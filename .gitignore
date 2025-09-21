@@ -1,2 +1,4 @@
 .venv/
 estructura_curso/
+
+*.DS_Store
