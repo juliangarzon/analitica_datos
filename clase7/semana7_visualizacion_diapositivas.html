@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Datos y Métricas de Negocio - Semana 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .presentation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .slide {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px;
+            margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-height: 80vh;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide:first-child {
+            display: flex;
+        }
+
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .title-slide {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .title-slide h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .title-slide h2 {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .title-slide .info {
+            font-size: 1.3rem;
+            opacity: 0.8;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #34495e;
+            margin: 30px 0 20px 0;
+        }
+
+        .nav-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .three-column-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .example-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .good-example {
+            background: #d4edda;
+            border-left-color: #28a745;
+        }
+
+        .bad-example {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #17a2b8;
+            margin: 20px 0;
+        }
+
+        .chart-type-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .chart-card {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 184, 148, 0.3);
+        }
+
+        .chart-card h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .chart-visual {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .kpi-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .kpi-section h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .sector-kpis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .sector-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .sector-card h4 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .visual-principles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .principle-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .principle-card h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .color-sample {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .exercise-box {
+            background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .exercise-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 30px;
+                margin: 20px 0;
+            }
+            
+            .title-slide h1 {
+                font-size: 2.5rem;
+            }
+            
+            .comparison-grid, .three-column-grid, .chart-type-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <button class="nav-btn" onclick="previousSlide()">◀ Anterior</button>
+        <button class="nav-btn" onclick="nextSlide()">Siguiente ▶</button>
+    </div>
+
+    <div class="presentation-container">
+        <!-- Slide 1: Título -->
+        <div class="slide title-slide">
+            <h1>📊 Visualización de Datos y Métricas de Negocio</h1>
+            <h2>Semana 7 - Del EDA Técnico a la Comunicación Ejecutiva</h2>
+            <div class="info">
+                <div style="margin-top: 20px;">Julian Eduardo Garzon Giraldo, MsC</div>
+                <div style="margin-top: 10px; font-size: 1.1rem; opacity: 0.8;">Módulo 2 - Business Intelligence y Visualización</div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Agenda y Conexión -->
+        <div class="slide">
+            <h1>🗓️ Agenda de Hoy</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎯 Objetivo Principal</h2>
+                    <p style="font-size: 1.2rem;">Transformar análisis técnico en comunicación que tome decisiones</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>📚 TEORÍA - Fundamentos</h3>
+                        <ul style="list-style: none; text-align: left; margin-top: 15px;">
+                            <li style="padding: 5px 0;">• Principios de visualización efectiva</li>
+                            <li style="padding: 5px 0;">• Tipos de gráficos y cuándo usarlos</li>
+                            <li style="padding: 5px 0;">• Métricas de negocio por sector</li>
+                            <li style="padding: 5px 0;">• Data storytelling básico</li>
+                        </ul>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>💻 PRÁCTICA - Aplicación</h3>
+                        <ul style="list-style: none; text-align: left; margin-top: 15px;">
+                            <li style="padding: 5px 0;">• Mejorar gráficos de su EDA</li>
+                            <li style="padding: 5px 0;">• Identificar KPIs relevantes</li>
+                            <li style="padding: 5px 0;">• Crear historia con datos</li>
+                            <li style="padding: 5px 0;">• Python, Excel o herramienta preferida</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🌉 Puente Conceptual</h2>
+                    <p style="font-size: 1.2rem;">De "¿Qué dicen los datos?" a "¿Qué debo hacer con esta información?"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: ¿Por qué fallan los dashboards? -->
+        <div class="slide">
+            <h1>🤔 ¿Por qué fallan el 70% de los dashboards empresariales?</h1>
+            <div style="margin: 40px 0;">
+                <div class="comparison-grid">
+                    <div>
+                        <h2 style="color: #dc3545;">❌ Dashboards que Fallan</h2>
+                        <div class="bad-example">
+                            <h4>🔴 Síntomas típicos:</h4>
+                            <ul style="margin-top: 10px;">
+                                <li>Nadie los usa después del primer mes</li>
+                                <li>Solo sirven para reuniones de reporte</li>
+                                <li>Información abundante, insights cero</li>
+                                <li>Decisiones se toman "por intuición"</li>
+                                <li>KPIs que nadie entiende</li>
+                            </ul>
+                        </div>
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: #f8d7da; border-radius: 10px;">
+                            <strong style="color: #721c24;">📊➡️🗑️ Beautiful but Useless</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="color: #28a745;">✅ Dashboards que Funcionan</h2>
+                        <div class="good-example">
+                            <h4>🟢 Características exitosas:</h4>
+                            <ul style="margin-top: 10px;">
+                                <li>Se consultan diariamente</li>
+                                <li>Generan acciones concretas</li>
+                                <li>Métricas alineadas con objetivos</li>
+                                <li>Historia clara y convincente</li>
+                                <li>Audiencia específica en mente</li>
+                            </ul>
+                        </div>
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: #d4edda; border-radius: 10px;">
+                            <strong style="color: #155724;">📊➡️🎯 Actionable Intelligence</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎯 La Diferencia Clave</h2>
+                    <p style="font-size: 1.3rem; margin: 0;">
+                        Los dashboards exitosos <strong>responden preguntas de negocio específicas</strong>,<br>
+                        no solo muestran datos bonitos
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Conexión Módulo 1 -->
+        <div class="slide">
+            <h1>🔗 De EDA Técnico a Comunicación Ejecutiva</h1>
+            <div style="margin: 40px 0;">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 15px; display: inline-block;">
+                        <h2 style="color: white; margin: 0;">📈 Evolución del Análisis</h2>
+                    </div>
+                </div>
+                
+                <div class="three-column-grid">
+                    <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🔬 MÓDULO 1: EDA</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Audiencia:</strong> Yo mismo</p>
+                            <p><strong>Pregunta:</strong> "¿Qué hay en los datos?"</p>
+                            <p><strong>Herramientas:</strong> pandas, matplotlib básico</p>
+                            <p><strong>Output:</strong> Jupyter notebook técnico</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            ✅ Ya dominamos esto
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>📊 HOY: VISUALIZACIÓN</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Audiencia:</strong> Colegas técnicos</p>
+                            <p><strong>Pregunta:</strong> "¿Qué significa esto?"</p>
+                            <p><strong>Herramientas:</strong> plotly, seaborn, Power BI</p>
+                            <p><strong>Output:</strong> Gráficos profesionales</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            🎯 Aprendemos hoy
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🎬 FUTURO: STORYTELLING</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Audiencia:</strong> Tomadores de decisión</p>
+                            <p><strong>Pregunta:</strong> "¿Qué debo hacer?"</p>
+                            <p><strong>Herramientas:</strong> Dashboards + Narrativa</p>
+                            <p><strong>Output:</strong> Presentación ejecutiva</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            🚀 Próximas semanas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 10px;">⚠️ Error Común</h4>
+                    <p style="color: #856404; margin: 0;">
+                        Usar gráficos de EDA (técnicos) para presentar a gerentes (ejecutivos). 
+                        <strong>Cada audiencia necesita un enfoque diferente.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Objetivos específicos -->
+        <div class="slide">
+            <h1>🎯 Al Final de Esta Clase Podrán</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🏆 Competencias Específicas</h2>
+                    <p style="font-size: 1.2rem;">Habilidades medibles y aplicables inmediatamente</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>👁️ Diseñar Visualizaciones</h3>
+                        <p>Elegir el gráfico correcto para cada tipo de dato y mensaje</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            <strong>Test:</strong> Barras vs líneas vs scatter
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>📐 Aplicar Principios</h3>
+                        <p>Usar color, tipografía y espacio para comunicar efectivamente</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            <strong>Test:</strong> Gráfico antes/después
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>📊 Identificar KPIs</h3>
+                        <p>Seleccionar métricas relevantes para cada sector público</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            <strong>Test:</strong> 2 KPIs para su dataset
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>📖 Estructurar Historia</h3>
+                        <p>Organizar información en narrativa convincente</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            <strong>Test:</strong> Contexto→Conflicto→Resolución
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">🎪 Ejercicio de Validación</h3>
+                    <div style="text-align: center;">
+                        <p style="color: #666; font-size: 1.1rem;">
+                            Al final crearán <strong>3 gráficos mejorados</strong> de su EDA + 
+                            <strong>2 KPIs</strong> + <strong>1 slide historia</strong>
+                        </p>
+                        <div style="margin-top: 15px; padding: 15px; background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; border-radius: 10px; display: inline-block;">
+                            <strong>⏱️ Tendrán herramientas para aplicar inmediatamente en sus proyectos</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: El problema de visualización -->
+        <div class="slide">
+            <h1>🚨 El Problema: Gráficos que Confunden</h1>
+            <div style="margin: 40px 0;">
+                <div class="comparison-grid">
+                    <div>
+                        <h2 style="color: #dc3545;">❌ Gráfico Horrible</h2>
+                        <div style="background: #f8d7da; padding: 20px; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 4rem; margin: 20px 0;">🥧</div>
+                            <h4 style="color: #721c24;">Pie Chart 3D con 15 categorías</h4>
+                            <ul style="text-align: left; margin-top: 15px; color: #721c24;">
+                                <li>Imposible comparar tamaños</li>
+                                <li>Colores indistinguibles</li>
+                                <li>Efecto 3D distorsiona</li>
+                                <li>Demasiadas categorías</li>
+                                <li>Leyenda ilegible</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="color: #28a745;">✅ Gráfico Efectivo</h2>
+                        <div style="background: #d4edda; padding: 20px; border-radius: 10px; text-align: center;">
+                            <div style="font-size: 4rem; margin: 20px 0;">📊</div>
+                            <h4 style="color: #155724;">Barras Horizontales Ordenadas</h4>
+                            <ul style="text-align: left; margin-top: 15px; color: #155724;">
+                                <li>Fácil comparación visual</li>
+                                <li>Ordenado por valor</li>
+                                <li>Etiquetas legibles</li>
+                                <li>Solo top 10 categorías</li>
+                                <li>Colores consistentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">⚡ El Costo de la Confusión</h2>
+                    <div class="comparison-grid" style="margin-top: 20px;">
+                        <div>
+                            <p style="font-size: 1.1rem;"><strong>⏰ Tiempo perdido:</strong> 10 min explicando el gráfico</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 1.1rem;"><strong>🎯 Decisión equivocada:</strong> Interpretación incorrecta</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.2rem; margin-top: 15px;">
+                        <strong>Un gráfico malo puede arruinar un análisis excelente</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Principios fundamentales -->
+        <div class="slide">
+            <h1>📏 Principios Fundamentales de Visualización</h1>
+            <div style="margin: 40px 0;">
+                <div class="visual-principles">
+                    <div class="principle-card">
+                        <h3>🔍 CLARIDAD</h3>
+                        <p style="margin: 15px 0;">El mensaje debe ser obvio en 3 segundos</p>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.9rem;">
+                            <strong>Test:</strong> ¿Un extraño entendería sin explicación?
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <h3>🎯 PRECISIÓN</h3>
+                        <p style="margin: 15px 0;">Los datos se representan fielmente</p>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.9rem;">
+                            <strong>Test:</strong> ¿Las proporciones visuales coinciden con los números?
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <h3>⚡ EFICIENCIA</h3>
+                        <p style="margin: 15px 0;">Máxima información, mínimo esfuerzo cognitivo</p>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.9rem;">
+                            <strong>Test:</strong> ¿Se puede simplificar sin perder información?
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <h3>✨ BELLEZA</h3>
+                        <p style="margin: 15px 0;">Estéticamente agradable invita a la exploración</p>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.9rem;">
+                            <strong>Test:</strong> ¿Da ganas de seguir mirando?
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">⚖️ Jerarquía de Prioridades</h3>
+                    <div style="text-align: center;">
+                        <div style="display: inline-flex; align-items: center; gap: 15px; font-size: 1.2rem;">
+                            <span style="background: #dc3545; color: white; padding: 10px 15px; border-radius: 25px;"><strong>1. CLARIDAD</strong></span>
+                            <span>></span>
+                            <span style="background: #ffc107; color: #333; padding: 10px 15px; border-radius: 25px;"><strong>2. PRECISIÓN</strong></span>
+                            <span>></span>
+                            <span style="background: #28a745; color: white; padding: 10px 15px; border-radius: 25px;"><strong>3. EFICIENCIA</strong></span>
+                            <span>></span>
+                            <span style="background: #667eea; color: white; padding: 10px 15px; border-radius: 25px;"><strong>4. BELLEZA</strong></span>
+                        </div>
+                        <p style="color: #666; margin-top: 15px; font-style: italic;">
+                            Si hay conflicto, siempre priorizar en este orden
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Jerarquía visual -->
+        <div class="slide">
+            <h1>👁️ Jerarquía Visual: Guiando el Ojo</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎯 El Recorrido Visual</h2>
+                    <p style="font-size: 1.2rem;">El ojo humano sigue patrones predecibles. Úsalos a tu favor.</p>
+                </div>
+
+                <div class="three-column-grid">
+                    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🥇 PRIMERO</h3>
+                        <div style="font-size: 2.5rem; margin: 20px 0;">👀</div>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Mensaje principal</strong></p>
+                            <p>Título grande, colores intensos</p>
+                            <p>Posición superior izquierda</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Ej: "Ventas cayeron 15%"
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🥈 SEGUNDO</h3>
+                        <div style="font-size: 2.5rem; margin: 20px 0;">📊</div>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Evidencia principal</strong></p>
+                            <p>Gráfico central, datos clave</p>
+                            <p>Contraste medio</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Ej: Gráfico de tendencia
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🥉 TERCERO</h3>
+                        <div style="font-size: 2.5rem; margin: 20px 0;">📝</div>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Detalles y contexto</strong></p>
+                            <p>Texto explicativo, fuentes</p>
+                            <p>Colores suaves</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Ej: "Fuente: DANE 2024"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 Técnicas Prácticas para Controlar el Recorrido:</h4>
+                    <div class="comparison-grid" style="margin-top: 15px;">
+                        <div>
+                            <p><strong>🎨 Color:</strong> Colores cálidos (rojo, naranja) atraen primero</p>
+                            <p><strong>📏 Tamaño:</strong> Elementos grandes dominan la atención</p>
+                            <p><strong>🔲 Contraste:</strong> Diferencias marcadas destacan</p>
+                        </div>
+                        <div>
+                            <p><strong>📍 Posición:</strong> Arriba-izquierda tiene prioridad</p>
+                            <p><strong>🌐 Espacio:</strong> Elementos aislados se notan más</p>
+                            <p><strong>🔤 Tipografía:</strong> Bold y cursiva llaman atención</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Colores que funcionan -->
+        <div class="slide">
+            <h1>🎨 Colores que Funcionan</h1>
+            <div style="margin: 40px 0;">
+                <div class="three-column-grid">
+                    <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🔵 PALETA SEGURA</h3>
+                        <div class="color-palette">
+                            <div class="color-sample" style="background: #0984e3;"></div>
+                            <div class="color-sample" style="background: #00b894;"></div>
+                            <div class="color-sample" style="background: #fdcb6e;"></div>
+                            <div class="color-sample" style="background: #e17055;"></div>
+                        </div>
+                        <p style="margin: 15px 0; font-size: 0.9rem;">
+                            Visible para daltónicos<br>
+                            Contraste adecuado<br>
+                            Profesional
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>❤️ EMOCIONES</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem; text-align: left;">
+                            <p><span style="color: #ff3838;">🔴 Rojo:</span> Urgencia, peligro, decline</p>
+                            <p><span style="color: #4cd137;">🟢 Verde:</span> Éxito, crecimiento, salud</p>
+                            <p><span style="color: #ffa502;">🟡 Amarillo:</span> Advertencia, atención</p>
+                            <p><span style="color: #3742fa;">🔵 Azul:</span> Confianza, estabilidad</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Úsalos coherentemente
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>⚠️ EVITAR</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem; text-align: left;">
+                            <p>❌ Arcoíris (muchos colores)</p>
+                            <p>❌ Rojo-verde juntos (daltónicos)</p>
+                            <p>❌ Amarillo sobre blanco (invisible)</p>
+                            <p>❌ Neón (fatiga visual)</p>
+                            <p>❌ Colores inconsistentes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">🛠️ Herramientas Recomendadas</h3>
+                    <div class="comparison-grid" style="gap: 20px;">
+                        <div style="text-align: center;">
+                            <p style="margin: 10px 0;"><strong>🎨 Paletas automáticas:</strong></p>
+                            <p style="color: #666;">ColorBrewer, Coolors.co</p>
+                            <p style="color: #666;">Seaborn palettes en Python</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <p style="margin: 10px 0;"><strong>🔍 Test accesibilidad:</strong></p>
+                            <p style="color: #666;">WebAIM Contrast Checker</p>
+                            <p style="color: #666;">Simuladores daltonismo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 10px;">🧠 Regla de Oro</h4>
+                    <p style="color: #856404; margin: 0; font-size: 1.1rem;">
+                        <strong>Máximo 5 colores por gráfico.</strong> Si necesitas más, tu gráfico probablemente es muy complejo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Tipografía legible -->
+        <div class="slide">
+            <h1>🔤 Tipografía Legible</h1>
+            <div style="margin: 40px 0;">
+                <div class="comparison-grid">
+                    <div>
+                        <h2>✅ Tipografía Efectiva</h2>
+                        <div class="good-example">
+                            <div style="margin: 15px 0;">
+                                <h3 style="font-size: 1.8rem; font-weight: bold; color: #2c3e50;">Título Principal</h3>
+                                <h4 style="font-size: 1.3rem; font-weight: normal; color: #34495e; margin: 10px 0;">Subtítulo descriptivo</h4>
+                                <p style="font-size: 1rem; line-height: 1.5; color: #666;">
+                                    Texto de párrafo con espaciado adecuado y contraste suficiente para lectura cómoda.
+                                </p>
+                                <p style="font-size: 0.9rem; color: #888;">Fuente: DANE 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>❌ Tipografía Problemática</h2>
+                        <div class="bad-example">
+                            <div style="margin: 15px 0;">
+                                <h3 style="font-size: 1rem; font-weight: normal; color: #aaa;">titulo muy pequeño</h3>
+                                <h4 style="font-size: 1.5rem; font-weight: bold; color: #333; margin: 2px 0;">SUBTÍTULO MUY GRANDE</h4>
+                                <p style="font-size: 0.7rem; line-height: 1; color: #ccc;">
+                                    textosinespacio ydifícildeleerpor quenohaydistinción entretamaños ycolores
+                                </p>
+                                <p style="font-size: 1.2rem; color: #f00;">FUENTE GRITANDO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="three-column-grid" style="margin-top: 40px;">
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>📏 TAMAÑOS</h3>
+                        <div style="margin: 15px 0; text-align: left; font-size: 0.9rem;">
+                            <p><strong>Título:</strong> 24-32px</p>
+                            <p><strong>Subtítulo:</strong> 18-22px</p>
+                            <p><strong>Texto:</strong> 14-16px</p>
+                            <p><strong>Anotaciones:</strong> 12-14px</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Escalas consistentes
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🔤 FUENTES</h3>
+                        <div style="margin: 15px 0; text-align: left; font-size: 0.9rem;">
+                            <p><strong>Sin Serif:</strong> Arial, Helvetica</p>
+                            <p><strong>Con Serif:</strong> Times, Georgia</p>
+                            <p><strong>Monospace:</strong> Courier (código)</p>
+                            <p><strong>Máximo:</strong> 2 fuentes por gráfico</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Sin serif para pantallas
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>📐 ESPACIADO</h3>
+                        <div style="margin: 15px 0; text-align: left; font-size: 0.9rem;">
+                            <p><strong>Line-height:</strong> 1.4-1.6</p>
+                            <p><strong>Párrafos:</strong> Espacios entre bloques</p>
+                            <p><strong>Márgenes:</strong> Respiración visual</p>
+                            <p><strong>Alineación:</strong> Consistente</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Menos es más
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 style="color: #0c5460; margin-bottom: 10px;">💡 Test de Legibilidad</h4>
+                    <p style="color: #0c5460; margin: 0;">
+                        <strong>Regla de 6 metros:</strong> ¿Se puede leer el texto principal desde 6 metros de distancia? 
+                        Si no, es muy pequeño para una presentación.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Espacio en blanco -->
+        <div class="slide">
+            <h1>⬜ Espacio en Blanco: Por qué Menos es Más</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🧠 Psicología del Espacio</h2>
+                    <p style="font-size: 1.2rem;">El cerebro procesa mejor información espaciada que información amontonada</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div>
+                        <h2 style="color: #dc3545;">❌ Sin Espacio en Blanco</h2>
+                        <div style="background: #f8d7da; padding: 15px; border-radius: 10px; line-height: 1.1;">
+                            <h4 style="margin: 2px 0; color: #721c24;">TítuloSinEspacio</h4>
+                            <p style="margin: 2px 0; font-size: 0.8rem; color: #721c24;">Textoapiñadoqueesdifícildeleerynocomunicabienpuntosprincipalesporquenohaydistinciónvisual</p>
+                            <div style="display: flex; gap: 2px; margin: 2px 0;">
+                                <div style="background: #dc3545; color: white; padding: 2px; font-size: 0.7rem;">Dato1</div>
+                                <div style="background: #ffc107; color: black; padding: 2px; font-size: 0.7rem;">Dato2</div>
+                                <div style="background: #28a745; color: white; padding: 2px; font-size: 0.7rem;">Dato3</div>
+                            </div>
+                            <p style="margin: 2px 0; font-size: 0.7rem; color: #721c24;">Fuente:Muchosdatos2024Autor:Investigador</p>
+                        </div>
+                        <div style="text-align: center; margin-top: 15px; color: #dc3545;">
+                            <strong>😵 Fatiga cognitiva en 5 segundos</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="color: #28a745;">✅ Con Espacio en Blanco</h2>
+                        <div style="background: #d4edda; padding: 25px; border-radius: 10px; line-height: 1.6;">
+                            <h4 style="margin: 0 0 15px 0; color: #155724;">Título Claro</h4>
+                            
+                            <p style="margin: 0 0 20px 0; font-size: 0.9rem; color: #155724;">
+                                Texto espaciado que permite lectura cómoda y comunicación efectiva.
+                            </p>
+                            
+                            <div style="display: flex; gap: 15px; margin: 20px 0;">
+                                <div style="background: #28a745; color: white; padding: 8px 12px; border-radius: 5px; font-size: 0.8rem;">Dato 1</div>
+                                <div style="background: #17a2b8; color: white; padding: 8px 12px; border-radius: 5px; font-size: 0.8rem;">Dato 2</div>
+                                <div style="background: #6c757d; color: white; padding: 8px 12px; border-radius: 5px; font-size: 0.8rem;">Dato 3</div>
+                            </div>
+                            
+                            <p style="margin: 20px 0 0 0; font-size: 0.8rem; color: #6c757d;">
+                                Fuente: Datos 2024 | Autor: Investigador
+                            </p>
+                        </div>
+                        <div style="text-align: center; margin-top: 15px; color: #28a745;">
+                            <strong>😌 Comprensión inmediata</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-grid" style="margin-top: 40px;">
+                    <div class="feature-card">
+                        <h3>👁️ GUÍA LA ATENCIÓN</h3>
+                        <p>El espacio aisla elementos importantes y crea jerarquía visual natural</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🧠 REDUCE CARGA COGNITIVA</h3>
+                        <p>El cerebro procesa información espaciada 40% más rápido</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>✨ AUMENTA PERCEPCIÓN DE CALIDAD</h3>
+                        <p>Diseños espaciados se perciben como más profesionales</p>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 10px;">⚖️ Equilibrio Correcto</h4>
+                    <p style="color: #856404; margin: 0;">
+                        <strong>No es "espacio vacío desperdiciado"</strong> - es herramienta de comunicación. 
+                        Pero tampoco exageres: muy espaciado se ve incompleto.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Ejercicio rápido -->
+        <div class="slide">
+            <h1>⚡ Ejercicio Rápido: Arreglen Este Gráfico</h1>
+            <div style="margin: 40px 0;">
+                <div class="exercise-box">
+                    <h3>🎯 Desafío de 2 Minutos</h3>
+                    <p style="font-size: 1.1rem; margin: 15px 0;">
+                        En parejas, identifiquen <strong>3 problemas</strong> en el gráfico horrible de abajo 
+                        y propongan <strong>3 soluciones</strong> específicas
+                    </p>
+                </div>
+
+                <div style="background: #f8d7da; padding: 30px; border-radius: 15px; text-align: center; margin: 30px 0; border: 3px dashed #dc3545;">
+                    <h2 style="color: #721c24; margin-bottom: 20px;">📊 GRÁFICO PROBLEMÁTICO</h2>
+                    
+                    <div style="background: white; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <div style="font-size: 0.8rem; color: #999; text-align: left; margin-bottom: 5px;">
+                            VentasPorDepartamento2024EnMillonesDeColombianosSegunDatos DelDANERecopilados
+                        </div>
+                        
+                        <div style="display: flex; justify-content: center; align-items: end; gap: 2px; height: 150px; margin: 10px 0;">
+                            <div style="width: 20px; height: 120px; background: #ff0000; margin: 0;"></div>
+                            <div style="width: 20px; height: 80px; background: #ff3300; margin: 0;"></div>
+                            <div style="width: 20px; height: 60px; background: #ff6600; margin: 0;"></div>
+                            <div style="width: 20px; height: 40px; background: #ff9900; margin: 0;"></div>
+                            <div style="width: 20px; height: 20px; background: #ffcc00; margin: 0;"></div>
+                            <div style="width: 20px; height: 100px; background: #ffff00; margin: 0;"></div>
+                            <div style="width: 20px; height: 90px; background: #ccff00; margin: 0;"></div>
+                            <div style="width: 20px; height: 70px; background: #99ff00; margin: 0;"></div>
+                            <div style="width: 20px; height: 50px; background: #66ff00; margin: 0;"></div>
+                            <div style="width: 20px; height: 30px; background: #33ff00; margin: 0;"></div>
+                            <div style="width: 20px; height: 10px; background: #00ff00; margin: 0;"></div>
+                        </div>
+                        
+                        <div style="font-size: 0.6rem; color: #333; display: flex; justify-content: space-between;">
+                            <span>BGT</span><span>ANT</span><span>CUN</span><span>VAL</span><span>ATL</span><span>BOL</span><span>STD</span><span>NOR</span><span>TOL</span><span>CLD</span><span>OTR</span>
+                        </div>
+                        
+                        <div style="font-size: 0.7rem; color: #666; margin-top: 5px; text-align: right;">
+                            Fuente:EstadísticasGubernamentales
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-grid">
+                    <div style="background: #fff3cd; padding: 20px; border-radius: 10px; border-left: 5px solid #ffc107;">
+                        <h4 style="color: #856404; margin-bottom: 15px;">🔍 Problemas a Identificar:</h4>
+                        <ul style="color: #856404; text-align: left;">
+                            <li>Título ilegible y sin espacios</li>
+                            <li>Colores arcoíris (imposible distinguir)</li>
+                            <li>Etiquetas de ejes abreviadas</li>
+                            <li>Sin valores numéricos</li>
+                            <li>Fuente apiñada</li>
+                            <li>No hay jerarquía visual</li>
+                        </ul>
+                    </div>
+                    <div style="background: #d4edda; padding: 20px; border-radius: 10px; border-left: 5px solid #28a745;">
+                        <h4 style="color: #155724; margin-bottom: 15px;">✅ Soluciones a Proponer:</h4>
+                        <ul style="color: #155724; text-align: left;">
+                            <li>Título claro y espaciado</li>
+                            <li>Paleta de 2-3 colores máximo</li>
+                            <li>Nombres completos de departamentos</li>
+                            <li>Valores en las barras</li>
+                            <li>Fuente bien formatada</li>
+                            <li>Ordenar por valor descendente</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 15px; text-align: center; margin-top: 30px;">
+                    <p style="font-size: 1.1rem; margin: 0;">
+                        <strong>⏰ Tiempo: 2 minutos para discutir</strong> - Luego compartimos hallazgos
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Mapa mental tipos de gráficos -->
+        <div class="slide">
+            <h1>🗺️ Mapa Mental: Qué Gráfico Para Qué Tipo de Datos</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎯 La Pregunta Clave</h2>
+                    <p style="font-size: 1.3rem;">¿Qué historia quiero contar con estos datos?</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>📊 COMPARAR</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Pregunta:</strong> "¿Cuál es mayor/menor?"</p>
+                            <p><strong>Gráfico:</strong> Barras (horizontal/vertical)</p>
+                            <p><strong>Cuándo:</strong> Categorías vs valores</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Ej: Ventas por departamento
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>📈 TENDENCIA</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Pregunta:</strong> "¿Cómo cambia en el tiempo?"</p>
+                            <p><strong>Gráfico:</strong> Líneas</p>
+                            <p><strong>Cuándo:</strong> Variable temporal</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Ej: Criminalidad 2020-2024
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>🔗 RELACIÓN</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Pregunta:</strong> "¿Están relacionadas?"</p>
+                            <p><strong>Gráfico:</strong> Scatter plot</p>
+                            <p><strong>Cuándo:</strong> Dos variables numéricas</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Ej: Educación vs Ingresos
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>📊 DISTRIBUCIÓN</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Pregunta:</strong> "¿Cómo se distribuye?"</p>
+                            <p><strong>Gráfico:</strong> Histograma, boxplot</p>
+                            <p><strong>Cuándo:</strong> Forma de los datos</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Ej: Distribución de salarios
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box" style="margin-top: 40px;">
+                    <h4 style="color: #856404; margin-bottom: 10px;">🧠 Proceso Mental Correcto</h4>
+                    <div style="text-align: center;">
+                        <div style="display: inline-flex; align-items: center; gap: 15px; font-size: 1.1rem;">
+                            <span style="background: #667eea; color: white; padding: 10px 15px; border-radius: 25px;"><strong>1. ¿Qué quiero mostrar?</strong></span>
+                            <span>→</span>
+                            <span style="background: #00b894; color: white; padding: 10px 15px; border-radius: 25px;"><strong>2. ¿Qué tipo de datos tengo?</strong></span>
+                            <span>→</span>
+                            <span style="background: #f093fb; color: white; padding: 10px 15px; border-radius: 25px;"><strong>3. ¿Qué gráfico usar?</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Comparación - Barras -->
+        <div class="slide">
+            <h1>📊 Comparación: Barras Horizontales vs Verticales</h1>
+            <div style="margin: 40px 0;">
+                <div class="comparison-grid">
+                    <div>
+                        <h2 style="color: #28a745;">✅ Barras Horizontales</h2>
+                        <div class="good-example">
+                            <h4>🟢 Cuándo usar:</h4>
+                            <ul style="margin-top: 10px;">
+                                <li>Nombres largos de categorías</li>
+                                <li>Muchas categorías (>6)</li>
+                                <li>Comparar valores específicos</li>
+                                <li>Audiencia lee de izquierda a derecha</li>
+                            </ul>
+                            <div style="margin-top: 15px; padding: 15px; background: #e8f5e8; border-radius: 8px;">
+                                <strong>Ejemplo:</strong> Departamentos de Colombia<br>
+                                <span style="font-size: 0.9rem; color: #666;">Norte de Santander, Valle del Cauca, etc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="color: #17a2b8;">✅ Barras Verticales</h2>
+                        <div style="background: #d1ecf1; padding: 20px; border-radius: 10px; border-left: 5px solid #17a2b8;">
+                            <h4 style="color: #0c5460;">🟦 Cuándo usar:</h4>
+                            <ul style="margin-top: 10px; color: #0c5460;">
+                                <li>Nombres cortos de categorías</li>
+                                <li>Pocas categorías (≤6)</li>
+                                <li>Mostrar tendencia temporal</li>
+                                <li>Comparar magnitudes</li>
+                            </ul>
+                            <div style="margin-top: 15px; padding: 15px; background: rgba(255,255,255,0.5); border-radius: 8px;">
+                                <strong>Ejemplo:</strong> Años (2020, 2021, 2022)<br>
+                                <span style="font-size: 0.9rem; color: #666;">Meses, trimestres, regiones</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">🎯 Reglas de Oro para Barras</h3>
+                    <div class="three-column-grid">
+                        <div style="text-align: center; padding: 20px;">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">📐</div>
+                            <h4>SIEMPRE empezar en 0</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Las barras representan magnitud total</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">📊</div>
+                            <h4>Ordenar por valor</h4>
+                            <p style="color: #666; font-size: 0.9rem;">De mayor a menor (salvo que sea temporal)</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <div style="font-size: 2rem; margin-bottom: 10px;">🎨</div>
+                            <h4>Destacar lo importante</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Color diferente para el mensaje clave</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 10px;">❌ Error Común</h4>
+                    <p style="color: #856404; margin: 0;">
+                        <strong>No uses barras apiladas si quieres comparar categorías individuales.</strong> 
+                        Solo para mostrar composición del total.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Tendencias temporales -->
+        <div class="slide">
+            <h1>📈 Tendencias Temporales: Líneas vs Áreas</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">⏰ El Tiempo es Especial</h2>
+                    <p style="font-size: 1.2rem;">Los datos temporales tienen propiedades únicas que hay que respetar</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>📈 GRÁFICOS DE LÍNEA</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Ideal para:</strong></p>
+                            <ul style="text-align: left; margin-top: 10px;">
+                                <li>Mostrar cambios en el tiempo</li>
+                                <li>Identificar tendencias</li>
+                                <li>Comparar múltiples series</li>
+                                <li>Datos continuos</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Ejemplo:</strong> Homicidios por mes en Bogotá 2020-2024
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>📊 GRÁFICOS DE ÁREA</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Ideal para:</strong></p>
+                            <ul style="text-align: left; margin-top: 10px;">
+                                <li>Enfatizar magnitud total</li>
+                                <li>Mostrar acumulación</li>
+                                <li>Comparar volúmenes</li>
+                                <li>Resaltar el "llenado"</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Ejemplo:</strong> Presupuesto ejecutado acumulado por trimestre
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">🛠️ Técnicas Avanzadas para Series Temporales</h3>
+                    
+                    <div class="feature-grid">
+                        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>📅 ANOTACIONES</h4>
+                            <p style="font-size: 0.9rem;">Marca eventos importantes</p>
+                            <div style="font-size: 0.8rem; opacity: 0.9;">
+                                "COVID-19 inicio", "Nueva ley"
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>📊 LÍNEAS DE REFERENCIA</h4>
+                            <p style="font-size: 0.9rem;">Promedio, meta, umbral</p>
+                            <div style="font-size: 0.8rem; opacity: 0.9;">
+                                "Meta anual", "Promedio histórico"
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>🔍 ZOOM TEMPORAL</h4>
+                            <p style="font-size: 0.9rem;">Destacar períodos clave</p>
+                            <div style="font-size: 0.8rem; opacity: 0.9;">
+                                "Últimos 6 meses", "Período crítico"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 style="color: #0c5460; margin-bottom: 10px;">💡 Tip de Interpretación</h4>
+                    <p style="color: #0c5460; margin: 0;">
+                        <strong>Pendiente de la línea = velocidad del cambio.</strong> 
+                        Línea empinada = cambio rápido. Línea plana = estabilidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Distribuciones -->
+        <div class="slide">
+            <h1>📊 Distribuciones: Histogramas, Boxplots, Violin Plots</h1>
+            <div style="margin: 40px 0;">
+                <div class="three-column-grid">
+                    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>📊 HISTOGRAMA</h3>
+                        <div class="chart-visual">📊</div>
+                        <div style="font-size: 0.9rem; text-align: left;">
+                            <p><strong>Muestra:</strong> Frecuencia</p>
+                            <p><strong>Revela:</strong> Forma, picos, huecos</p>
+                            <p><strong>Ideal para:</strong> Datos numéricos continuos</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem; margin-top: 10px;">
+                            Ej: Distribución de salarios
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>📦 BOXPLOT</h3>
+                        <div class="chart-visual">📦</div>
+                        <div style="font-size: 0.9rem; text-align: left;">
+                            <p><strong>Muestra:</strong> Resumen estadístico</p>
+                            <p><strong>Revela:</strong> Outliers, cuartiles</p>
+                            <p><strong>Ideal para:</strong> Comparar grupos</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem; margin-top: 10px;">
+                            Ej: Salarios por departamento
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🎻 VIOLIN PLOT</h3>
+                        <div class="chart-visual">🎻</div>
+                        <div style="font-size: 0.9rem; text-align: left;">
+                            <p><strong>Muestra:</strong> Forma + estadísticas</p>
+                            <p><strong>Revela:</strong> Densidad detallada</p>
+                            <p><strong>Ideal para:</strong> Análisis avanzado</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem; margin-top: 10px;">
+                            Ej: Distribuciones complejas
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">🔍 Cómo Leer Cada Tipo</h3>
+                    
+                    <div class="comparison-grid">
+                        <div>
+                            <h4 style="color: #e74c3c;">📊 Histograma: Buscar</h4>
+                            <ul style="color: #666; font-size: 0.9rem;">
+                                <li><strong>Forma:</strong> Normal, sesgada, bimodal</li>
+                                <li><strong>Picos:</strong> Valores más comunes</li>
+                                <li><strong>Huecos:</strong> Valores ausentes</li>
+                                <li><strong>Outliers:</strong> Barras aisladas</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: #27ae60;">📦 Boxplot: Interpretar</h4>
+                            <ul style="color: #666; font-size: 0.9rem;">
+                                <li><strong>Caja:</strong> 50% de los datos</li>
+                                <li><strong>Línea central:</strong> Mediana</li>
+                                <li><strong>Bigotes:</strong> Rango típico</li>
+                                <li><strong>Puntos:</strong> Outliers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 10px;">⚠️ Cuidado con los Bins</h4>
+                    <p style="color: #856404; margin: 0;">
+                        En histogramas, <strong>el número de bins cambia la historia.</strong> 
+                        Muy pocos = pérdida de detalle. Muchos = ruido. Prueba 20-50 bins.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 17: Relaciones -->
+        <div class="slide">
+            <h1>🔗 Relaciones: Scatter Plots, Heatmaps, Correlaciones</h1>
+            <div style="margin: 40px 0;">
+                <div class="comparison-grid">
+                    <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>⚡ SCATTER PLOTS</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Para qué:</strong> Relaciones entre 2 variables numéricas</p>
+                            <p><strong>Revela:</strong> Correlación, outliers, patrones</p>
+                            <p><strong>Mejoras:</strong> Color por categoría, tamaño por 3ª variable</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Ejemplo:</strong> PIB per cápita vs Años de escolaridad
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>🔥 HEATMAPS</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Para qué:</strong> Matrices de correlación, tablas cruzadas</p>
+                            <p><strong>Revela:</strong> Patrones en muchas variables</p>
+                            <p><strong>Mejoras:</strong> Paleta divergente, anotaciones</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Ejemplo:</strong> Correlaciones entre indicadores socioeconómicos
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">🎯 Patrones a Buscar en Scatter Plots</h3>
+                    
+                    <div class="feature-grid">
+                        <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>📈 LINEAL POSITIVA</h4>
+                            <p style="font-size: 0.9rem;">A mayor X, mayor Y</p>
+                            <div style="font-size: 0.8rem; opacity: 0.9;">
+                                Ej: Educación → Ingresos
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>📉 LINEAL NEGATIVA</h4>
+                            <p style="font-size: 0.9rem;">A mayor X, menor Y</p>
+                            <div style="font-size: 0.8rem; opacity: 0.9;">
+                                Ej: Criminalidad → Inversión
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>🌊 NO LINEAL</h4>
+                            <p style="font-size: 0.9rem;">Relación curva</p>
+                            <div style="font-size: 0.8rem; opacity: 0.9;">
+                                Ej: Edad → Productividad
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>☁️ SIN RELACIÓN</h4>
+                            <p style="font-size: 0.9rem;">Nube de puntos</p>
+                            <div style="font-size: 0.8rem; opacity: 0.9;">
+                                Ej: Variables independientes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 style="color: #0c5460; margin-bottom: 10px;">🔍 Técnica Pro: Agregue una 3ª Dimensión</h4>
+                    <p style="color: #0c5460; margin: 0;">
+                        <strong>Color por categoría + Tamaño por variable numérica</strong> = 4 variables en un gráfico. 
+                        Ej: X=PIB, Y=Salud, Color=Región, Tamaño=Población
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 18: Composición -->
+        <div class="slide">
+            <h1>🥧 Composición: Pie Charts, Treemaps, Stacked</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🚨 Zona de Peligro</h2>
+                    <p style="font-size: 1.2rem;">Los gráficos de composición son los más mal usados. Úsalos con cuidado.</p>
+                </div>
+
+                <div class="three-column-grid">
+                    <div>
+                        <h3 style="color: #e74c3c;">🥧 PIE CHARTS</h3>
+                        <div style="background: #f8d7da; padding: 20px; border-radius: 10px; border-left: 5px solid #dc3545;">
+                            <h4 style="color: #721c24;">✅ Cuándo SÍ usar:</h4>
+                            <ul style="color: #721c24; font-size: 0.9rem;">
+                                <li>Máximo 5 categorías</li>
+                                <li>Una categoría > 50%</li>
+                                <li>Partes de un todo obvio</li>
+                                <li>Audiencia general</li>
+                            </ul>
+                            <div style="background: rgba(255,255,255,0.5); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                                <strong>Ejemplo:</strong> Presupuesto nacional por sector
+                            </div>
+                        </div>
+                        
+                        <div style="background: #fff3cd; padding: 15px; border-radius: 10px; margin-top: 15px;">
+                            <h4 style="color: #856404;">❌ Cuándo NO usar:</h4>
+                            <ul style="color: #856404; font-size: 0.8rem;">
+                                <li>Muchas categorías</li>
+                                <li>Comparar tamaños similares</li>
+                                <li>Datos temporales</li>
+                                <li>Valores negativos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #27ae60;">🌳 TREEMAPS</h3>
+                        <div style="background: #d4edda; padding: 20px; border-radius: 10px; border-left: 5px solid #28a745;">
+                            <h4 style="color: #155724;">🎯 Ideal para:</h4>
+                            <ul style="color: #155724; font-size: 0.9rem;">
+                                <li>Muchas categorías</li>
+                                <li>Jerarquías (departamento > municipio)</li>
+                                <li>Grandes diferencias de tamaño</li>
+                                <li>Uso eficiente del espacio</li>
+                            </ul>
+                            <div style="background: rgba(255,255,255,0.5); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                                <strong>Ejemplo:</strong> PIB por departamento y municipio
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #f39c12;">📊 STACKED BARS</h3>
+                        <div style="background: #fff3cd; padding: 20px; border-radius: 10px; border-left: 5px solid #ffc107;">
+                            <h4 style="color: #856404;">⚡ Úsalos para:</h4>
+                            <ul style="color: #856404; font-size: 0.9rem;">
+                                <li>Total + composición</li>
+                                <li>Cambios en el tiempo</li>
+                                <li>Comparar grupos</li>
+                                <li>Máximo 4-5 categorías</li>
+                            </ul>
+                            <div style="background: rgba(255,255,255,0.5); padding: 10px; border-radius: 8px; margin-top: 10px;">
+                                <strong>Ejemplo:</strong> Población urbana/rural por año
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">🏆 Alternativas Mejores a Pie Charts</h3>
+                    
+                    <div class="comparison-grid">
+                        <div style="text-align: center; padding: 20px;">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
+                            <h4>BARRAS HORIZONTALES</h4>
+                            <p style="color: #666; font-size: 0.9rem;">
+                                Más fácil comparar tamaños<br>
+                                Etiquetas legibles<br>
+                                Funciona con muchas categorías
+                            </p>
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">📈</div>
+                            <h4>WAFFLE CHARTS</h4>
+                            <p style="color: #666; font-size: 0.9rem;">
+                                100 cuadrados = 100%<br>
+                                Intuitivo para porcentajes<br>
+                                Alternativa moderna
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 10px;">🧠 Regla Mental Rápida</h4>
+                    <p style="color: #856404; margin: 0; font-size: 1.1rem;">
+                        <strong>Si dudas entre pie chart y barras, elige barras.</strong> 
+                        99% de las veces funcionará mejor.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: ¿Qué son los KPIs? -->
+        <div class="slide">
+            <h1>🎯 ¿Qué son los KPIs?</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">📊 Key Performance Indicators</h2>
+                    <p style="font-size: 1.3rem;">Métricas que importan a los tomadores de decisión</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div>
+                        <h2 style="color: #dc3545;">❌ NO son KPIs</h2>
+                        <div class="bad-example">
+                            <h4>🔴 Métricas que NO toman decisiones:</h4>
+                            <ul style="margin-top: 10px;">
+                                <li>"Número total de registros en la base"</li>
+                                <li>"Promedio de edad de la población"</li>
+                                <li>"Cantidad de municipios por departamento"</li>
+                                <li>"Fecha de última actualización"</li>
+                                <li>"Número de variables en el dataset"</li>
+                            </ul>
+                        </div>
+                        <div style="text-align: center; margin-top: 15px; padding: 15px; background: #f8d7da; border-radius: 10px;">
+                            <strong style="color: #721c24;">📊➡️🤷 "Interesante, pero... ¿y qué?"</strong>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 style="color: #28a745;">✅ SÍ son KPIs</h2>
+                        <div class="good-example">
+                            <h4>🟢 Métricas que SÍ toman decisiones:</h4>
+                            <ul style="margin-top: 10px;">
+                                <li>"Mortalidad infantil > 10 por 1000"</li>
+                                <li>"Deserción escolar aumentó 15%"</li>
+                                <li>"Homicidios por encima de meta nacional"</li>
+                                <li>"Cobertura vacunación < 80%"</li>
+                                <li>"Índice pobreza empeoró vs año anterior"</li>
+                            </ul>
+                        </div>
+                        <div style="text-align: center; margin-top: 15px; padding: 15px; background: #d4edda; border-radius: 10px;">
+                            <strong style="color: #155724;">📊➡️🎯 "Necesitamos actuar YA"</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">🔍 Características de un KPI Efectivo</h3>
+                    
+                    <div class="feature-grid">
+                        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>🎯 ESPECÍFICO</h4>
+                            <p style="font-size: 0.9rem;">No "educación", sino "deserción escolar 9º grado"</p>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>📏 MEDIBLE</h4>
+                            <p style="font-size: 0.9rem;">Número, porcentaje, ratio. No "mejoró un poco"</p>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>⚡ ACCIONABLE</h4>
+                            <p style="font-size: 0.9rem;">Sugiere qué hacer. "Si X entonces Y"</p>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                            <h4>⏰ OPORTUNO</h4>
+                            <p style="font-size: 0.9rem;">Se puede actuar a tiempo. No datos de hace 3 años</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 style="color: #0c5460; margin-bottom: 10px;">💡 Test Rápido: ¿Es un KPI?</h4>
+                    <p style="color: #0c5460; margin: 0;">
+                        Pregúntate: <strong>"Si este número cambia mañana, ¿alguien va a hacer algo diferente?"</strong> 
+                        Si la respuesta es NO, no es un KPI útil.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 20: KPIs por sector -->
+        <div class="slide">
+            <h1>📊 KPIs por Sector</h1>
+            <div style="margin: 40px 0;">
+                <div class="kpi-section">
+                    <h3>📋 Ejemplos de KPIs Críticos por Sector</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 25px;">
+                        Métricas que realmente impulsan decisiones de negocio en diferentes industrias
+                    </p>
+                    
+                    <div class="sector-kpis">
+                        <div class="sector-card">
+                            <h4>🏥 SALUD</h4>
+                            <ul style="font-size: 0.9rem; text-align: left;">
+                                <li>Tiempo promedio atención urgencias</li>
+                                <li>Tasa ocupación camas UCI</li>
+                                <li>% reingreso hospitalario 30 días</li>
+                                <li>Satisfacción del paciente (NPS)</li>
+                                <li>Costo promedio por tratamiento</li>
+                            </ul>
+                        </div>
+
+                        <div class="sector-card">
+                            <h4>🎓 EDUCACIÓN</h4>
+                            <ul style="font-size: 0.9rem; text-align: left;">
+                                <li>Tasa retención estudiantil</li>
+                                <li>Puntajes promedio exámenes estandarizados</li>
+                                <li>% graduación a tiempo</li>
+                                <li>Ratio estudiantes por profesor</li>
+                                <li>Empleabilidad egresados (6 meses)</li>
+                            </ul>
+                        </div>
+
+                        <div class="sector-card">
+                            <h4>🏪 RETAIL</h4>
+                            <ul style="font-size: 0.9rem; text-align: left;">
+                                <li>Ventas por metro cuadrado</li>
+                                <li>Rotación de inventario</li>
+                                <li>Conversión visitantes-compradores</li>
+                                <li>Ticket promedio por cliente</li>
+                                <li>% clientes que regresan</li>
+                            </ul>
+                        </div>
+
+                        <div class="sector-card">
+                            <h4>💻 TECNOLOGÍA</h4>
+                            <ul style="font-size: 0.9rem; text-align: left;">
+                                <li>Tiempo actividad del sistema (uptime)</li>
+                                <li>Usuarios activos mensuales (MAU)</li>
+                                <li>Tasa retención de usuarios</li>
+                                <li>Tiempo resolución bugs críticos</li>
+                                <li>Costo adquisición cliente (CAC)</li>
+                            </ul>
+                        </div>
+
+                        <div class="sector-card">
+                            <h4>🏭 MANUFACTURA</h4>
+                            <ul style="font-size: 0.9rem; text-align: left;">
+                                <li>Eficiencia operacional (OEE)</li>
+                                <li>Tiempo promedio entre fallas</li>
+                                <li>% productos defectuosos</li>
+                                <li>Costo por unidad producida</li>
+                                <li>Rotación de inventario materia prima</li>
+                            </ul>
+                        </div>
+
+                        <div class="sector-card">
+                            <h4>🏦 FINANZAS</h4>
+                            <ul style="font-size: 0.9rem; text-align: left;">
+                                <li>Ratio morosidad crediticia</li>
+                                <li>Margen de intermediación</li>
+                                <li>Costo por transacción</li>
+                                <li>Tiempo aprobación créditos</li>
+                                <li>% clientes digitales activos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">🎯 Cómo Elegir KPIs para Su Proyecto</h3>
+                    
+                    <div class="comparison-grid">
+                        <div>
+                            <h4 style="color: #667eea;">1️⃣ Identifique el Objetivo</h4>
+                            <p style="color: #666; font-size: 0.9rem;">
+                                ¿Qué problema de negocio están analizando? 
+                                Ejemplo: "Baja eficiencia en producción"
+                            </p>
+                        </div>
+                        <div>
+                            <h4 style="color: #667eea;">2️⃣ Defina la Métrica</h4>
+                            <p style="color: #666; font-size: 0.9rem;">
+                                ¿Cómo se mide ese objetivo específicamente? 
+                                Ejemplo: "Unidades producidas por hora-hombre"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 25px;">
+                        <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 20px; border-radius: 15px; display: inline-block;">
+                            <h4 style="color: white; margin-bottom: 10px;">✅ Su KPI debe responder:</h4>
+                            <p style="font-size: 1.1rem; margin: 0;">
+                                "¿Estamos mejorando/empeorando en [objetivo específico]?"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 21: Estructura KPI efectivo -->
+        <div class="slide">
+            <h1>📐 Estructura de un KPI Efectivo</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">📊 Anatomía de un KPI</h2>
+                    <p style="font-size: 1.2rem;">4 elementos esenciales para comunicar efectivamente</p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 40px; border-radius: 20px; margin: 40px 0;">
+                    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px;">📊 Ejemplo: KPI de Deserción Escolar</h2>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 30px 0;">
+                            <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border-radius: 15px;">
+                                <h3 style="color: white; margin-bottom: 10px;">📊 VALOR ACTUAL</h3>
+                                <div style="font-size: 2.5rem; font-weight: bold; margin: 10px 0;">12.5%</div>
+                                <p style="font-size: 0.9rem; opacity: 0.9;">Deserción 2024</p>
+                            </div>
+
+                            <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; border-radius: 15px;">
+                                <h3 style="color: white; margin-bottom: 10px;">🎯 META</h3>
+                                <div style="font-size: 2.5rem; font-weight: bold; margin: 10px 0;">8.0%</div>
+                                <p style="font-size: 0.9rem; opacity: 0.9;">Meta Nacional</p>
+                            </div>
+
+                            <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; border-radius: 15px;">
+                                <h3 style="color: white; margin-bottom: 10px;">📈 TENDENCIA</h3>
+                                <div style="font-size: 2.5rem; font-weight: bold; margin: 10px 0;">↗️ +2.1%</div>
+                                <p style="font-size: 0.9rem; opacity: 0.9;">vs 2023</p>
+                            </div>
+
+                            <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; border-radius: 15px;">
+                                <h3 style="color: white; margin-bottom: 10px;">📍 CONTEXTO</h3>
+                                <div style="font-size: 1.5rem; font-weight: bold; margin: 10px 0;">Peor que promedio nacional (9.2%)</div>
+                                <p style="font-size: 0.9rem; opacity: 0.9;">Ranking 28/32 departamentos</p>
+                            </div>
+                        </div>
+
+                        <div style="background: #fff3cd; padding: 20px; border-radius: 10px; border-left: 5px solid #ffc107; margin-top: 30px;">
+                            <h4 style="color: #856404; margin-bottom: 10px;">💬 Narrativa Automática:</h4>
+                            <p style="color: #856404; margin: 0; font-size: 1.1rem;">
+                                "La deserción escolar está <strong>4.5 puntos por encima de la meta</strong>, 
+                                empeoró <strong>2.1% respecto al año pasado</strong>, y nos ubica entre los 
+                                <strong>5 departamentos con peor desempeño</strong> del país."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                        <h4>1️⃣ VALOR ACTUAL</h4>
+                        <p style="font-size: 0.9rem;">El número principal. Grande, claro, imposible de ignorar</p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                        <h4>2️⃣ META/REFERENCIA</h4>
+                        <p style="font-size: 0.9rem;">¿Hacia dónde vamos? Meta interna, promedio nacional, benchmark</p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                        <h4>3️⃣ TENDENCIA</h4>
+                        <p style="font-size: 0.9rem;">¿Mejorando o empeorando? Cambio vs período anterior</p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                        <h4>4️⃣ CONTEXTO</h4>
+                        <p style="font-size: 0.9rem;">¿Comparado con qué? Ranking, percentil, situación relativa</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 style="color: #0c5460; margin-bottom: 10px;">🎯 El KPI Perfecto</h4>
+                    <p style="color: #0c5460; margin: 0;">
+                        <strong>Se entiende en 5 segundos y genera una acción clara.</strong> 
+                        Si necesitas explicar qué significa, no está bien diseñado.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 22: Dashboard vs Reporte -->
+        <div class="slide">
+            <h1>📊 Dashboard vs Reporte: Cuándo Usar Cada Uno</h1>
+            <div style="margin: 40px 0;">
+                <div class="comparison-grid">
+                    <div>
+                        <h2 style="color: #74b9ff;">📺 DASHBOARD</h2>
+                        <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 25px; border-radius: 15px;">
+                            <h4 style="color: white; margin-bottom: 15px;">🎯 Características:</h4>
+                            <ul style="text-align: left; font-size: 0.9rem; margin-bottom: 15px;">
+                                <li>Una pantalla, toda la info</li>
+                                <li>Actualización automática</li>
+                                <li>Monitoreo continuo</li>
+                                <li>Interactividad limitada</li>
+                                <li>Foco en KPIs principales</li>
+                            </ul>
+                            <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                                <strong>Ejemplo:</strong> Monitor criminalidad tiempo real
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h2 style="color: #00b894;">📄 REPORTE</h2>
+                        <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px;">
+                            <h4 style="color: white; margin-bottom: 15px;">📋 Características:</h4>
+                            <ul style="text-align: left; font-size: 0.9rem; margin-bottom: 15px;">
+                                <li>Múltiples páginas</li>
+                                <li>Análisis profundo</li>
+                                <li>Periodicidad específica</li>
+                                <li>Narrativa detallada</li>
+                                <li>Contexto y recomendaciones</li>
+                            </ul>
+                            <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px;">
+                                <strong>Ejemplo:</strong> Informe trimestral educación
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">🤔 ¿Cuál Elegir?</h3>
+                    
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                            <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                                <tr>
+                                    <th style="padding: 15px; text-align: left;">Situación</th>
+                                    <th style="padding: 15px; text-align: left;">Dashboard 📺</th>
+                                    <th style="padding: 15px; text-align: left;">Reporte 📄</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 15px;"><strong>Frecuencia</strong></td>
+                                    <td style="padding: 15px;">Diario/Tiempo real</td>
+                                    <td style="padding: 15px;">Semanal/Mensual/Trimestral</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px;"><strong>Audiencia</strong></td>
+                                    <td style="padding: 15px;">Operativa (monitoreo)</td>
+                                    <td style="padding: 15px;">Ejecutiva (decisiones)</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 15px;"><strong>Profundidad</strong></td>
+                                    <td style="padding: 15px;">Vista general (¿todo OK?)</td>
+                                    <td style="padding: 15px;">Análisis detallado (¿por qué?)</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 15px;"><strong>Interacción</strong></td>
+                                    <td style="padding: 15px;">Filtros simples</td>
+                                    <td style="padding: 15px;">Lectura lineal</td>
+                                </tr>
+                                <tr style="background: #f8f9fa;">
+                                    <td style="padding: 15px;"><strong>Objetivo</strong></td>
+                                    <td style="padding: 15px;">Detectar problemas</td>
+                                    <td style="padding: 15px;">Entender causas y soluciones</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">💡 Para Su Proyecto</h2>
+                    <p style="font-size: 1.2rem; margin: 15px 0;">
+                        <strong>Entrega 2:</strong> Dashboard interactivo (monitoreo)<br>
+                        <strong>Entrega 3:</strong> Reporte completo (decisiones)
+                    </p>
+                    <p style="font-size: 1rem; opacity: 0.9;">
+                        Dos productos diferentes, dos propósitos diferentes
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 23: Audiencias diferentes -->
+        <div class="slide">
+            <h1>👥 Audiencias Diferentes, Visualizaciones Diferentes</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎭 Una Misma Historia, Tres Versiones</h2>
+                    <p style="font-size: 1.2rem;">El mismo análisis debe presentarse diferente según quién lo vea</p>
+                </div>
+
+                <div class="three-column-grid">
+                    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>👨‍💼 GERENTE/DIRECTOR</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem; text-align: left;">
+                            <p><strong>Quiere:</strong> Decisión clara</p>
+                            <p><strong>Tiempo:</strong> 30 segundos</p>
+                            <p><strong>Formato:</strong> 1 número grande + semáforo</p>
+                            <p><strong>Pregunta:</strong> "¿Estamos bien o mal?"</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Ejemplo:</strong> "Deserción: 12.5% 🔴"
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>👨‍💻 ANALISTA</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem; text-align: left;">
+                            <p><strong>Quiere:</strong> Entender patrones</p>
+                            <p><strong>Tiempo:</strong> 5-10 minutos</p>
+                            <p><strong>Formato:</strong> Múltiples gráficos + correlaciones</p>
+                            <p><strong>Pregunta:</strong> "¿Por qué está pasando?"</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Ejemplo:</strong> Deserción por grado, género, zona
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; padding: 25px; border-radius: 15px;">
+                        <h3>👷‍♂️ OPERATIVO</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem; text-align: left;">
+                            <p><strong>Quiere:</strong> Saber qué hacer</p>
+                            <p><strong>Tiempo:</strong> Lo que sea necesario</p>
+                            <p><strong>Formato:</strong> Listas, tablas, detalles</p>
+                            <p><strong>Pregunta:</strong> "¿Qué colegios visitar primero?"</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            <strong>Ejemplo:</strong> Lista colegios con >20% deserción
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">📊 Ejemplo Práctico: Mismos Datos, 3 Formatos</h3>
+                    
+                    <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <h4 style="color: #2c3e50; margin-bottom: 20px;">Datos: Criminalidad en 5 municipios</h4>
+                        
+                        <div class="three-column-grid" style="gap: 20px;">
+                            <div style="background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107;">
+                                <h5 style="color: #856404;">👨‍💼 Para el Gerente:</h5>
+                                <div style="font-size: 1.5rem; font-weight: bold; color: #dc3545; text-align: center; margin: 10px 0;">
+                                    2 municipios en RIESGO ALTO
+                                </div>
+                            </div>
+                            
+                            <div style="background: #d1ecf1; padding: 15px; border-radius: 8px; border-left: 4px solid #17a2b8;">
+                                <h5 style="color: #0c5460;">👨‍💻 Para el Analista:</h5>
+                                <p style="font-size: 0.8rem; color: #0c5460; margin: 5px 0;">
+                                    📊 Gráfico de barras + tendencia<br>
+                                    📈 Correlación con desempleo<br>
+                                    🗺️ Mapa de calor por zona
+                                </p>
+                            </div>
+                            
+                            <div style="background: #d4edda; padding: 15px; border-radius: 8px; border-left: 4px solid #28a745;">
+                                <h5 style="color: #155724;">👷‍♂️ Para el Operativo:</h5>
+                                <p style="font-size: 0.8rem; color: #155724; margin: 5px 0;">
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].style.display = 'flex';
+            slides[currentSlide].style.animation = 'fadeInUp 0.6s ease-out';
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function previousSlide() {
+            showSlide(currentSlide - 1);  
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+        
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>
