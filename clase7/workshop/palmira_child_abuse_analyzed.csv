@@ -1,0 +1,385 @@
+FECHA DE APERTURA,DIA DE APERTURA,FISICA,VERBAL,ECONOMICA,PSICOLOGICA,SEXUAL,GENERO M/F VICTIMA,EDAD_VICTIMA_NUM,GENERO AGRESOR M/F,EDAD_AGRESOR_NUM,PARENTESCO FRENTE A LA VICTIMA,COMUNA DE LA VICTIMA,TOTAL_ABUSE_TYPES,IS_INTRAFAMILIAL,IS_MULTIDIMENSIONAL,HAS_PSYCHOLOGICAL,SEVERITY_LEVEL
+2022-01-03T00:00:00.000,lunes,si,si,no,no,no,femenino,,femenino,,madre,comuna6,2,True,True,False,Medium
+2022-01-06T00:00:00.000,viernes,si,si,no,si,no,masculino,7.0,femenino,17.0,madre,comuna7,3,True,True,True,High
+2022-06-05T00:00:00.000,domingo,no,si,no,si,no,masculino,3.0,femenino,3.0,madre,comuna5,2,True,True,True,Medium
+2022-01-06T00:00:00.000,viernes,si,si,no,si,no,masculino,8.0,femenino,8.0,madre,comuna7,3,True,True,True,High
+2022-01-12T00:00:00.000,miercoles,si,si,no,si,no,masculino,8.0,femenino,8.0,madre,comuna2,3,True,True,True,High
+2022-01-12T00:00:00.000,miercoles,si,si,no,si,no,masculino,3.0,femenino,8.0,madre,comuna2,3,True,True,True,High
+2022-01-27T00:00:00.000,jueves,si,si,no,si,no,femenino,10.0,masculino,10.0,padre,comuna2,3,True,True,True,High
+2022-01-07T00:00:00.000,viernes,si,si,no,si,no,femenino,11.0,masculino,19.0,padre,comuna7,3,True,True,True,High
+2022-04-01T00:00:00.000,miercoles,si,si,no,si,no,femenino,16.0,femenino,34.0,madre,comuna1,3,True,True,True,High
+17-01-2022,lunes,no,si,si,si,no,masculino,17.0,masculino,38.0,padre,comuna1,3,True,True,True,High
+18-01-2022,martes,no,si,no,si,no,masculino,14.0,femenino,32.0,madre,comuna2,2,True,True,True,Medium
+18-01-2022,martes,no,si,no,si,no,masculino,11.0,masculino,14.0,hermano(a),comuna2,2,False,True,True,Medium
+18-01-2022,martes,no,si,no,si,no,femenino,3.0,masculino,14.0,hermano(a),comuna2,2,False,True,True,Medium
+18-01-2022,martes,no,si,no,si,no,masculino,2.0,masculino,14.0,hermano(a),comuna2,2,False,True,True,Medium
+18-01-2022,martes,no,si,no,si,no,femenino,17.0,femenino,39.0,madre,comuna1,2,True,True,True,Medium
+18-01-2022,martes,no,si,no,si,si,masculino,6.0,femenino,28.0,madre,comuna1,3,True,True,True,High
+18-01-2022,martes,no,si,no,si,si,masculino,2.0,femenino,28.0,madre,comuna1,3,True,True,True,High
+2022-10-01T00:00:00.000,jueves,si,si,no,si,si,masculino,16.0,femenino,45.0,madre,comuna2,4,True,True,True,High
+18-01-2022,viernes,si,si,no,si,no,masculino,12.0,masculino,0.0,padre,comuna2,3,True,True,True,High
+18-01-2022,viernes,si,si,no,si,no,masculino,10.0,masculino,0.0,padre,comuna2,3,True,True,True,High
+18-01-2022,viernes,si,si,no,si,no,femenino,12.0,masculino,0.0,padre,comuna1,3,True,True,True,High
+18-01-2022,viernes,si,si,no,si,no,masculino,15.0,masculino,0.0,padre,comuna1,3,True,True,True,High
+2022-01-20T00:00:00.000,jueves,si,si,no,si,no,masculino,4.0,masculino,4.0,padre,no aplica,3,True,True,True,High
+2022-01-20T00:00:00.000,jueves,si,si,no,si,no,masculino,7.0,masculino,7.0,padre,no aplica,3,True,True,True,High
+2022-04-02T00:00:00.000,viernes,si,si,no,si,no,masculino,14.0,masculino,17.0,hermano(a),comuna2,3,False,True,True,High
+14-02-2022,lunes,si,si,no,si,si,masculino,14.0,masculino,0.0,hermanastro(a),comuna2,4,False,True,True,High
+15-02-2022,martes,si,si,no,si,no,femenino,11.0,femenino,27.0,madre,comuna1,3,True,True,True,High
+16-02-2022,miercoles,si,si,no,si,no,femenino,15.0,femenino,40.0,padre,comuna1,3,True,True,True,High
+16-02-2022,miercoles,si,si,no,si,no,masculino,8.0,femenino,27.0,padre,comuna1,3,True,True,True,High
+18-02-2022,viernes,si,si,no,si,no,masculino,7.0,femenino,26.0,madre,comuna2,3,True,True,True,High
+18-02-2022,viernes,si,si,no,si,no,femenino,3.0,femenino,26.0,madre,comuna2,3,True,True,True,High
+18-02-2022,viernes,si,si,no,si,no,masculino,10.0,masculino,33.0,padre,comuna1,3,True,True,True,High
+18-02-2022,viernes,si,si,no,si,si,femenino,4.0,masculino,22.0,padre,comuna2,4,True,True,True,High
+21-02-2022,lunes,si,si,no,si,no,masculino,3.0,masculino,0.0,padre,comuna2,3,True,True,True,High
+21-02-2022,lunes,si,si,no,si,no,masculino,5.0,femenino,17.0,padre,comuna1,3,True,True,True,High
+24-02-2022,jueves,si,si,no,si,no,masculino,8.0,masculino,27.0,padre,comuna1,3,True,True,True,High
+2022-02-05T00:00:00.000,sabado,no,si,si,si,no,femenino,15.0,masculino,,padre,bogota,3,True,True,True,High
+2022-02-07T00:00:00.000,lunes,si,si,no,si,no,masculino,12.0,femenino,12.0,madre,comuna5,3,True,True,True,High
+2022-02-17T00:00:00.000,jueves,si,si,no,si,no,masculino,3.0,masculino,,padrastro,comuna4,3,False,True,True,High
+2022-02-21T00:00:00.000,lunes,si,si,no,si,no,masculino,13.0,femenino,36.0,madre,comuna7,3,True,True,True,High
+2022-02-03T00:00:00.000,jueves,si,si,no,si,no,femenino,12.0,femenino,,abuela,comuna2,3,False,True,True,High
+2022-02-18T00:00:00.000,viernes,si,si,no,si,no,femenino,16.0,masculino,,padrastro,comuna7,3,False,True,True,High
+2022-02-01T00:00:00.000,sabado,no,no,si,no,no,masculino,5.0,femenino,39.0,madre,comuna6,1,True,False,False,Low
+2022-02-02T00:00:00.000,miercoles,no,no,no,si,no,masculino,7.0,femenino,44.0,madre,comuna10,1,True,False,True,Low
+2022-02-03T00:00:00.000,jueves,si,si,si,si,no,masculino,13.0,no aplica,13.0,no aplica,comuna3,4,False,True,True,High
+2022-02-14T00:00:00.000,lunes,si,si,no,si,no,femenino,13.0,femenino,,madre,comuna12,3,True,True,True,High
+2022-03-05T00:00:00.000,sabado,si,si,no,si,no,masculino,3.0,femenino,50.0,abuela,comuna3,3,False,True,True,High
+2022-03-05T00:00:00.000,sabado,si,si,no,si,no,masculino,6.0,femenino,50.0,abuela,comuna3,3,False,True,True,High
+2022-03-06T00:00:00.000,domingo,no,si,no,si,no,masculino,14.0,masculino,,padre,comuna6,2,True,True,True,Medium
+2022-03-06T00:00:00.000,domingo,no,si,no,si,no,femenino,12.0,masculino,,padre,comuna6,2,True,True,True,Medium
+2022-03-06T00:00:00.000,domingo,no,si,no,si,no,femenino,15.0,masculino,,padre,comuna6,2,True,True,True,Medium
+2022-03-08T00:00:00.000,martes,si,si,no,si,no,masculino,23.0,masculino,7.0,padrastro,comuna4,3,False,True,True,High
+2022-03-12T00:00:00.000,sabado,no,si,no,si,si,femenino,15.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-03-02T00:00:00.000,miercoles,si,si,no,si,no,femenino,31.0,masculino,,hermano(a),comuna7,3,False,True,True,High
+2022-03-14T00:00:00.000,lunes,si,si,no,si,no,femenino,12.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-03-15T00:00:00.000,martes,si,si,no,si,no,femenino,1.0,femenino,,madre,comuna6,3,True,True,True,High
+2022-03-15T00:00:00.000,martes,si,si,no,si,no,femenino,2.0,femenino,,madre,comuna6,3,True,True,True,High
+2022-03-16T00:00:00.000,miercoles,si,si,no,si,si,femenino,14.0,femenino,,madre,no aplica,4,True,True,True,High
+2022-03-16T00:00:00.000,miercoles,si,si,no,si,si,femenino,15.0,femenino,,madre,no aplica,4,True,True,True,High
+2022-03-17T00:00:00.000,jueves,si,si,no,si,no,masculino,6.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-03-18T00:00:00.000,viernes,no,si,si,si,no,masculino,2.0,masculino,,padre,comuna11,3,True,True,True,High
+2022-03-18T00:00:00.000,viernes,no,no,no,si,si,masculino,1.0,femenino,,madre,comuna7,2,True,True,True,Medium
+2022-03-20T00:00:00.000,domingo,si,si,no,si,no,femenino,5.0,femenino,,abuela,comuna7,3,False,True,True,High
+2022-03-23T00:00:00.000,miercoles,si,si,no,si,no,masculino,3.0,masculino,,padre,no aplica,3,True,True,True,High
+2022-03-25T00:00:00.000,viernes,no,si,no,si,no,femenino,10.0,femenino,,madre,comuna7,2,True,True,True,Medium
+2022-03-17T00:00:00.000,jueves,si,si,no,si,no,femenino,1.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-03-28T00:00:00.000,lunes,no,si,no,si,no,masculino,15.0,masculino,15.0,padre,comuna3,2,True,True,True,Medium
+2022-03-30T00:00:00.000,miercoles,si,si,no,si,no,masculino,6.0,masculino,,padre,comuna7,3,True,True,True,High
+2022-03-31T00:00:00.000,jueves,si,si,no,si,no,femenino,8.0,femenino,,madre,comuna5,3,True,True,True,High
+2022-03-01T00:00:00.000,martes,no,si,no,si,si,femenino,2.0,masculino,46.0,tio(a),comuna1,3,False,True,True,High
+2022-03-01T00:00:00.000,martes,no,si,no,si,no,femenino,17.0,masculino,45.0,padre,comuna1,2,True,True,True,Medium
+2022-05-13T00:00:00.000,viernes,no,si,no,si,no,femenino,13.0,femenino,,madre,comuna7,2,True,True,True,Medium
+2022-03-04T00:00:00.000,viernes,si,si,no,si,si,femenino,10.0,masculino,40.0,padre,comuna2,4,True,True,True,High
+2022-03-04T00:00:00.000,viernes,si,si,no,si,si,femenino,13.0,femenino,32.0,madre,comuna1,4,True,True,True,High
+2022-03-07T00:00:00.000,lunes,si,si,no,si,no,masculino,14.0,femenino,48.0,madre,comuna1,3,True,True,True,High
+2022-03-10T00:00:00.000,jueves,si,si,no,si,si,femenino,6.0,masculino,32.0,padre,comuna2,4,True,True,True,High
+2022-03-10T00:00:00.000,jueves,si,si,no,si,si,femenino,9.0,masculino,32.0,padre,comuna2,4,True,True,True,High
+2022-03-10T00:00:00.000,jueves,si,si,no,si,no,masculino,5.0,femenino,37.0,madre,comuna2,3,True,True,True,High
+2022-03-10T00:00:00.000,jueves,si,si,no,si,no,masculino,5.0,femenino,37.0,madre,comuna2,3,True,True,True,High
+2022-03-10T00:00:00.000,jueves,si,si,no,si,no,masculino,15.0,femenino,34.0,madre,comuna2,3,True,True,True,High
+2022-03-10T00:00:00.000,jueves,si,si,no,si,no,masculino,1.0,femenino,21.0,madre,comuna1,3,True,True,True,High
+2022-03-14T00:00:00.000,lunes,no,si,no,si,no,masculino,5.0,femenino,40.0,madre,comuna1,2,True,True,True,Medium
+2022-03-17T00:00:00.000,jueves,si,si,no,si,no,femenino,14.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-03-16T00:00:00.000,miercoles,no,si,no,si,no,femenino,5.0,masculino,25.0,madre,comuna2,2,True,True,True,Medium
+2022-03-17T00:00:00.000,jueves,si,si,no,si,si,femenino,14.0,masculino,31.0,padre,comuna1,4,True,True,True,High
+2022-03-31T00:00:00.000,jueves,si,si,no,si,no,femenino,11.0,femenino,,no aplica,comuna10,3,False,True,True,High
+2022-03-18T00:00:00.000,viernes,no,si,no,si,no,masculino,13.0,femenino,,no aplica,comuna11,2,False,True,True,Medium
+2022-03-18T00:00:00.000,viernes,no,no,no,si,si,femenino,11.0,no aplica,,no aplica,comuna11,2,False,True,True,Medium
+2022-03-29T00:00:00.000,lunes,no,no,no,si,si,femenino,9.0,masculino,,padre,comuna12,2,True,True,True,Medium
+2022-03-30T00:00:00.000,miercoles,si,si,no,si,no,masculino,16.0,masculino,,tio(a),comuna10,3,False,True,True,High
+2022-03-30T00:00:00.000,miercoles,si,no,no,si,si,femenino,9.0,masculino,,hermanastro(a),comuna12,3,False,True,True,High
+2022-03-08T00:00:00.000,martes,si,si,no,si,no,femenino,10.0,femenino,23.0,madrastra,comuna 8,3,False,True,True,High
+2022-03-22T00:00:00.000,martes,no,si,no,si,no,femenino,15.0,no aplica,46.0,madre,comuna 8,2,True,True,True,Medium
+2022-03-08T00:00:00.000,martes,si,no,no,si,si,femenino,13.0,masculino,41.0,abuelastro,comuna 8,3,False,True,True,High
+2022-03-08T00:00:00.000,martes,no,no,no,si,no,femenino,7.0,masculino,41.0,abuelastro,comuna 8,1,False,False,True,Low
+2022-03-24T00:00:00.000,jueves,si,si,no,si,no,femenino,11.0,masculino,60.0,padre,comuna 8,3,True,True,True,High
+2022-04-05T00:00:00.000,martes,no,no,no,si,si,masculino,8.0,masculino,,hermanastro(a),comuna1,2,False,True,True,Medium
+2022-04-04T00:00:00.000,lunes,si,si,no,si,no,masculino,12.0,femenino,29.0,madre,comuna1,3,True,True,True,High
+2022-04-05T00:00:00.000,martes,si,si,no,si,si,masculino,6.0,masculino,20.0,hermano(a),comuna1,4,False,True,True,High
+2022-04-21T00:00:00.000,jueves,no,si,no,si,no,femenino,13.0,femenino,43.0,madre,comuna1,2,True,True,True,Medium
+2022-04-01T00:00:00.000,viernes,si,si,no,si,no,femenino,13.0,masculino,33.0,padre,comuna2,3,True,True,True,High
+2022-04-21T00:00:00.000,jueves,no,si,no,si,no,masculino,10.0,femenino,43.0,madre,comuna1,2,True,True,True,Medium
+2022-04-21T00:00:00.000,jueves,no,si,no,si,no,masculino,15.0,femenino,43.0,madre,comuna1,2,True,True,True,Medium
+2022-04-07T00:00:00.000,jueves,si,si,no,si,no,masculino,10.0,femenino,34.0,madre,comuna7,3,True,True,True,High
+2022-04-03T00:00:00.000,domingo,no,si,no,si,no,masculino,11.0,masculino,,padre,comuna7,2,True,True,True,Medium
+2022-04-03T00:00:00.000,domingo,no,si,no,si,no,masculino,2.0,masculino,,padre,comuna7,2,True,True,True,Medium
+2022-04-07T00:00:00.000,jueves,si,si,no,si,no,femenino,7.0,femenino,,madre,comuna5,3,True,True,True,High
+2022-04-07T00:00:00.000,jueves,si,si,no,si,no,masculino,10.0,femenino,,madre,no aplica,3,True,True,True,High
+2022-04-04T00:00:00.000,lunes,si,si,no,si,no,femenino,14.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-04-28T00:00:00.000,jueves,no,no,no,si,no,femenino,4.0,femenino,,madre,comuna7,1,True,False,True,Low
+2022-04-29T00:00:00.000,viernes,no,si,no,si,no,masculino,11.0,femenino,,tio(a),comuna4,2,False,True,True,Medium
+2022-04-29T00:00:00.000,viernes,no,si,no,si,no,femenino,12.0,femenino,,tio(a),comuna7,2,False,True,True,Medium
+2022-04-30T00:00:00.000,sabado,si,si,no,si,no,femenino,13.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-04-22T00:00:00.000,viernes,no,si,no,si,no,masculino,9.0,masculino,,esposo de la tia,comuna3,2,False,True,True,Medium
+2022-04-05T00:00:00.000,martes,si,si,no,si,no,femenino,5.0,femenino,,abuela,no aplica,3,False,True,True,High
+2022-04-06T00:00:00.000,miercoles,si,si,no,si,no,femenino,15.0,femenino,34.0,madre,comuna 8,3,True,True,True,High
+2022-04-26T00:00:00.000,martes,si,si,no,si,no,masculino,16.0,femenino,43.0,madre,no aplica,3,True,True,True,High
+2022-04-16T00:00:00.000,martes,si,no,no,si,no,femenino,4.0,femenino,23.0,madre,comuna 13,2,True,True,True,Medium
+2022-05-17T00:00:00.000,martes,si,si,no,si,no,masculino,9.0,femenino,52.0,madre,comuna1,3,True,True,True,High
+2022-05-17T00:00:00.000,martes,si,si,no,si,no,femenino,16.0,femenino,38.0,madre,comuna2,3,True,True,True,High
+2022-05-17T00:00:00.000,martes,si,si,no,si,no,femenino,12.0,femenino,,hermano(a),comuna1,3,False,True,True,High
+2022-05-17T00:00:00.000,martes,si,si,no,si,no,masculino,15.0,masculino,60.0,padre,comuna1,3,True,True,True,High
+2022-05-18T00:00:00.000,miercoles,si,si,no,si,no,masculino,14.0,femenino,30.0,madre,comuna1,3,True,True,True,High
+2022-05-18T00:00:00.000,miercoles,si,si,no,si,no,masculino,13.0,femenino,30.0,madre,comuna1,3,True,True,True,High
+2022-05-20T00:00:00.000,viernes,si,si,no,si,no,masculino,9.0,femenino,26.0,madre,comuna2,3,True,True,True,High
+2022-05-20T00:00:00.000,viernes,si,si,no,si,no,femenino,5.0,femenino,25.0,madre,comuna1,3,True,True,True,High
+2022-05-20T00:00:00.000,viernes,si,si,no,si,no,femenino,10.0,femenino,25.0,madre,comuna1,3,True,True,True,High
+2022-05-26T00:00:00.000,jueves,si,si,no,si,no,femenino,14.0,femenino,30.0,madre,comuna1,3,True,True,True,High
+2022-05-26T00:00:00.000,jueves,si,si,no,si,no,femenino,14.0,femenino,39.0,madre,comuna1,3,True,True,True,High
+2022-05-28T00:00:00.000,sabado,si,si,no,si,no,femenino,5.0,femenino,21.0,madre,comuna1,3,True,True,True,High
+2022-05-28T00:00:00.000,sabado,si,si,no,si,no,masculino,10.0,femenino,26.0,madre,comuna1,3,True,True,True,High
+2022-05-28T00:00:00.000,sabado,si,si,no,si,no,masculino,9.0,femenino,26.0,madre,comuna1,3,True,True,True,High
+2022-05-28T00:00:00.000,sabado,si,si,no,si,no,femenino,16.0,femenino,30.0,madre,comuna2,3,True,True,True,High
+2022-05-03T00:00:00.000,martes,si,si,no,si,no,masculino,17.0,femenino,,madre,comuna6,3,True,True,True,High
+2022-05-03T00:00:00.000,martes,si,si,no,si,no,masculino,14.0,femenino,,madre,comuna6,3,True,True,True,High
+2022-05-03T00:00:00.000,martes,no,no,no,si,no,femenino,11.0,femenino,,madre,comuna5,1,True,False,True,Low
+2022-05-04T00:00:00.000,miercoles,no,no,no,si,no,masculino,10.0,femenino,,madre,comuna7,1,True,False,True,Low
+2022-05-09T00:00:00.000,lunes,si,si,no,si,no,masculino,8.0,femenino,,madre,comuna4,3,True,True,True,High
+2022-05-16T00:00:00.000,lunes,si,si,no,si,no,femenino,10.0,femenino,,madre,comuna4,3,True,True,True,High
+2022-05-18T00:00:00.000,miercoles,si,si,no,si,no,femenino,10.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-05-31T00:00:00.000,martes,si,si,no,si,no,masculino,9.0,femenino,,tio(a),comuna6,3,False,True,True,High
+2022-05-12T00:00:00.000,jueves,si,si,no,si,no,femenino,15.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-05-25T00:00:00.000,miercoles,si,si,no,si,no,femenino,12.0,femenino,,hermano(a),comuna7,3,False,True,True,High
+2022-05-31T00:00:00.000,martes,si,si,no,si,no,masculino,14.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-05-31T00:00:00.000,martes,si,si,no,si,no,masculino,12.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-05-20T00:00:00.000,lunes,no,no,no,si,si,femenino,13.0,masculino,66.0,no aplica,comuna3,2,False,True,True,Medium
+2022-05-19T00:00:00.000,domingo,si,si,no,si,no,masculino,8.0,masculino,52.0,tio(a),comuna 13,3,False,True,True,High
+2022-05-06T00:00:00.000,viernes,si,si,no,si,no,femenino,12.0,masculino,49.0,padre,comuna 8,3,True,True,True,High
+2022-05-18T00:00:00.000,jueves,no,si,no,si,no,masculino,10.0,femenino,,madre,no aplica,2,True,True,True,Medium
+2022-05-11T00:00:00.000,miercoles,si,si,no,no,no,masculino,2.0,femenino,24.0,madre,comuna 8,2,True,True,False,Medium
+2022-05-11T00:00:00.000,miercoles,no,si,no,si,no,masculino,13.0,femenino,36.0,madre,comuna 9,2,True,True,True,Medium
+2022-05-16T00:00:00.000,lunes,si,si,no,si,no,femenino,12.0,femenino,55.0,abuela,comuna 8,3,False,True,True,High
+2022-05-24T00:00:00.000,martes,si,si,no,si,no,masculino,10.0,femenino,30.0,madre,comuna 8,3,True,True,True,High
+2022-05-24T00:00:00.000,martes,si,si,no,si,no,femenino,13.0,femenino,30.0,madre,comuna 8,3,True,True,True,High
+2022-05-24T00:00:00.000,martes,si,si,no,si,no,femenino,3.0,femenino,30.0,madre,comuna 8,3,True,True,True,High
+2022-05-24T00:00:00.000,martes,si,si,no,si,no,femenino,7.0,femenino,30.0,madre,comuna 8,3,True,True,True,High
+2022-05-25T00:00:00.000,miercoles,no,no,no,si,no,femenino,5.0,femenino,33.0,madre,comuna 8,1,True,False,True,Low
+2022-06-02T00:00:00.000,jueves,si,si,no,si,no,femenino,5.0,femenino,5.0,madre,comuna7,3,True,True,True,High
+2022-06-05T00:00:00.000,domingo,si,si,no,si,si,femenino,11.0,femenino,,abuela,comuna3,4,False,True,True,High
+2022-06-05T00:00:00.000,domingo,si,si,no,si,si,femenino,10.0,femenino,,abuela,comuna3,4,False,True,True,High
+2022-06-06T00:00:00.000,lunes,no,si,no,si,no,masculino,2.0,femenino,,madre,no aplica,2,True,True,True,Medium
+2022-06-06T00:00:00.000,lunes,no,si,no,si,no,masculino,8.0,masculino,,arrendador,comuna5,2,False,True,True,Medium
+2022-06-06T00:00:00.000,lunes,no,si,no,si,no,masculino,12.0,masculino,,arrendador,comuna5,2,False,True,True,Medium
+2022-06-06T00:00:00.000,lunes,si,si,no,si,no,masculino,12.0,femenino,,no aplica,comuna7,3,False,True,True,High
+2022-06-08T00:00:00.000,miercoles,si,si,no,si,no,masculino,4.0,masculino,,no aplica,comuna5,3,False,True,True,High
+2022-06-08T00:00:00.000,miercoles,si,si,no,si,no,masculino,3.0,femenino,3.0,madre,comuna1,3,True,True,True,High
+2022-06-12T00:00:00.000,domingo,no,si,no,si,si,femenino,12.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-06-13T00:00:00.000,lunes,si,si,no,si,no,femenino,1.0,femenino,,madre,no aplica,3,True,True,True,High
+2022-06-24T00:00:00.000,viernes,si,si,no,si,no,femenino,3.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-06-27T00:00:00.000,lunes,si,si,no,si,no,masculino,6.0,masculino,,padre,comuna7,3,True,True,True,High
+2022-06-21T00:00:00.000,martes,no,no,no,si,si,femenino,14.0,masculino,14.0,padre,comuna7,2,True,True,True,Medium
+2022-06-30T00:00:00.000,jueves,no,si,no,si,no,femenino,12.0,femenino,8.0,madre,comuna7,2,True,True,True,Medium
+2022-06-02T00:00:00.000,jueves,si,si,no,si,no,femenino,5.0,femenino,12.0,nieta,no aplica,3,False,True,True,High
+2022-06-09T00:00:00.000,jueves,no,no,no,si,no,femenino,16.0,femenino,,madre,comuna 8,1,True,False,True,Low
+2022-06-01T00:00:00.000,miercoles,si,si,no,si,no,masculino,5.0,masculino,38.0,padre,comuna1,3,True,True,True,High
+2022-06-09T00:00:00.000,jueves,si,si,no,si,no,femenino,8.0,femenino,28.0,madre,comuna1,3,True,True,True,High
+2022-06-09T00:00:00.000,jueves,si,si,no,si,no,masculino,7.0,femenino,28.0,madre,comuna1,3,True,True,True,High
+2022-06-09T00:00:00.000,jueves,si,si,no,si,no,femenino,2.0,femenino,28.0,madre,comuna1,3,True,True,True,High
+2022-06-09T00:00:00.000,jueves,si,si,no,si,no,femenino,4.0,femenino,28.0,madre,comuna1,3,True,True,True,High
+2022-06-09T00:00:00.000,jueves,si,si,no,si,no,femenino,15.0,femenino,0.0,madre,comuna1,3,True,True,True,High
+2022-06-09T00:00:00.000,jueves,si,si,no,si,no,femenino,1.0,femenino,22.0,madre,comuna1,3,True,True,True,High
+2022-06-08T00:00:00.000,miercoles,si,si,no,si,no,masculino,3.0,femenino,23.0,madre,comuna1,3,True,True,True,High
+2022-06-23T00:00:00.000,jueves,si,si,no,si,no,masculino,4.0,masculino,,padrastro,comuna1,3,False,True,True,High
+2022-06-29T00:00:00.000,miercoles,si,si,no,si,no,masculino,15.0,femenino,0.0,padre,comuna2,3,True,True,True,High
+2022-06-28T00:00:00.000,martes,si,si,no,si,no,femenino,2.0,masculino,24.0,padre,comuna11,3,True,True,True,High
+2022-06-28T00:00:00.000,martes,si,si,no,si,no,femenino,5.0,femenino,,madre,comuna6,3,True,True,True,High
+2022-06-28T00:00:00.000,martes,si,si,no,si,no,masculino,9.0,femenino,,madre,comuna6,3,True,True,True,High
+2022-06-11T00:00:00.000,jueves,si,si,no,si,no,masculino,8.0,masculino,,padre,comuna2,3,True,True,True,High
+2022-06-06T00:00:00.000,lunes,si,si,no,si,si,femenino,12.0,masculino,,hermano(a),comuna3,4,False,True,True,High
+2022-06-13T00:00:00.000,lunes,si,no,no,si,no,masculino,15.0,no aplica,,no aplica,no aplica,2,False,True,True,Medium
+2022-06-14T00:00:00.000,martes,si,no,no,si,si,femenino,5.0,masculino,,tio(a),comuna10,3,False,True,True,High
+2022-07-11T00:00:00.000,lunes,si,si,no,si,no,masculino,3.0,femenino,25.0,madre,comuna2,3,True,True,True,High
+2022-07-11T00:00:00.000,lunes,si,si,no,si,no,femenino,1.0,femenino,25.0,madre,comuna2,3,True,True,True,High
+2022-07-14T00:00:00.000,jueves,si,si,no,si,no,femenino,9.0,femenino,29.0,madre,comuna1,3,True,True,True,High
+2022-07-11T00:00:00.000,lunes,si,si,no,si,no,femenino,8.0,femenino,38.0,tio(a),comuna2,3,False,True,True,High
+2022-07-15T00:00:00.000,viernes,si,si,no,si,no,femenino,10.0,masculino,46.0,padre,comuna1,3,True,True,True,High
+2022-07-18T00:00:00.000,lunes,si,si,no,si,no,masculino,7.0,femenino,39.0,madre,comuna5,3,True,True,True,High
+2022-07-19T00:00:00.000,martes,si,si,no,si,no,femenino,5.0,masculino,39.0,padre,comuna1,3,True,True,True,High
+2022-07-28T00:00:00.000,jueves,si,si,no,si,no,masculino,1.0,femenino,20.0,madre,comuna3,3,True,True,True,High
+2022-07-06T00:00:00.000,jueves,no,si,no,si,no,masculino,,no aplica,,no aplica,comuna 8,2,False,True,True,Medium
+2022-07-06T00:00:00.000,jueves,no,si,no,si,no,femenino,,no aplica,,no aplica,comuna 8,2,False,True,True,Medium
+2022-07-07T00:00:00.000,jueves,si,si,no,si,no,masculino,9.0,masculino,,padre,comuna11,3,True,True,True,High
+2022-07-11T00:00:00.000,lunes,no,no,no,si,no,femenino,15.0,femenino,,madre,no aplica,1,True,False,True,Low
+2022-07-13T00:00:00.000,miercoles,no,no,no,si,no,femenino,11.0,femenino,,madre,comuna6,1,True,False,True,Low
+2022-07-13T00:00:00.000,jueves,no,no,no,no,no,femenino,13.0,no aplica,,no aplica,comuna 13,0,False,False,False,Low
+2022-07-13T00:00:00.000,jueves,no,no,no,no,no,masculino,13.0,femenino,,no aplica,comuna 9,0,False,False,False,Low
+2022-07-13T00:00:00.000,jueves,si,si,no,si,no,masculino,8.0,femenino,,madre,no aplica,3,True,True,True,High
+2022-07-29T00:00:00.000,viernes,no,no,no,no,no,femenino,13.0,no aplica,,no aplica,no aplica,0,False,False,False,Low
+2022-07-29T00:00:00.000,viernes,si,si,no,si,no,femenino,14.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-07-29T00:00:00.000,viernes,no,no,no,si,no,masculino,14.0,masculino,,padre,comuna7,1,True,False,True,Low
+2022-07-29T00:00:00.000,viernes,no,no,no,si,no,masculino,10.0,femenino,,madre,comuna5,1,True,False,True,Low
+2022-07-29T00:00:00.000,viernes,si,no,no,si,si,femenino,10.0,masculino,,padre,comuna1,3,True,True,True,High
+2022-07-29T00:00:00.000,viernes,si,si,no,si,no,masculino,12.0,femenino,,madre,no aplica,3,True,True,True,High
+2022-07-02T00:00:00.000,sabado,si,si,no,si,no,femenino,9.0,masculino,14.0,padre,comuna7,3,True,True,True,High
+2022-07-02T00:00:00.000,sabado,si,si,no,si,no,femenino,14.0,masculino,14.0,padre,comuna7,3,True,True,True,High
+2022-07-06T00:00:00.000,miercoles,si,si,no,si,no,masculino,4.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-07-11T00:00:00.000,lunes,si,si,no,si,no,masculino,9.0,femenino,9.0,madre,no aplica,3,True,True,True,High
+2022-07-11T00:00:00.000,lunes,si,si,no,si,no,femenino,8.0,femenino,17.0,tio(a),comuna2,3,False,True,True,High
+2022-07-18T00:00:00.000,lunes,si,si,no,si,no,femenino,14.0,masculino,14.0,padre,comuna3,3,True,True,True,High
+2022-07-24T00:00:00.000,sabado,si,si,no,si,no,femenino,8.0,masculino,8.0,padre,comuna5,3,True,True,True,High
+2022-07-26T00:00:00.000,martes,si,si,no,si,si,femenino,13.0,masculino,14.0,padrastro,comuna7,4,False,True,True,High
+2022-07-29T00:00:00.000,viernes,no,si,no,si,si,femenino,2.0,masculino,2.0,padre,comuna1,3,True,True,True,High
+2022-07-21T00:00:00.000,jueves,si,si,no,si,no,femenino,15.0,masculino,15.0,padre,comuna7,3,True,True,True,High
+2022-08-04T00:00:00.000,jueves,si,si,no,si,no,femenino,10.0,masculino,28.0,padre,comuna1,3,True,True,True,High
+2022-08-10T00:00:00.000,miercoles,si,si,no,si,no,femenino,15.0,femenino,34.0,madre,comuna1,3,True,True,True,High
+2022-08-10T00:00:00.000,miercoles,si,si,no,si,no,masculino,13.0,femenino,42.0,madre,comuna1,3,True,True,True,High
+2022-08-10T00:00:00.000,miercoles,si,si,no,si,no,femenino,11.0,femenino,29.0,madre,comuna1,3,True,True,True,High
+2022-08-22T00:00:00.000,lunes,si,si,no,si,no,femenino,13.0,masculino,43.0,padre,comuna5,3,True,True,True,High
+2022-08-05T00:00:00.000,viernes,no,si,no,no,no,femenino,5.0,femenino,,madre,comuna 8,1,True,False,False,Low
+2022-08-29T00:00:00.000,lunes,si,si,no,si,si,femenino,17.0,femenino,,madre,comuna 8,4,True,True,True,High
+2022-08-11T00:00:00.000,jueves,si,si,no,si,no,femenino,15.0,masculino,,padre,comuna 8,3,True,True,True,High
+2022-08-29T00:00:00.000,lunes,si,si,no,si,no,femenino,15.0,femenino,,madre,comuna 8,3,True,True,True,High
+2022-08-04T00:00:00.000,jueves,si,si,no,si,no,femenino,12.0,femenino,56.0,abuela,comuna 8,3,False,True,True,High
+2022-08-26T00:00:00.000,viernes,si,si,no,si,no,femenino,7.0,femenino,30.0,madre,comuna 8,3,True,True,True,High
+2022-08-06T00:00:00.000,sabado,si,si,no,si,no,masculino,14.0,femenino,42.0,madre,comuna 16,3,True,True,True,High
+2022-08-07T00:00:00.000,domingo,si,si,no,si,no,masculino,14.0,femenino,,padre,comuna 16,3,True,True,True,High
+2022-08-14T00:00:00.000,domingo,si,si,no,si,no,femenino,14.0,femenino,,no aplica,comuna7,3,False,True,True,High
+2022-08-14T00:00:00.000,domingo,si,si,no,si,no,masculino,9.0,masculino,,padre,comuna1,3,True,True,True,High
+2022-08-14T00:00:00.000,domingo,si,no,no,si,si,femenino,6.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-08-12T00:00:00.000,viernes,si,si,no,si,no,masculino,,femenino,,madre,no aplica,3,True,True,True,High
+2022-08-26T00:00:00.000,viernes,no,si,no,si,no,masculino,3.0,femenino,,madre,no aplica,2,True,True,True,Medium
+2022-08-08T00:00:00.000,lunes,si,si,no,si,no,masculino,16.0,femenino,,madre,comuna2,3,True,True,True,High
+2022-08-15T00:00:00.000,domingo,si,si,no,si,no,masculino,11.0,femenino,30.0,madre,comuna7,3,True,True,True,High
+2022-08-15T00:00:00.000,domingo,si,si,no,si,no,masculino,2.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-08-15T00:00:00.000,domingo,si,si,no,si,no,masculino,13.0,femenino,,madre,comuna6,3,True,True,True,High
+2022-08-15T00:00:00.000,domingo,si,si,no,si,no,masculino,10.0,masculino,,padre,comuna5,3,True,True,True,High
+2022-08-20T00:00:00.000,domingo,no,si,no,no,no,femenino,7.0,femenino/masculino,,padres,comuna7,1,False,False,False,Low
+2022-08-20T00:00:00.000,domingo,no,si,no,no,no,femenino,7.0,femenino/masculino,,padres,comuna7,1,False,False,False,Low
+2022-08-26T00:00:00.000,martes,no,si,no,si,no,femenino,9.0,masculino,,padrastro,no aplica,2,False,True,True,Medium
+2022-08-26T00:00:00.000,viernes,si,si,no,no,no,femenino,8.0,femenino,,madre,comuna6,2,True,True,False,Medium
+2022-08-31T00:00:00.000,miercoles,si,no,no,si,no,masculino,4.0,femenino,,madre,comuna7,2,True,True,True,Medium
+2022-08-31T00:00:00.000,miercoles,no,no,no,si,no,femenino,6.0,femenino,25.0,madre,comuna5,1,True,False,True,Low
+2022-08-31T00:00:00.000,miercoles,no,no,no,no,no,masculino,3.0,femenino,25.0,madre,comuna5,0,True,False,False,Low
+2022-08-31T00:00:00.000,miercoles,no,no,si,si,no,femenino,10.0,femenino,32.0,madre,comuna4,2,True,True,True,Medium
+2022-08-23T00:00:00.000,martes,si,si,no,si,no,masculino,14.0,masculino,,padre,comuna7,3,True,True,True,High
+2022-08-08T00:00:00.000,lunes,si,si,no,si,no,femenino,47.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-08-02T00:00:00.000,martes,si,si,no,si,no,masculino,6.0,masculino,,padrastro,comuna7,3,False,True,True,High
+2022-09-27T00:00:00.000,martes,si,si,no,si,no,masculino,14.0,masculino,,madre,comuna2,3,True,True,True,High
+2022-09-27T00:00:00.000,martes,si,si,no,si,no,femenino,3.0,masculino,,madre,comuna2,3,True,True,True,High
+2022-09-27T00:00:00.000,martes,si,si,no,si,no,masculino,13.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-09-27T00:00:00.000,martes,si,no,no,si,no,femenino,17.0,femenino,,madre,comuna1,2,True,True,True,Medium
+2022-09-27T00:00:00.000,martes,si,no,no,si,no,masculino,9.0,femenino,,madre,comuna1,2,True,True,True,Medium
+2022-09-27T00:00:00.000,martes,si,no,no,si,no,femenino,14.0,masculino,,padre,comuna1,2,True,True,True,Medium
+2022-09-27T00:00:00.000,martes,si,si,no,si,no,masculino,14.0,masculino,,hermano(a),comuna1,3,False,True,True,High
+2022-09-04T00:00:00.000,domingo,si,si,no,si,no,femenino,14.0,masculino,,padre,comuna3,3,True,True,True,High
+2022-09-07T00:00:00.000,miercoles,si,si,no,si,no,masculino,11.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-09-10T00:00:00.000,sabado,si,si,no,si,no,masculino,12.0,masculino,,padre,no aplica,3,True,True,True,High
+2022-09-10T00:00:00.000,sabado,no,si,no,si,si,masculino,2.0,masculino,,padre,comuna7,3,True,True,True,High
+2022-09-13T00:00:00.000,martes,no,no,no,si,si,masculino,8.0,femenino,,madre,comuna7,2,True,True,True,Medium
+2022-09-07T00:00:00.000,miercoles,si,si,no,si,no,masculino,16.0,masculino,,abuelo(a),no aplica,3,False,True,True,High
+2022-09-07T00:00:00.000,miercoles,si,si,no,si,no,masculino,7.0,masculino,,madre,comuna5,3,True,True,True,High
+2022-09-19T00:00:00.000,lunes,si,si,no,si,no,masculino,10.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-09-21T00:00:00.000,viernes,no,si,no,si,no,femenino,16.0,femenino,,madre,no aplica,2,True,True,True,Medium
+2022-09-07T00:00:00.000,miercoles,si,si,no,si,no,masculino,8.0,femenino,,madre,comuna5,3,True,True,True,High
+2022-09-22T00:00:00.000,jueves,si,si,no,si,no,femenino,7.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-09-22T00:00:00.000,jueves,si,si,no,si,no,masculino,9.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-09-13T00:00:00.000,martes,si,si,no,si,no,femenino,11.0,femenino,,abuelo(a),comuna7,3,False,True,True,High
+2022-09-30T00:00:00.000,viernes,si,si,no,si,no,masculino,5.0,masculino,,padre,comuna3,3,True,True,True,High
+2022-09-08T00:00:00.000,jueves,si,si,no,si,no,masculino,13.0,masculino,58.0,padre,comuna10,3,True,True,True,High
+2022-09-22T00:00:00.000,jueves,si,si,no,no,no,masculino,6.0,femenino,,abuelo(a),comuna 8,2,False,True,False,Medium
+2022-09-22T00:00:00.000,jueves,si,si,no,no,si,femenino,5.0,femenino,,abuelo(a),comuna 8,3,False,True,False,High
+2022-09-28T00:00:00.000,miercoles,no,si,no,si,no,masculino,13.0,femenino,50.0,abuelo(a),comuna 8,2,False,True,True,Medium
+2022-09-29T00:00:00.000,jueves,si,si,no,no,no,femenino,8.0,femenino,27.0,madre,comuna 8,2,True,True,False,Medium
+2022-09-29T00:00:00.000,jueves,si,si,no,no,no,femenino,4.0,femenino,27.0,madre,comuna 8,2,True,True,False,Medium
+2022-09-09T00:00:00.000,viernes,si,si,no,si,si,femenino,3.0,masculino,29.0,padre,comuna11,4,True,True,True,High
+2022-09-09T00:00:00.000,viernes,si,si,no,si,no,masculino,5.0,masculino,29.0,padre,comuna11,3,True,True,True,High
+2022-09-09T00:00:00.000,viernes,si,si,no,si,no,femenino,1.0,masculino,29.0,padre,comuna11,3,True,True,True,High
+2022-09-12T00:00:00.000,lunes,si,si,no,si,no,masculino,16.0,masculino,,padre,comuna12,3,True,True,True,High
+2022-10-04T00:00:00.000,martes,si,si,no,si,no,femenino,12.0,femenino,56.0,abuela,comuna6,3,False,True,True,High
+2022-10-01T00:00:00.000,sabado,si,si,no,si,no,femenino,2.0,masculino,,padre,comuna3,3,True,True,True,High
+2022-10-04T00:00:00.000,martes,si,si,no,si,no,masculino,8.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-10-18T00:00:00.000,martes,si,si,no,si,no,femenino,3.0,femenino,,madre,comuna7,3,True,True,True,High
+2022-10-18T00:00:00.000,martes,no,si,no,si,no,femenino,16.0,femenino,,abuela,comuna4,2,False,True,True,Medium
+2022-10-10T00:00:00.000,lunes,no,si,no,si,no,masculino,13.0,masculino,,padre,comuna7,2,True,True,True,Medium
+2022-10-10T00:00:00.000,lunes,no,si,no,si,si,masculino,16.0,femenino,38.0,madre,comuna5,3,True,True,True,High
+2022-10-30T00:00:00.000,domingo,si,si,no,si,si,femenino,13.0,masculino,51.0,padrastro,no aplica,4,False,True,True,High
+2022-10-30T00:00:00.000,domingo,si,si,no,si,no,femenino,14.0,femenino,38.0,madre,comuna7,3,True,True,True,High
+2022-10-18T00:00:00.000,martes,si,si,no,si,no,masculino,0.0,masculino,,padre,comuna2,3,True,True,True,High
+2022-10-21T00:00:00.000,viernes,si,si,no,si,no,femenino,4.0,femenino,23.0,madre,comuna1,3,True,True,True,High
+2022-10-26T00:00:00.000,miercoles,si,si,no,si,no,femenino,11.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-10-26T00:00:00.000,miercoles,si,si,no,si,no,masculino,6.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-10-26T00:00:00.000,miercoles,si,si,no,si,no,masculino,1.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-10-28T00:00:00.000,miercoles,si,si,no,si,no,masculino,8.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-10-13T00:00:00.000,jueves,si,si,si,si,no,masculino,17.0,femenino,40.0,madre,comuna11,4,True,True,True,High
+2022-10-13T00:00:00.000,jueves,si,si,si,si,no,masculino,10.0,femenino,40.0,madre,comuna11,4,True,True,True,High
+2022-10-13T00:00:00.000,jueves,si,si,si,si,no,masculino,13.0,femenino,40.0,madre,comuna11,4,True,True,True,High
+2022-10-25T00:00:00.000,martes,si,no,no,si,no,femenino,7.0,masculino,26.0,padre,comuna 16,2,True,True,True,Medium
+2022-10-26T00:00:00.000,miercoles,si,si,no,si,no,femenino,15.0,masculino,55.0,padre,comuna 8,3,True,True,True,High
+2022-10-04T00:00:00.000,martes,si,si,no,si,no,femenino,5.0,no aplica,35.0,padre,comuna 8,3,True,True,True,High
+2022-11-28T00:00:00.000,lunes,si,si,no,si,no,femenino,12.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-11-28T00:00:00.000,lunes,si,si,no,si,no,femenino,6.0,masculino,,padre,comuna2,3,True,True,True,High
+2022-11-28T00:00:00.000,lunes,si,si,no,si,no,masculino,7.0,masculino,,padre,comuna2,3,True,True,True,High
+2022-11-30T00:00:00.000,miercoles,si,si,no,si,no,femenino,14.0,masculino,,padre,comuna1,3,True,True,True,High
+2022-11-03T00:00:00.000,jueves,si,si,no,si,no,masculino,15.0,masculino,37.0,padre,cali,3,True,True,True,High
+2022-11-03T00:00:00.000,jueves,si,si,no,si,si,femenino,16.0,femenino,40.0,madre,comuna7,4,True,True,True,High
+2022-11-03T00:00:00.000,jueves,si,si,no,si,no,femenino,4.0,femenino,30.0,madre,comuna7,3,True,True,True,High
+2022-11-08T00:00:00.000,martes,no,si,no,si,no,masculino,7.0,femenino,,madre,comuna2,2,True,True,True,Medium
+2022-11-11T00:00:00.000,viernes,no,no,no,si,no,femenino,7.0,femenino,24.0,madre,cerrito,1,True,False,True,Low
+2022-11-12T00:00:00.000,sabado,no,si,no,si,no,masculino,6.0,femenino,44.0,madre,comuna2,2,True,True,True,Medium
+2022-11-14T00:00:00.000,lunes,no,si,no,si,no,femenino,10.0,femenino,30.0,madre,comuna5,2,True,True,True,Medium
+2022-11-14T00:00:00.000,lunes,no,si,no,si,no,masculino,12.0,femenino,30.0,madre,comuna5,2,True,True,True,Medium
+2022-11-14T00:00:00.000,lunes,si,si,no,si,no,femenino,15.0,femenino,49.0,padre,comuna6,3,True,True,True,High
+2022-11-15T00:00:00.000,martes,si,si,no,si,no,femenino,10.0,masculino,53.0,padre,comuna3,3,True,True,True,High
+2022-11-15T00:00:00.000,martes,si,si,no,si,no,femenino,15.0,masculino,53.0,padre,comuna3,3,True,True,True,High
+2022-11-18T00:00:00.000,viernes,si,si,no,si,no,femenino,7.0,femenino,30.0,madre,comuna5,3,True,True,True,High
+2022-11-18T00:00:00.000,viernes,si,si,si,si,no,masculino,13.0,femenino,30.0,tio(a),comuna5,4,False,True,True,High
+2022-11-18T00:00:00.000,viernes,si,si,no,si,no,femenino,12.0,femenino,30.0,tio(a),comuna5,3,False,True,True,High
+2022-11-20T00:00:00.000,domingo,no,no,si,si,no,masculino,,femenino,18.0,madre,no aplica,2,True,True,True,Medium
+2022-11-20T00:00:00.000,domingo,no,no,no,si,no,femenino,1.0,femenino,23.0,madre,comuna7,1,True,False,True,Low
+2022-11-21T00:00:00.000,lunes,si,si,no,si,no,masculino,13.0,masculino,50.0,padre,comuna4,3,True,True,True,High
+2022-11-24T00:00:00.000,jueves,si,si,no,si,no,masculino,16.0,femenino,,madre,comuna3,3,True,True,True,High
+2022-11-29T00:00:00.000,martes,si,si,no,si,no,femenino,16.0,femenino,54.0,madre,comuna3,3,True,True,True,High
+2022-11-29T00:00:00.000,martes,si,si,no,si,no,masculino,2.0,femenino,24.0,madre,no aplica,3,True,True,True,High
+2022-11-29T00:00:00.000,martes,si,si,no,si,no,femenino,17.0,femenino,37.0,tio(a),comuna2,3,False,True,True,High
+2022-11-30T00:00:00.000,miercoles,no,no,no,si,no,femenino,11.0,masculino,46.0,padre,comuna7,1,True,False,True,Low
+2022-11-30T00:00:00.000,miercoles,si,si,no,si,no,masculino,10.0,femenino,41.0,madre,jamundi,3,True,True,True,High
+2022-11-30T00:00:00.000,miercoles,no,no,no,si,no,masculino,9.0,masculino,57.0,padre,comuna6,1,True,False,True,Low
+2022-11-30T00:00:00.000,miercoles,no,no,no,si,no,femenino,11.0,masculino,57.0,padre,comuna6,1,True,False,True,Low
+2022-11-05T00:00:00.000,lunes,no,si,no,si,no,femenino,14.0,femenino,46.0,madre,comuna7,2,True,True,True,Medium
+2022-11-03T00:00:00.000,jueves,si,si,no,si,si,masculino,6.0,femenino,,abuelo(a),comuna 8,4,False,True,True,High
+2022-11-03T00:00:00.000,jueves,si,si,no,si,si,femenino,5.0,femenino,,abuelo(a),comuna 8,4,False,True,True,High
+2022-11-01T00:00:00.000,martes,si,si,no,si,no,femenino,9.0,femenino,,madre,comuna 8,3,True,True,True,High
+2022-11-03T00:00:00.000,jueves,si,si,no,si,no,femenino,17.0,femenino,,no aplica,comuna 8,3,False,True,True,High
+2022-11-21T00:00:00.000,lunes,si,si,no,si,no,femenino,14.0,masculino,36.0,padre,no aplica,3,True,True,True,High
+2022-11-16T00:00:00.000,miercoles,si,no,no,si,si,masculino,10.0,masculino,,no aplica,comuna11,3,False,True,True,High
+2022-11-16T00:00:00.000,viernes,no,si,no,si,no,femenino,4.0,masculino,58.0,padre,comuna7,2,True,True,True,Medium
+2022-11-17T00:00:00.000,viernes,no,si,no,si,no,masculino,13.0,masculino,58.0,padre,comuna7,2,True,True,True,Medium
+2022-12-02T00:00:00.000,jueves,si,no,no,si,no,femenino,6.0,femenino,,madre,comuna1,2,True,True,True,Medium
+2022-12-15T00:00:00.000,jueves,si,si,no,si,no,femenino,14.0,femenino,49.0,madre,comuna1,3,True,True,True,High
+2022-12-20T00:00:00.000,martes,si,si,no,si,no,masculino,11.0,femenino,31.0,madre,comuna2,3,True,True,True,High
+2022-12-20T00:00:00.000,martes,si,si,no,si,no,masculino,13.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-12-20T00:00:00.000,martes,si,si,no,si,no,femenino,10.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-12-20T00:00:00.000,martes,si,si,no,si,no,femenino,9.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-12-21T00:00:00.000,miercoles,si,si,no,si,no,femenino,4.0,femenino,,madre,comuna1,3,True,True,True,High
+2022-12-26T00:00:00.000,lunes,si,no,no,no,si,femenino,16.0,masculino,,padrastro,comuna1,2,False,True,False,Medium
+2022-12-06T00:00:00.000,martes,no,si,no,si,no,masculino,8.0,femenino,34.0,madre,comuna3,2,True,True,True,Medium
+2022-12-12T00:00:00.000,lunes,no,si,no,si,no,masculino,11.0,masculino,42.0,padre,comuna3,2,True,True,True,Medium
+2022-12-12T00:00:00.000,lunes,no,si,no,no,no,femenino,2.0,femenino,25.0,madre,comuna6,1,True,False,False,Low
+2022-12-12T00:00:00.000,lunes,si,si,no,si,no,femenino,14.0,masculino,52.0,padre,comuna6,3,True,True,True,High
+2022-12-12T00:00:00.000,lunes,no,si,no,si,no,femenino,8.0,femenino,34.0,madre,comuna2,2,True,True,True,Medium
+2022-12-12T00:00:00.000,lunes,si,si,no,si,no,femenino,12.0,femenino,34.0,madre,comuna2,3,True,True,True,High
+2022-12-15T00:00:00.000,jueves,no,si,no,si,no,femenino,12.0,femenino,53.0,madre,comuna5,2,True,True,True,Medium
+2022-12-15T00:00:00.000,jueves,no,no,no,si,no,masculino,6.0,masculino,54.0,padre,comuna3,1,True,False,True,Low
+2022-12-15T00:00:00.000,jueves,si,si,no,si,no,masculino,16.0,femenino,39.0,madre,comuna7,3,True,True,True,High
+2022-12-15T00:00:00.000,jueves,si,si,si,si,no,femenino,6.0,femenino,30.0,madre,comuna5,4,True,True,True,High
+2022-12-15T00:00:00.000,jueves,si,si,si,si,no,masculino,9.0,femenino,30.0,madre,comuna5,4,True,True,True,High
+2022-12-15T00:00:00.000,jueves,no,si,no,si,no,masculino,2.0,femenino,34.0,madre,comuna5,2,True,True,True,Medium
+2022-12-15T00:00:00.000,jueves,no,si,no,si,no,femenino,5.0,femenino,34.0,madre,comuna5,2,True,True,True,Medium
+2022-12-20T00:00:00.000,martes,no,no,no,si,no,femenino,9.0,femenino,29.0,madre,comuna5,1,True,False,True,Low
+2022-12-20T00:00:00.000,martes,si,si,no,si,no,masculino,7.0,masculino,,padrastro,comuna7,3,False,True,True,High
+2022-12-21T00:00:00.000,miercoles,si,si,no,si,no,masculino,15.0,femenino,24.0,madre,comuna7,3,True,True,True,High
+2022-12-21T00:00:00.000,miercoles,no,no,no,si,no,masculino,3.0,femenino,,madre,comuna3,1,True,False,True,Low
+2022-12-21T00:00:00.000,miercoles,no,no,no,si,no,masculino,13.0,femenino,,madre,comuna3,1,True,False,True,Low
+2022-12-23T00:00:00.000,viernes,no,no,no,si,si,femenino,6.0,masculino,,padrastro,comuna7,2,False,True,True,Medium
+2022-12-25T00:00:00.000,domingo,no,no,no,si,no,masculino,9.0,femenino,29.0,madre,comuna5,1,True,False,True,Low
+2022-12-23T00:00:00.000,viernes,no,no,no,si,no,masculino,2.0,femenino,28.0,madre,no aplica,1,True,False,True,Low
+2022-12-27T00:00:00.000,martes,no,no,no,si,si,femenino,17.0,femenino,45.0,madre,comuna5,2,True,True,True,Medium
+2022-12-24T00:00:00.000,sabado,si,si,no,si,no,femenino,15.0,femenino,,tio(a),comuna3,3,False,True,True,High
+2022-12-24T00:00:00.000,sabado,no,no,no,si,no,masculino,12.0,femenino,39.0,madre,comuna6,1,True,False,True,Low
+2022-12-26T00:00:00.000,lunes,si,si,no,si,no,femenino,2.0,femenino,33.0,madre,comuna2,3,True,True,True,High
+2022-12-09T00:00:00.000,viernes,si,si,no,si,no,femenino,9.0,masculino,45.0,no aplica,comuna5,3,False,True,True,High
+2022-12-09T00:00:00.000,viernes,si,si,no,si,no,femenino,11.0,masculino,45.0,no aplica,comuna5,3,False,True,True,High
+2022-12-09T00:00:00.000,viernes,si,si,no,si,no,femenino,12.0,masculino,45.0,no aplica,comuna5,3,False,True,True,High
+2022-12-09T00:00:00.000,viernes,si,no,no,si,si,femenino,10.0,masculino,,no aplica,no aplica,3,False,True,True,High
