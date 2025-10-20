@@ -1,0 +1,2783 @@
+        <!-- Slide 10: CASO 2 - Dashboard Resolución -->
+        <div class="slide">
+            <h1>✅ CASO 2: Dashboard - La Solución</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #28a745;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="color: #28a745; font-size: 2.2rem; margin-bottom: 15px;">
+                            📊 Dashboard Predictivo para Coordinadores
+                        </h2>
+                        <p style="color: #666; font-size: 1.1rem;">3 Funcionalidades clave para optimización en tiempo real</p>
+                    </div>
+
+                    <!-- Feature 1: Predicción -->
+                    <div style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); padding: 25px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #28a745;">
+                        <div style="display: flex; align-items: start; gap: 30px;">
+                            <div style="background: #28a745; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0;">
+                                📈
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: #155724; margin-bottom: 15px; font-size: 1.4rem;">
+                                    Feature 1: Predicción de Demanda por Hora
+                                </h3>
+                                <p style="color: #155724; line-height: 1.6; margin-bottom: 15px;">
+                                    El sistema predice cuántos pacientes llegarán en las próximas 4 horas basado en:
+                                </p>
+                                <ul style="color: #155724; line-height: 1.8;">
+                                    <li>Patrones históricos del mismo día/hora</li>
+                                    <li>Eventos especiales (partidos, festividades)</li>
+                                    <li>Condiciones climáticas</li>
+                                    <li>Tendencias de temporada</li>
+                                </ul>
+                                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                                    <p style="color: #28a745; font-weight: bold;">
+                                        ✅ Permite ajustar personal proactivamente ANTES del pico
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; flex-shrink: 0;">
+                                <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">PREDICCIÓN 6-10PM</div>
+                                <div style="font-size: 2.5rem; font-weight: bold; color: #dc3545; margin-bottom: 5px;">+45%</div>
+                                <div style="font-size: 0.75rem; color: #666;">Demanda vs promedio</div>
+                                <div style="margin-top: 10px; padding: 8px; background: #fff3cd; border-radius: 5px; font-size: 0.75rem; color: #856404;">
+                                    ⚠️ Agregar 2 médicos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: Alertas -->
+                    <div style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); padding: 25px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #ffc107;">
+                        <div style="display: flex; align-items: start; gap: 30px;">
+                            <div style="background: #ffc107; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0;">
+                                🚨
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: #856404; margin-bottom: 15px; font-size: 1.4rem;">
+                                    Feature 2: Sistema de Alertas Inteligentes
+                                </h3>
+                                <p style="color: #856404; line-height: 1.6; margin-bottom: 15px;">
+                                    Notificaciones automáticas en tiempo real cuando:
+                                </p>
+                                <ul style="color: #856404; line-height: 1.8;">
+                                    <li>Tiempo de espera promedio > 60 minutos</li>
+                                    <li>Acumulación de > 15 pacientes sin categorizar</li>
+                                    <li>Un paciente específico espera > 90 minutos</li>
+                                    <li>Se proyecta superar capacidad en próxima hora</li>
+                                </ul>
+                                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                                    <p style="color: #ffc107; font-weight: bold;">
+                                        ⚠️ Coordinador puede reasignar recursos ANTES de que empeore
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; flex-shrink: 0;">
+                                <div style="font-size: 0.8rem; color: #666; margin-bottom: 10px;">ALERTA ACTIVA</div>
+                                <div style="background: #dc3545; color: white; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+                                    <div style="font-size: 1.2rem; font-weight: bold;">🚨 CRÍTICO</div>
+                                    <div style="font-size: 0.85rem; margin-top: 5px;">Hospital Sur</div>
+                                </div>
+                                <div style="font-size: 0.75rem; color: #666; line-height: 1.4;">
+                                    18 pacientes<br>esperan > 90 min
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3: Análisis de Patrones -->
+                    <div style="background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%); padding: 25px; border-radius: 12px; border-left: 5px solid #17a2b8;">
+                        <div style="display: flex; align-items: start; gap: 30px;">
+                            <div style="background: #17a2b8; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0;">
+                                📊
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: #0c5460; margin-bottom: 15px; font-size: 1.4rem;">
+                                    Feature 3: Análisis Histórico de Patrones
+                                </h3>
+                                <p style="color: #0c5460; line-height: 1.6; margin-bottom: 15px;">
+                                    Vista mensual/semanal para planificación estratégica:
+                                </p>
+                                <ul style="color: #0c5460; line-height: 1.8;">
+                                    <li>Identificación de días/horas consistentemente críticas</li>
+                                    <li>Comparación de eficiencia entre turnos</li>
+                                    <li>Impacto de cambios implementados (A/B testing)</li>
+                                    <li>Benchmarking entre hospitales del sistema</li>
+                                </ul>
+                                <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                                    <p style="color: #17a2b8; font-weight: bold;">
+                                        📈 Base para decisiones de contratación y redistribución de turnos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultados del Piloto -->
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; margin-top: 30px;">
+                        <h3 style="color: white; margin-bottom: 20px; text-align: center;">🎯 Resultados del Piloto (3 meses)</h3>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 10px;">TIEMPO PROMEDIO</div>
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+                                    <div>
+                                        <div style="font-size: 2rem; font-weight: bold;">47m</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.8;">Antes</div>
+                                    </div>
+                                    <div style="font-size: 2rem;">→</div>
+                                    <div>
+                                        <div style="font-size: 2rem; font-weight: bold; color: #d4edda;">31m</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.8;">Después</div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 10px; background: rgba(255,255,255,0.2); padding: 8px; border-radius: 5px; font-size: 0.85rem;">
+                                    <strong>-34%</strong> reducción
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 10px;">SATISFACCIÓN</div>
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+                                    <div>
+                                        <div style="font-size: 2rem; font-weight: bold;">67%</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.8;">Antes</div>
+                                    </div>
+                                    <div style="font-size: 2rem;">→</div>
+                                    <div>
+                                        <div style="font-size: 2rem; font-weight: bold; color: #d4edda;">84%</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.8;">Después</div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 10px; background: rgba(255,255,255,0.2); padding: 8px; border-radius: 5px; font-size: 0.85rem;">
+                                    <strong>+17pp</strong> mejora
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 10px;">COSTO ADICIONAL</div>
+                                <div style="font-size: 3rem; font-weight: bold; color: #d4edda; margin: 10px 0;">$0</div>
+                                <div style="margin-top: 10px; background: rgba(255,255,255,0.2); padding: 8px; border-radius: 5px; font-size: 0.85rem;">
+                                    Sin contratar personal
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px; margin-top: 20px;">
+                    <h3 style="color: white; margin-bottom: 15px;">🔍 Diferencia Clave vs Caso 1</h3>
+                    <div class="comparison-grid">
+                        <div>
+                            <p style="margin: 10px 0;">✅ <strong>Dashboard OPERACIONAL</strong> (no solo presentación)</p>
+                            <p style="margin: 10px 0;">✅ <strong>Herramienta diaria</strong> para coordinadores (Power BI)</p>
+                            <p style="margin: 10px 0;">✅ <strong>Datos actualizables</strong> + visuales dinámicos</p>
+                        </div>
+                        <div>
+                            <p style="margin: 10px 0;">✅ <strong>Validación con piloto</strong> (no solo proyección)</p>
+                            <p style="margin: 10px 0;">✅ <strong>Múltiples métricas</strong> (tiempo + satisfacción)</p>
+                            <p style="margin: 10px 0;">✅ <strong>ROI claro</strong> (mejora sin inversión)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: CASO 3 - Intro -->
+        <div class="slide">
+            <h1>🔀 CASO 3: Antes y Después</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">📊 Criminalidad en Cali 2023</h2>
+                    <p style="font-size: 1.2rem;">Mismo dataset, dos presentaciones completamente diferentes</p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 40px; border-radius: 15px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 30px; text-align: center;">🎯 Objetivo del Ejercicio</h3>
+                    
+                    <div class="comparison-grid" style="gap: 30px;">
+                        <div style="background: #f8d7da; padding: 30px; border-radius: 15px; border: 3px solid #dc3545;">
+                            <div style="text-align: center; margin-bottom: 20px;">
+                                <div style="font-size: 4rem; margin-bottom: 15px;">❌</div>
+                                <h3 style="color: #721c24; margin-bottom: 15px;">VERSIÓN MALA</h3>
+                            </div>
+                            <ul style="color: #721c24; line-height: 2;">
+                                <li>Sobrecarga de información</li>
+                                <li>Sin mensaje claro</li>
+                                <li>Visuales confusos</li>
+                                <li>Sin recomendaciones</li>
+                            </ul>
+                        </div>
+
+                        <div style="background: #d4edda; padding: 30px; border-radius: 15px; border: 3px solid #28a745;">
+                            <div style="text-align: center; margin-bottom: 20px;">
+                                <div style="font-size: 4rem; margin-bottom: 15px;">✅</div>
+                                <h3 style="color: #155724; margin-bottom: 15px;">VERSIÓN MEJORADA</h3>
+                            </div>
+                            <ul style="color: #155724; line-height: 2;">
+                                <li>Enfoque específico</li>
+                                <li>Historia clara</li>
+                                <li>Visuales efectivos</li>
+                                <li>Soluciones accionables</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff3cd; padding: 25px; border-radius: 10px; margin-top: 30px; text-align: center;">
+                        <p style="color: #856404; font-size: 1.1rem; margin: 0;">
+                            <strong>💡 Veremos primero la versión MALA completa</strong> para identificar problemas,<br>
+                            luego la versión MEJORADA para ver cómo corregirlos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11b: CASO 3 MALO - Slide 1 -->
+        <div class="slide">
+            <h1>🚫 CASO 3 MALO: Presentación - Slide 1/3</h1>
+            <div style="margin: 40px 0;">
+        <!-- Slide 11b: CASO 3 MALO - Slide 1 -->
+        <div class="slide">
+            <h1>🚫 CASO 3 MALO: Presentación - Slide 1/3</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #dc3545;">
+                    <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        <strong style="color: #721c24;">❌ SLIDE MALO 1 DE 3</strong>
+                    </div>
+                    
+                    <h2 style="color: #333; font-size: 1.8rem; margin-bottom: 20px; text-align: center;">
+                        Análisis de Criminalidad en Cali 2023
+                    </h2>
+                    
+                    <!-- Tabla horrible con demasiados datos -->
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; overflow-x: auto;">
+                        <table style="width: 100%; font-size: 0.7rem; border-collapse: collapse;">
+                            <thead style="background: #e9ecef;">
+                                <tr>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Mes</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Hurtos</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Homicidios</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Lesiones</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Atracos</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Violencia Intrafamiliar</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Violencia Sexual</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Extorsión</th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-size: 0.65rem;">
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Enero</td><td style="padding: 5px; border: 1px solid #dee2e6;">1,847</td><td style="padding: 5px; border: 1px solid #dee2e6;">45</td><td style="padding: 5px; border: 1px solid #dee2e6;">892</td><td style="padding: 5px; border: 1px solid #dee2e6;">423</td><td style="padding: 5px; border: 1px solid #dee2e6;">156</td><td style="padding: 5px; border: 1px solid #dee2e6;">34</td><td style="padding: 5px; border: 1px solid #dee2e6;">28</td></tr>
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Febrero</td><td style="padding: 5px; border: 1px solid #dee2e6;">1,923</td><td style="padding: 5px; border: 1px solid #dee2e6;">52</td><td style="padding: 5px; border: 1px solid #dee2e6;">934</td><td style="padding: 5px; border: 1px solid #dee2e6;">467</td><td style="padding: 5px; border: 1px solid #dee2e6;">178</td><td style="padding: 5px; border: 1px solid #dee2e6;">41</td><td style="padding: 5px; border: 1px solid #dee2e6;">32</td></tr>
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Marzo</td><td style="padding: 5px; border: 1px solid #dee2e6;">2,156</td><td style="padding: 5px; border: 1px solid #dee2e6;">48</td><td style="padding: 5px; border: 1px solid #dee2e6;">1,012</td><td style="padding: 5px; border: 1px solid #dee2e6;">501</td><td style="padding: 5px; border: 1px solid #dee2e6;">165</td><td style="padding: 5px; border: 1px solid #dee2e6;">38</td><td style="padding: 5px; border: 1px solid #dee2e6;">29</td></tr>
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Abril</td><td style="padding: 5px; border: 1px solid #dee2e6;">1,998</td><td style="padding: 5px; border: 1px solid #dee2e6;">43</td><td style="padding: 5px; border: 1px solid #dee2e6;">856</td><td style="padding: 5px; border: 1px solid #dee2e6;">489</td><td style="padding: 5px; border: 1px solid #dee2e6;">142</td><td style="padding: 5px; border: 1px solid #dee2e6;">29</td><td style="padding: 5px; border: 1px solid #dee2e6;">31</td></tr>
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Mayo</td><td style="padding: 5px; border: 1px solid #dee2e6;">2,089</td><td style="padding: 5px; border: 1px solid #dee2e6;">51</td><td style="padding: 5px; border: 1px solid #dee2e6;">923</td><td style="padding: 5px; border: 1px solid #dee2e6;">512</td><td style="padding: 5px; border: 1px solid #dee2e6;">168</td><td style="padding: 5px; border: 1px solid #dee2e6;">36</td><td style="padding: 5px; border: 1px solid #dee2e6;">27</td></tr>
+                                <tr style="background: #ffe6e6;"><td colspan="8" style="padding: 10px; border: 1px solid #dee2e6; text-align: center; font-size: 0.7rem;">
+                                    [...más filas de datos sin procesar, sin resaltar nada importante...]
+                                </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div style="margin-top: 15px; color: #999; font-size: 0.8rem; text-align: right;">
+                        Datos: Policía Nacional, INML, Fiscalía, 23,000 reportes totales
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <h4 style="color: #856404; margin-bottom: 10px;">🤔 Problemas en este slide:</h4>
+                    <ul style="color: #856404;">
+                        <li>❌ <strong>Sobrecarga de información:</strong> Demasiados números sin procesar</li>
+                        <li>❌ <strong>Sin jerarquía visual:</strong> Nada resalta, todo igual de importante</li>
+                        <li>❌ <strong>Sin mensaje:</strong> ¿Qué debo ver? ¿Cuál es el punto?</li>
+                        <li>❌ <strong>7 tipos de delitos:</strong> Sin enfoque específico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11c: CASO 3 MALO - Slide 2 -->
+        <div class="slide">
+            <h1>🚫 CASO 3 MALO: Presentación - Slide 2/3</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #dc3545;">
+                    <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        <strong style="color: #721c24;">❌ SLIDE MALO 2 DE 3</strong>
+                    </div>
+                    
+                    <h2 style="color: #333; font-size: 1.8rem; margin-bottom: 20px; text-align: center;">
+                        Gráfico de Criminalidad por Tipo
+                    </h2>
+                    
+                    <!-- Gráfico horrible con muchas categorías y colores -->
+                    <div style="background: #f8f9fa; padding: 30px; border-radius: 8px;">
+                        <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 250px;">
+                            <div style="width: 40px; background: #ff0000; height: 220px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ff3300; height: 180px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ff6600; height: 160px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ff9900; height: 140px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ffcc00; height: 120px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ffff00; height: 100px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ccff00; height: 90px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #99ff00; height: 80px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #66ff00; height: 70px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #33ff00; height: 60px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff00; height: 50px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff33; height: 40px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff66; height: 30px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff99; height: 25px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ffcc; height: 20px; border-radius: 5px 5px 0 0;"></div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 20px; font-size: 0.65rem; color: #666;">
+                            <span>Hurtos</span><span>Lesiones</span><span>Atracos</span><span>Homicidios</span><span>V.Intrafam</span>
+                            <span>V.Sexual</span><span>Extorsión</span><span>Secuestro</span><span>Piratería</span><span>Terrorismo</span>
+                            <span>Narcotráfico</span><span>Corrupción</span><span>Fraude</span><span>Contrabando</span><span>Otros</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <h4 style="color: #856404; margin-bottom: 10px;">🤔 Problemas en este slide:</h4>
+                    <ul style="color: #856404;">
+                        <li>❌ <strong>Colores arcoíris:</strong> Imposibles de distinguir, sin significado</li>
+                        <li>❌ <strong>15 categorías:</strong> Demasiadas para un solo gráfico</li>
+                        <li>❌ <strong>Sin ordenar:</strong> No hay lógica en la secuencia</li>
+                        <li>❌ <strong>Sin valores numéricos:</strong> ¿Cuántos casos exactamente?</li>
+                        <li>❌ <strong>Sin mensaje claro:</strong> ¿Qué debo concluir de esto?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11d: CASO 3 MALO - Slide 3 -->
+        <div class="slide">
+            <h1>🚫 CASO 3 MALO: Presentación - Slide 3/3</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #dc3545;">
+                    <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        <strong style="color: #721c24;">❌ SLIDE MALO 3 DE 3</strong>
+                    </div>
+                    
+                    <h2 style="color: #333; font-size: 1.8rem; margin-bottom: 40px; text-align: center;">
+                        Conclusión
+                    </h2>
+                    
+                    <div style="text-align: center; padding: 80px 40px;">
+                        <p style="color: #666; font-size: 1.4rem; line-height: 2.2; margin-bottom: 40px;">
+                            La criminalidad en Cali aumentó en 2023 respecto a 2022.
+                        </p>
+                        <p style="color: #999; font-size: 1.1rem; margin-top: 40px;">
+                            Se observan variaciones en diferentes tipos de delitos.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: #f8d7da; padding: 30px; border-radius: 10px; margin-top: 20px; border-left: 5px solid #dc3545;">
+                    <h4 style="color: #721c24; margin-bottom: 15px;">🤔 Problemas en este slide:</h4>
+                    <ul style="color: #721c24; line-height: 2;">
+                        <li>❌ <strong>Sin números específicos:</strong> ¿Cuánto aumentó?</li>
+                        <li>❌ <strong>Sin recomendaciones:</strong> ¿Qué debemos hacer?</li>
+                        <li>❌ <strong>Sin call-to-action:</strong> ¿Cuál es el siguiente paso?</li>
+                        <li>❌ <strong>Conclusión vaga:</strong> "Se observan variaciones" no dice nada útil</li>
+                        <li>❌ <strong>No responde:</strong> ¿Dónde? ¿Cuándo? ¿Por qué? ¿Cómo resolverlo?</li>
+                    </ul>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 15px; margin-top: 30px; text-align: center;">
+                    <h3 style="color: white; margin-bottom: 15px;">💬 ¿Qué diría un ejecutivo después de ver esto?</h3>
+                    <p style="font-size: 1.3rem; font-style: italic; margin: 0;">
+                        "Está bien... pero ¿y ahora qué? ¿Qué quieres que haga con esta información?"
+                    </p>
+                    <p style="font-size: 1rem; margin-top: 20px; opacity: 0.9;">
+                        La presentación no genera acción = presentación inútil
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11e: Resumen Problemas CASO 3 MALO -->
+        <div class="slide">
+            <h1>📝 CASO 3 MALO: Resumen de Problemas</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🚫 ¿Por qué esta presentación fracasa?</h2>
+                    <p style="font-size: 1.2rem;">Análisis completo de los errores</p>
+                </div>
+
+                <div class="comparison-grid" style="gap: 30px;">
+                    <div>
+                        <h3 style="color: #dc3545; margin-bottom: 20px;">❌ Problemas de Contenido</h3>
+                        <div class="bad-example" style="padding: 25px;">
+                            <ul style="color: #721c24; line-height: 2; font-size: 1rem;">
+                                <li><strong>Sobrecarga de información:</strong> 50+ filas de datos sin procesar</li>
+                                <li><strong>Sin enfoque:</strong> 15 tipos de delitos (todos = ninguno importante)</li>
+                                <li><strong>Sin números específicos:</strong> "Aumentó" pero ¿cuánto?</li>
+                                <li><strong>Sin recomendaciones:</strong> No dice qué hacer</li>
+                                <li><strong>Sin call-to-action:</strong> ¿Cuál es el siguiente paso?</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #dc3545; margin-bottom: 20px;">❌ Problemas Visuales</h3>
+                        <div class="bad-example" style="padding: 25px;">
+                            <ul style="color: #721c24; line-height: 2; font-size: 1rem;">
+                                <li><strong>Colores sin significado:</strong> Arcoíris imposible de distinguir</li>
+                                <li><strong>Sin jerarquía visual:</strong> Todo igual de "importante"</li>
+                                <li><strong>Tablas indigestas:</strong> Excel pegado en PowerPoint</li>
+                                <li><strong>Sin valores en gráficos:</strong> Imposible saber magnitudes</li>
+                                <li><strong>Conclusión vacía:</strong> Slide casi en blanco</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="color: #856404; margin-bottom: 20px; text-align: center;">🎯 El Problema FUNDAMENTAL</h3>
+                    <div style="text-align: center;">
+                        <p style="color: #856404; font-size: 1.3rem; line-height: 1.8; margin-bottom: 20px;">
+                            Esta presentación NO responde las preguntas clave:
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px;">
+                            <div style="background: white; padding: 20px; border-radius: 10px;">
+                                <p style="color: #856404; font-size: 1.1rem; margin: 0;">❓ <strong>¿Dónde?</strong> No especifica zonas</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px;">
+                                <p style="color: #856404; font-size: 1.1rem; margin: 0;">❓ <strong>¿Cuándo?</strong> No muestra patrones temporales</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px;">
+                                <p style="color: #856404; font-size: 1.1rem; margin: 0;">❓ <strong>¿Por qué?</strong> No explica causas</p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px;">
+                                <p style="color: #856404; font-size: 1.1rem; margin: 0;">❓ <strong>¿Qué hacer?</strong> Cero recomendaciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 40px;">
+                    <h3 style="color: white; margin-bottom: 15px;">💡 Ahora veamos la versión MEJORADA</h3>
+                    <p style="font-size: 1.2rem; margin: 0;">
+                        Mismo dataset, pero con enfoque, historia y soluciones claras
+                    </p>
+                </div>
+            </div>
+        </div>
+                    <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        <strong style="color: #721c24;">❌ SLIDE MALO 1 DE 3</strong>
+                    </div>
+                    
+                    <h2 style="color: #333; font-size: 1.8rem; margin-bottom: 20px; text-align: center;">
+                        Análisis de Criminalidad en Cali 2023
+                    </h2>
+                    
+                    <!-- Tabla horrible con demasiados datos -->
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; overflow-x: auto;">
+                        <table style="width: 100%; font-size: 0.7rem; border-collapse: collapse;">
+                            <thead style="background: #e9ecef;">
+                                <tr>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Mes</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Hurtos</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Homicidios</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Lesiones</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Atracos</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Violencia Intrafamiliar</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Violencia Sexual</th>
+                                    <th style="padding: 8px; border: 1px solid #dee2e6;">Extorsión</th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-size: 0.65rem;">
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Enero</td><td style="padding: 5px; border: 1px solid #dee2e6;">1,847</td><td style="padding: 5px; border: 1px solid #dee2e6;">45</td><td style="padding: 5px; border: 1px solid #dee2e6;">892</td><td style="padding: 5px; border: 1px solid #dee2e6;">423</td><td style="padding: 5px; border: 1px solid #dee2e6;">156</td><td style="padding: 5px; border: 1px solid #dee2e6;">34</td><td style="padding: 5px; border: 1px solid #dee2e6;">28</td></tr>
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Febrero</td><td style="padding: 5px; border: 1px solid #dee2e6;">1,923</td><td style="padding: 5px; border: 1px solid #dee2e6;">52</td><td style="padding: 5px; border: 1px solid #dee2e6;">934</td><td style="padding: 5px; border: 1px solid #dee2e6;">467</td><td style="padding: 5px; border: 1px solid #dee2e6;">178</td><td style="padding: 5px; border: 1px solid #dee2e6;">41</td><td style="padding: 5px; border: 1px solid #dee2e6;">32</td></tr>
+                                <tr><td style="padding: 5px; border: 1px solid #dee2e6;">Marzo</td><td style="padding: 5px; border: 1px solid #dee2e6;">2,156</td><td style="padding: 5px; border: 1px solid #dee2e6;">48</td><td style="padding: 5px; border: 1px solid #dee2e6;">1,012</td><td style="padding: 5px; border: 1px solid #dee2e6;">501</td><td style="padding: 5px; border: 1px solid #dee2e6;">165</td><td style="padding: 5px; border: 1px solid #dee2e6;">38</td><td style="padding: 5px; border: 1px solid #dee2e6;">29</td></tr>
+                                <tr style="background: #ffe6e6;"><td colspan="8" style="padding: 10px; border: 1px solid #dee2e6; text-align: center; font-size: 0.7rem;">
+                                    [...50 filas más de datos sin análisis...]
+                                </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div style="margin-top: 15px; color: #999; font-size: 0.8rem; text-align: right;">
+                        Datos: Policía Nacional, INML, Fiscalía, 23,000 reportes totales
+                    </div>
+                </div>
+
+                <!-- SLIDE MALO 2 -->
+                <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #dc3545; margin-bottom: 30px;">
+                    <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        <strong style="color: #721c24;">❌ SLIDE MALO 2 DE 3</strong>
+                    </div>
+                    
+                    <h2 style="color: #333; font-size: 1.8rem; margin-bottom: 20px; text-align: center;">
+                        Gráfico de Criminalidad por Tipo
+                    </h2>
+                    
+                    <!-- Gráfico horrible con muchas categorías y colores -->
+                    <div style="background: #f8f9fa; padding: 30px; border-radius: 8px;">
+                        <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 250px;">
+                            <div style="width: 40px; background: #ff0000; height: 220px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ff3300; height: 180px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ff6600; height: 160px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ff9900; height: 140px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ffcc00; height: 120px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ffff00; height: 100px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #ccff00; height: 90px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #99ff00; height: 80px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #66ff00; height: 70px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #33ff00; height: 60px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff00; height: 50px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff33; height: 40px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff66; height: 30px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ff99; height: 25px; border-radius: 5px 5px 0 0;"></div>
+                            <div style="width: 40px; background: #00ffcc; height: 20px; border-radius: 5px 5px 0 0;"></div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 20px; font-size: 0.65rem; color: #666;">
+                            <span>Hurtos</span><span>Lesiones</span><span>Atracos</span><span>Homicidios</span><span>V.Intrafam</span>
+                            <span>V.Sexual</span><span>Extorsión</span><span>Secuestro</span><span>Piratería</span><span>Terrorismo</span>
+                            <span>Narcotráfico</span><span>Corrupción</span><span>Fraude</span><span>Contrabando</span><span>Otros</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px; padding: 15px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+                        <p style="color: #856404; margin: 0; font-size: 0.9rem;">
+                            Sin mensaje claro, sin ordenar, 15 categorías imposibles de distinguir
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SLIDE MALO 3 -->
+                <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #dc3545;">
+                    <div style="background: #f8d7da; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        <strong style="color: #721c24;">❌ SLIDE MALO 3 DE 3</strong>
+                    </div>
+                    
+                    <h2 style="color: #333; font-size: 1.8rem; margin-bottom: 40px; text-align: center;">
+                        Conclusión
+                    </h2>
+                    
+                    <div style="text-align: center; padding: 60px 40px;">
+                        <p style="color: #666; font-size: 1.3rem; line-height: 2;">
+                            La criminalidad en Cali aumentó en 2023 respecto a 2022.
+                        </p>
+                        <p style="color: #999; font-size: 1rem; margin-top: 40px;">
+                            Se observan variaciones en diferentes tipos de delitos.
+                        </p>
+                    </div>
+                    
+                    <div style="margin-top: 40px; padding: 20px; background: #f8d7da; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <p style="color: #721c24; margin: 0; font-size: 0.9rem;">
+                            <strong>❌ Sin números específicos, sin recomendaciones, sin call-to-action</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lista de Problemas -->
+                <div style="background: #fff3cd; padding: 30px; border-radius: 15px; margin-top: 30px;">
+                    <h3 style="color: #856404; margin-bottom: 20px; text-align: center;">🤔 ¿Qué está mal aquí?</h3>
+                    <div class="comparison-grid">
+                        <div>
+                            <ul style="color: #856404; line-height: 2;">
+                                <li>❌ Sobrecarga de información (50 filas de tabla)</li>
+                                <li>❌ Sin jerarquía visual</li>
+                                <li>❌ Colores arcoíris imposibles de distinguir</li>
+                                <li>❌ 15 categorías en un solo gráfico</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul style="color: #856404; line-height: 2;">
+                                <li>❌ Sin historia clara (¿cuál es el mensaje?)</li>
+                                <li>❌ Sin números específicos en conclusión</li>
+                                <li>❌ Sin recomendaciones accionables</li>
+                                <li>❌ Sin enfoque (todo es importante = nada es importante)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Storytelling Completo - Semana 10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .presentation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .slide {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px;
+            margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-height: 80vh;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide:first-child {
+            display: flex;
+        }
+
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .title-slide {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .title-slide h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .title-slide h2 {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .title-slide .info {
+            font-size: 1.3rem;
+            opacity: 0.8;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #34495e;
+            margin: 30px 0 20px 0;
+        }
+
+        .nav-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .nav-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .three-column-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .example-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .good-example {
+            background: #d4edda;
+            border-left-color: #28a745;
+        }
+
+        .bad-example {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #17a2b8;
+            margin: 20px 0;
+        }
+
+        .case-study-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .slide-mockup {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .technique-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .checklist-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 30px;
+                margin: 20px 0;
+            }
+            
+            .title-slide h1 {
+                font-size: 2.5rem;
+            }
+            
+            .comparison-grid, .three-column-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <button class="nav-btn" onclick="previousSlide()">◀ Anterior</button>
+        <button class="nav-btn" onclick="nextSlide()">Siguiente ▶</button>
+    </div>
+
+    <div class="presentation-container">
+        <!-- Slide 1: Título -->
+        <div class="slide title-slide">
+            <h1>🎬 Data Storytelling Completo</h1>
+            <h2>Semana 10 - Casos Profesionales y Aplicación Final</h2>
+            <div class="info">
+                <div style="margin-top: 20px;">Julian Eduardo Garzon Giraldo, MsC</div>
+                <div style="margin-top: 10px; font-size: 1.1rem; opacity: 0.8;">Módulo 2 - Business Intelligence y Visualización</div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Agenda -->
+        <div class="slide">
+            <h1>🗓️ Agenda de Hoy</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎯 Objetivo Principal</h2>
+                    <p style="font-size: 1.2rem;">Dominar storytelling con ejemplos profesionales antes de su presentación</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">
+                        <h3>🔍 RECAPITULACIÓN</h3>
+                        <p>Framework rápido del storytelling</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            Contexto → Conflicto → Resolución
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h3>📊 CASOS REALES</h3>
+                        <p>3 ejemplos profesionales desglosados</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            Educación, Salud, Seguridad
+                        </div>
+                    </div>
+
+                    <div class="feature-card" style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);">
+                        <h3>🎯 TÉCNICAS AVANZADAS</h3>
+                        <p>Herramientas profesionales de presentación</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            Ganchos, zoom narrativo, comparaciones
+                        </div>
+                    </div>
+
+                    <div class="feature-card" style="background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);">
+                        <h3>💻 WORKSHOP</h3>
+                        <p>Pulir sus presentaciones con feedback</p>
+                        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
+                            Auto-evaluación + Peer review
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">📅 Próxima Semana</h2>
+                    <p style="font-size: 1.2rem;">Presentaciones Entrega 2 - Dashboard Completo</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Dónde Estamos -->
+        <div class="slide">
+            <h1>🗺️ Dónde Estamos en el Viaje</h1>
+            <div style="margin: 40px 0;">
+                <div class="three-column-grid">
+                    <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>✅ SEMANA 7</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Aprendimos:</strong> Visualización + Storytelling básico</p>
+                            <p>Framework: Contexto → Conflicto → Resolución</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Fundamentos teóricos
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>✅ SEMANAS 8-9</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Crearon:</strong> Sus dashboards completos</p>
+                            <p>Visualización interactiva + Power BI</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Aplicación práctica
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>🎯 HOY - SEMANA 10</h3>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>Vemos:</strong> Ejemplos profesionales</p>
+                            <p>Pulimos presentación para Entrega 2</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            Preparación final
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">🌉 El Puente Final</h3>
+                    <div style="text-align: center;">
+                        <p style="color: #666; font-size: 1.1rem; line-height: 1.6;">
+                            Ya tienen el <strong>QUÉ</strong> (dashboard con datos)<br>
+                            Hoy aprenden el <strong>CÓMO</strong> (presentarlo efectivamente)<br>
+                            Semana 11: Demuestran que <strong>DOMINAN</strong> ambos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Recapitulación Framework -->
+        <div class="slide">
+            <h1>🔄 Recapitulación Rápida: Framework de Storytelling</h1>
+            <div style="margin: 40px 0;">
+                <div class="three-column-grid">
+                    <div style="background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>📍 CONTEXTO</h3>
+                        <div style="font-size: 2.5rem; margin: 20px 0;">🗺️</div>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>¿Qué?</strong></p>
+                            <p>Dataset, objetivo, audiencia</p>
+                            <p>Establece el escenario</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            "Analizamos 85,000 estudiantes..."
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>⚡ CONFLICTO</h3>
+                        <div style="font-size: 2.5rem; margin: 20px 0;">🔥</div>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>¿Por qué importa?</strong></p>
+                            <p>El insight, el problema</p>
+                            <p>Crea tensión</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            "75% deserción en primeros 3 meses..."
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%); color: white; padding: 25px; border-radius: 15px; text-align: center;">
+                        <h3>✅ RESOLUCIÓN</h3>
+                        <div style="font-size: 2.5rem; margin: 20px 0;">🎯</div>
+                        <div style="margin: 15px 0; font-size: 0.9rem;">
+                            <p><strong>¿Qué hacer?</strong></p>
+                            <p>Recomendaciones accionables</p>
+                            <p>Cierra con solución</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; font-size: 0.8rem;">
+                            "3 intervenciones priorizadas..."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 10px;">💡 Recuerden</h4>
+                    <p style="color: #856404; margin: 0; font-size: 1.1rem;">
+                        Ya conocen la teoría. Hoy vemos cómo se aplica en <strong>casos profesionales reales</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: CASO 1 - Setup Deserción Escolar -->
+        <div class="slide">
+            <h1>📚 CASO 1: Deserción Escolar en Zona Rural</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎯 Setup del Caso</h2>
+                    <p style="font-size: 1.2rem;">Análisis real para Ministerio de Educación</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div>
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">📊 Los Datos</h3>
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                            <ul style="list-style: none; font-size: 1rem; line-height: 2;">
+                                <li>📈 <strong>85,000 estudiantes</strong> rurales</li>
+                                <li>🏫 <strong>450 municipios</strong> analizados</li>
+                                <li>📅 <strong>Período:</strong> 2020-2024</li>
+                                <li>📍 <strong>Cobertura:</strong> Nacional</li>
+                                <li>🎓 <strong>Niveles:</strong> Primaria + Secundaria</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">🎯 La Pregunta Ejecutiva</h3>
+                        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 15px; text-align: center;">
+                            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">
+                                "¿Dónde debemos intervenir PRIMERO para reducir la deserción?"
+                            </p>
+                            <p style="font-size: 1rem; opacity: 0.9;">
+                                Audiencia: Secretarios de Educación departamentales
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 25px; border-radius: 15px; margin-top: 40px; border-left: 5px solid #ffc107;">
+                    <h4 style="color: #856404; margin-bottom: 15px;">🧠 Contexto Previo</h4>
+                    <p style="color: #856404; margin: 0; font-size: 1rem; line-height: 1.6;">
+                        Los tomadores de decisión ya saben que hay deserción. Lo que NO saben es: 
+                        <strong>¿qué patrón específico existe? ¿cuándo ocurre? ¿qué causa lo explica mejor?</strong>
+                        La presentación debe responder esto con claridad absoluta.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: CASO 1 - Presentación Completa SLIDE 1 -->
+        <div class="slide">
+            <h1>📊 CASO 1: Presentación Real - Slide 1/4</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #667eea;">
+                    <!-- Simulación de slide real -->
+                    <div style="text-align: center; margin-bottom: 40px;">
+                        <h2 style="color: #2c3e50; font-size: 2.5rem; margin-bottom: 15px;">
+                            📚 Deserción Escolar en Zona Rural
+                        </h2>
+                        <h3 style="color: #667eea; font-size: 1.5rem; margin-bottom: 30px;">
+                            ¿Dónde intervenir primero?
+                        </h3>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 10px; margin: 30px 0;">
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: center;">
+                            <div>
+                                <div style="font-size: 3rem; color: #667eea; font-weight: bold;">85,000</div>
+                                <div style="color: #666; font-size: 1rem; margin-top: 10px;">Estudiantes analizados</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 3rem; color: #667eea; font-weight: bold;">450</div>
+                                <div style="color: #666; font-size: 1rem; margin-top: 10px;">Municipios rurales</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 3rem; color: #667eea; font-weight: bold;">2020-24</div>
+                                <div style="color: #666; font-size: 1rem; margin-top: 10px;">Período de análisis</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #fff3cd; border-radius: 8px;">
+                        <p style="color: #856404; font-size: 1rem; margin: 0;">
+                            <strong>Audiencia:</strong> Secretarios de Educación Departamentales
+                        </p>
+                    </div>
+
+                    <div style="text-align: right; margin-top: 30px; color: #999; font-size: 0.9rem;">
+                        Fuente: Ministerio de Educación Nacional + DANE
+                    </div>
+                </div>
+
+                <div style="background: #d1ecf1; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="color: #0c5460; margin: 0;">
+                        <strong>💡 Nota:</strong> Este slide establece el CONTEXTO de forma clara y concisa. 
+                        Números grandes, visual limpio, audiencia identificada.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6b: CASO 1 - SLIDE 2 EL CONFLICTO -->
+        <div class="slide">
+            <h1>📊 CASO 1: Presentación Real - Slide 2/4</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #e74c3c;">
+                    <!-- Título impactante -->
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="color: #e74c3c; font-size: 2.2rem; line-height: 1.3; margin-bottom: 20px;">
+                            75% de la deserción ocurre en los primeros 3 meses del año escolar
+                        </h2>
+                        <p style="color: #666; font-size: 1.1rem;">Y existe un patrón geográfico crítico</p>
+                    </div>
+
+                    <!-- Visual: Mapa de calor simulado -->
+                    <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 10px; margin: 30px 0;">
+                        <h4 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">📍 Deserción por Región</h4>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                            <div style="background: linear-gradient(135deg, #dc3545 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px;">34%</div>
+                                <div style="font-size: 1rem; opacity: 0.9;">Amazonía</div>
+                                <div style="margin-top: 15px; padding: 8px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.8rem;">
+                                    🔴 CRÍTICO
+                                </div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px;">28%</div>
+                                <div style="font-size: 1rem; opacity: 0.9;">Costa</div>
+                                <div style="margin-top: 15px; padding: 8px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.8rem;">
+                                    🔴 ALTO
+                                </div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 30px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px;">12%</div>
+                                <div style="font-size: 1rem; opacity: 0.9;">Andina</div>
+                                <div style="margin-top: 15px; padding: 8px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.8rem;">
+                                    🟢 ACEPTABLE
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline visual -->
+                    <div style="background: #ffe6e6; padding: 25px; border-radius: 10px; border-left: 5px solid #dc3545;">
+                        <h4 style="color: #721c24; margin-bottom: 15px;">⏰ Concentración Temporal</h4>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <div style="text-align: center; flex: 1;">
+                                <div style="font-size: 1.8rem; color: #dc3545; font-weight: bold;">Febrero - Abril</div>
+                                <div style="color: #721c24; margin-top: 5px;">75% de deserción</div>
+                            </div>
+                            <div style="font-size: 3rem; color: #dc3545;">→</div>
+                            <div style="text-align: center; flex: 1;">
+                                <div style="font-size: 1.8rem; color: #666; font-weight: bold;">Mayo - Noviembre</div>
+                                <div style="color: #666; margin-top: 5px;">25% de deserción</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="color: #856404; margin: 0;">
+                        <strong>💡 Nota:</strong> Este slide presenta el CONFLICTO con datos visuales impactantes. 
+                        El mensaje es claro: hay un problema concentrado en tiempo y espacio.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6c: CASO 1 - SLIDE 3 PROFUNDIZACIÓN -->
+        <div class="slide">
+            <h1>📊 CASO 1: Presentación Real - Slide 3/4</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #667eea;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="color: #2c3e50; font-size: 2rem; margin-bottom: 15px;">
+                            🔍 ¿Qué causa el patrón?
+                        </h2>
+                        <p style="color: #667eea; font-size: 1.2rem;">Cruzamos datos económicos y encontramos 3 factores críticos</p>
+                    </div>
+
+                    <!-- 3 Factores visuales -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin: 30px 0;">
+                        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">🌾</div>
+                            <h4 style="color: white; margin-bottom: 15px;">Factor 1</h4>
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">Época de Cosecha</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Coincide con inicio del año escolar en 120 municipios</p>
+                            <div style="margin-top: 20px; padding: 10px; background: rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem;">
+                                Familias necesitan mano de obra infantil
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 30px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">🚶</div>
+                            <h4 style="color: white; margin-bottom: 15px;">Factor 2</h4>
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">Distancia Escolar</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">Promedio >5km en zonas de alta deserción</p>
+                            <div style="margin-top: 20px; padding: 10px; background: rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem;">
+                                Sin transporte escolar disponible
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%); color: white; padding: 30px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">🍎</div>
+                            <h4 style="color: white; margin-bottom: 15px;">Factor 3</h4>
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">Alimentación</p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">85% sin programa de desayuno escolar</p>
+                            <div style="margin-top: 20px; padding: 10px; background: rgba(255,255,255,0.2); border-radius: 8px; font-size: 0.85rem;">
+                                Niños van sin desayunar
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Correlación visual -->
+                    <div style="background: #d1ecf1; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                        <h4 style="color: #0c5460; margin-bottom: 15px; text-align: center;">📊 Correlación con Deserción</h4>
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; color: #17a2b8; font-weight: bold;">r = 0.78</div>
+                                <div style="color: #0c5460; font-size: 0.9rem;">Cosecha + Deserción</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; color: #17a2b8; font-weight: bold;">r = 0.65</div>
+                                <div style="color: #0c5460; font-size: 0.9rem;">Distancia + Deserción</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; color: #17a2b8; font-weight: bold;">r = 0.58</div>
+                                <div style="color: #0c5460; font-size: 0.9rem;">Sin alimentación + Deserción</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #d4edda; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="color: #155724; margin: 0;">
+                        <strong>💡 Nota:</strong> Este slide PROFUNDIZA el conflicto mostrando las CAUSAS. 
+                        Ya no es solo "qué" sino "por qué" - fundamental para soluciones accionables.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6d: CASO 1 - SLIDE 4 RESOLUCIÓN -->
+        <div class="slide">
+            <h1>📊 CASO 1: Presentación Real - Slide 4/4</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #28a745;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="color: #28a745; font-size: 2.2rem; margin-bottom: 15px;">
+                            ✅ 3 Intervenciones Priorizadas
+                        </h2>
+                        <p style="color: #666; font-size: 1.1rem;">Basadas en evidencia, costeadas y con impacto estimado</p>
+                    </div>
+
+                    <!-- Intervención 1 -->
+                    <div style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); padding: 25px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #28a745;">
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div style="flex: 1;">
+                                <h3 style="color: #155724; margin-bottom: 15px;">
+                                    🗓️ 1. Calendario Escolar Flexible
+                                </h3>
+                                <p style="color: #155724; font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">
+                                    → Ajustar inicio de clases post-cosecha en 120 municipios críticos<br>
+                                    → Permitir entrada escalonada según calendario agrícola local<br>
+                                    → Coordinación con Secretarías de Agricultura
+                                </p>
+                            </div>
+                            <div style="text-align: right; margin-left: 30px;">
+                                <div style="background: #28a745; color: white; padding: 15px 25px; border-radius: 10px; margin-bottom: 10px;">
+                                    <div style="font-size: 1.8rem; font-weight: bold;">-8%</div>
+                                    <div style="font-size: 0.8rem; opacity: 0.9;">Deserción</div>
+                                </div>
+                                <div style="background: #17a2b8; color: white; padding: 10px 20px; border-radius: 8px;">
+                                    <div style="font-size: 1.2rem; font-weight: bold;">$0</div>
+                                    <div style="font-size: 0.75rem;">Solo reorganización</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intervención 2 -->
+                    <div style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); padding: 25px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #ffc107;">
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div style="flex: 1;">
+                                <h3 style="color: #856404; margin-bottom: 15px;">
+                                    🚌 2. Transporte Escolar Rural
+                                </h3>
+                                <p style="color: #856404; font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">
+                                    → Priorizar 45 municipios con distancia promedio >5km<br>
+                                    → Rutas optimizadas con análisis geoespacial<br>
+                                    → Alianzas con transportadores locales
+                                </p>
+                            </div>
+                            <div style="text-align: right; margin-left: 30px;">
+                                <div style="background: #ffc107; color: white; padding: 15px 25px; border-radius: 10px; margin-bottom: 10px;">
+                                    <div style="font-size: 1.8rem; font-weight: bold;">-6%</div>
+                                    <div style="font-size: 0.8rem; opacity: 0.9;">Deserción</div>
+                                </div>
+                                <div style="background: #e67e22; color: white; padding: 10px 20px; border-radius: 8px;">
+                                    <div style="font-size: 1.2rem; font-weight: bold;">$2.3M</div>
+                                    <div style="font-size: 0.75rem;">Inversión inicial</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Intervención 3 -->
+                    <div style="background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%); padding: 25px; border-radius: 12px; border-left: 5px solid #17a2b8;">
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div style="flex: 1;">
+                                <h3 style="color: #0c5460; margin-bottom: 15px;">
+                                    🍎 3. Programa de Alimentación Ampliado
+                                </h3>
+                                <p style="color: #0c5460; font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">
+                                    → Incluir desayuno en 80 escuelas piloto (actualmente solo almuerzo)<br>
+                                    → Productos locales para fortalecer economía regional<br>
+                                    → Evaluación de impacto nutricional y académico
+                                </p>
+                            </div>
+                            <div style="text-align: right; margin-left: 30px;">
+                                <div style="background: #17a2b8; color: white; padding: 15px 25px; border-radius: 10px; margin-bottom: 10px;">
+                                    <div style="font-size: 1.8rem; font-weight: bold;">-4%</div>
+                                    <div style="font-size: 0.8rem; opacity: 0.9;">Deserción</div>
+                                </div>
+                                <div style="background: #138496; color: white; padding: 10px 20px; border-radius: 8px;">
+                                    <div style="font-size: 1.2rem; font-weight: bold;">$800K</div>
+                                    <div style="font-size: 0.75rem;">Anual</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Impacto Total -->
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 30px;">
+                        <h3 style="color: white; margin-bottom: 15px;">🎯 Impacto Combinado Proyectado</h3>
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                            <div>
+                                <div style="font-size: 3rem; font-weight: bold;">-18%</div>
+                                <div style="font-size: 1rem; opacity: 0.9;">Reducción total de deserción</div>
+                            </div>
+                            <div style="font-size: 3rem;">→</div>
+                            <div>
+                                <div style="font-size: 3rem; font-weight: bold;">15,300</div>
+                                <div style="font-size: 1rem; opacity: 0.9;">Estudiantes retenidos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #d4edda; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="color: #155724; margin: 0;">
+                        <strong>💡 Nota:</strong> Este slide cierra con la RESOLUCIÓN - soluciones específicas, priorizadas, costeadas y con impacto claro. 
+                        Todo ejecutivo sabe exactamente qué hacer después de verlo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: CASO 1 - Análisis Final -->
+        <div class="slide">
+            <h1>🔍 CASO 1: Análisis de lo que Funcionó</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">✨ Lecciones Clave del Caso</h2>
+                    <p style="font-size: 1.2rem;">¿Por qué esta presentación convence a tomadores de decisión?</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 25px; border-radius: 12px;">
+                        <h3 style="color: white; margin-bottom: 15px;">🎯 Insight Accionable</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">
+                            No solo "hay deserción", sino <strong>"75% ocurre en primeros 3 meses + época de cosecha"</strong>. 
+                            Esto permite acción específica.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #17a2b8 0%, #138496 100%); color: white; padding: 25px; border-radius: 12px;">
+                        <h3 style="color: white; margin-bottom: 15px;">💰 Números Concretos</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">
+                            Cada intervención tiene: <strong>impacto estimado (-8%, -6%, -4%) + costo específico</strong>. 
+                            Los ejecutivos pueden decidir con esta info.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%); color: white; padding: 25px; border-radius: 12px;">
+                        <h3 style="color: white; margin-bottom: 15px;">📊 Visuales Limpios</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">
+                            Máximo <strong>1 visual por slide</strong>, colores con propósito (rojo=crítico, verde=aceptable), 
+                            números grandes y legibles.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 12px;">
+                        <h3 style="color: white; margin-bottom: 15px;">🔗 Conecta Datos-Causas</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">
+                            No se queda en "qué", va hasta <strong>"por qué"</strong>: cosecha + distancia + alimentación. 
+                            Las soluciones atacan las causas raíz.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 25px; border-radius: 12px;">
+                        <h3 style="color: white; margin-bottom: 15px;">✅ Priorizadas y Realistas</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">
+                            3 intervenciones <strong>ordenadas por impacto</strong>. La primera cuesta $0, 
+                            la más cara tiene ROI claro. Realismo = credibilidad.
+                        </p>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 25px; border-radius: 12px;">
+                        <h3 style="color: white; margin-bottom: 15px;">🎬 Historia Completa</h3>
+                        <p style="font-size: 0.9rem; line-height: 1.6;">
+                            Sigue <strong>Contexto → Conflicto → Profundización → Resolución</strong>. 
+                            Al final, el ejecutivo sabe exactamente qué hacer.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 30px; border-radius: 15px; margin-top: 40px; text-align: center;">
+                    <h3 style="color: #856404; margin-bottom: 15px;">💡 Pregunta Clave</h3>
+                    <p style="color: #856404; font-size: 1.2rem; margin: 0; line-height: 1.8;">
+                        Después de esta presentación, ¿un tomador de decisión sabe <strong>exactamente qué hacer mañana</strong>?<br>
+                        <strong style="font-size: 1.3rem;">✅ SÍ</strong> - Por eso funciona.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: CASO 2 - Setup Salud -->
+        <div class="slide">
+            <h1>🏥 CASO 2: Tiempos de Atención en Urgencias</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🏥 Setup del Caso</h2>
+                    <p style="font-size: 1.2rem;">Presentación de dashboard para coordinadores hospitalarios</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div>
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">📊 Los Datos</h3>
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                            <ul style="list-style: none; font-size: 1rem; line-height: 2;">
+                                <li>📈 <strong>120,000 registros</strong> urgencias</li>
+                                <li>🏥 <strong>12 hospitales</strong> públicos</li>
+                                <li>📅 <strong>Período:</strong> 18 meses</li>
+                                <li>📍 <strong>Ciudad:</strong> Cali</li>
+                                <li>⏰ <strong>Variables:</strong> Tiempos, turnos, categorización</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">🎯 La Pregunta Ejecutiva</h3>
+                        <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 15px; text-align: center;">
+                            <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px;">
+                                "¿Por qué el 40% de pacientes espera más de 90 minutos?"
+                            </p>
+                            <p style="font-size: 1rem; opacity: 0.9;">
+                                Audiencia: Coordinadores de urgencias
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 style="color: #0c5460; margin-bottom: 15px;">💡 Diferencia con Caso 1</h4>
+                    <p style="color: #0c5460; margin: 0; font-size: 1rem; line-height: 1.6;">
+                        Este caso presenta un <strong>dashboard tipo Power BI</strong> (no solo slides estáticas). 
+                        El objetivo es <strong>operacionalizar los insights</strong> → herramienta para uso diario.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: CASO 2 - Presentación Dashboard -->
+        <div class="slide">
+            <h1>🏥 CASO 2: Presentación del Dashboard</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #e74c3c;">
+                    <!-- Header del Dashboard -->
+                    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 10px; margin-bottom: 30px;">
+                        <h2 style="color: white; font-size: 2rem; margin-bottom: 10px;">
+                            🏥 Monitor de Tiempos de Urgencias - Hospitales Públicos Cali
+                        </h2>
+                        <p style="font-size: 1rem; opacity: 0.9;">
+                            Vista tipo Power BI • 12 hospitales • Actualización diaria
+                        </p>
+                    </div>
+
+                    <!-- KPIs Principales -->
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 30px;">
+                        <div style="background: linear-gradient(135deg, #dc3545 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 0.85rem; opacity: 0.9; margin-bottom: 5px;">TIEMPO PROMEDIO</div>
+                            <div style="font-size: 3rem; font-weight: bold;">47min</div>
+                            <div style="margin-top: 10px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.8rem;">
+                                ⚠️ Por encima de meta (30min)
+                            </div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 25px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 0.85rem; opacity: 0.9; margin-bottom: 5px;">ATENDIDOS < 20MIN</div>
+                            <div style="font-size: 3rem; font-weight: bold;">60%</div>
+                            <div style="margin-top: 10px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.8rem;">
+                                ✅ Dentro de meta
+                            </div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #dc3545 0%, #c0392b 100%); color: white; padding: 25px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 0.85rem; opacity: 0.9; margin-bottom: 5px;">ESPERA > 90MIN</div>
+                            <div style="font-size: 3rem; font-weight: bold;">40%</div>
+                            <div style="margin-top: 10px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.8rem;">
+                                🔴 CRÍTICO
+                            </div>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%); color: white; padding: 25px; border-radius: 12px; text-align: center;">
+                            <div style="font-size: 0.85rem; opacity: 0.9; margin-bottom: 5px;">SATISFACCIÓN</div>
+                            <div style="font-size: 3rem; font-weight: bold;">67%</div>
+                            <div style="margin-top: 10px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.8rem;">
+                                ⚠️ Por debajo de meta (80%)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EL PROBLEMA: Distribución Bimodal -->
+                    <div style="background: #ffe6e6; padding: 25px; border-radius: 10px; border-left: 5px solid #dc3545; margin-bottom: 30px;">
+                        <h3 style="color: #721c24; margin-bottom: 20px;">🔍 EL PROBLEMA: Distribución Bimodal</h3>
+                        <div style="display: flex; gap: 20px; align-items: center;">
+                            <div style="flex: 1;">
+                                <div style="background: white; padding: 20px; border-radius: 8px;">
+                                    <h4 style="color: #333; margin-bottom: 15px; text-align: center;">Distribución de Tiempos de Espera</h4>
+                                    <!-- Simulación de gráfico de distribución -->
+                                    <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 150px; padding: 10px; background: #f8f9fa; border-radius: 5px;">
+                                        <div style="width: 40px; height: 130px; background: linear-gradient(to top, #28a745, #20c997); border-radius: 5px 5px 0 0; position: relative;">
+                                            <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #28a745; font-size: 0.9rem;">60%</div>
+                                            <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; color: #666; white-space: nowrap;">0-20 min</div>
+                                        </div>
+                                        <div style="width: 40px; height: 30px; background: #ffc107; border-radius: 5px 5px 0 0; position: relative;">
+                                            <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #ffc107; font-size: 0.9rem;">15%</div>
+                                            <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; color: #666; white-space: nowrap;">20-60 min</div>
+                                        </div>
+                                        <div style="width: 40px; height: 15px; background: #dc3545; border-radius: 5px 5px 0 0; position: relative;">
+                                            <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #dc3545; font-size: 0.9rem;">10%</div>
+                                            <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; color: #666; white-space: nowrap;">60-90 min</div>
+                                        </div>
+                                        <div style="width: 40px; height: 110px; background: linear-gradient(to top, #dc3545, #c0392b); border-radius: 5px 5px 0 0; position: relative;">
+                                            <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #dc3545; font-size: 0.9rem;">40%</div>
+                                            <div style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; color: #666; white-space: nowrap;">> 90 min</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="flex: 1;">
+                                <div style="background: white; padding: 20px; border-radius: 8px;">
+                                    <h4 style="color: #721c24; margin-bottom: 15px;">💡 El Insight</h4>
+                                    <p style="color: #721c24; line-height: 1.6; margin-bottom: 10px;">
+                                        <strong>El promedio de 47 min oculta dos realidades:</strong>
+                                    </p>
+                                    <ul style="color: #721c24; line-height: 1.8;">
+                                        <li>60% tiene servicio excelente (&lt;20 min)</li>
+                                        <li>40% tiene servicio pésimo (&gt;90 min)</li>
+                                    </ul>
+                                    <p style="color: #dc3545; font-weight: bold; margin-top: 15px; padding: 10px; background: rgba(220,53,69,0.1); border-radius: 5px;">
+                                        → El problema NO es general, es específico a ciertos horarios
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Heatmap Horarios -->
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">⏰ Análisis por Hora y Día</h3>
+                        <div style="background: white; padding: 20px; border-radius: 8px;">
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <thead>
+                                    <tr style="background: #e9ecef;">
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Hora</th>
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Lun</th>
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Mar</th>
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Mié</th>
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Jue</th>
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Vie</th>
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Sáb</th>
+                                        <th style="padding: 10px; border: 1px solid #dee2e6; font-size: 0.85rem;">Dom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; font-weight: bold; font-size: 0.8rem;">6-10am</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">25m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">28m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">22m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">26m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">24m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">42m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">45m</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; font-weight: bold; font-size: 0.8rem;">10-2pm</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">30m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">32m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">29m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">31m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #d4edda; text-align: center; font-size: 0.8rem;">33m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">48m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">51m</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; font-weight: bold; font-size: 0.8rem;">2-6pm</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">52m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">55m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">49m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">53m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem;">72m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem;">85m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem;">78m</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; font-weight: bold; font-size: 0.8rem;">6-10pm</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem; font-weight: bold;">95m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem; font-weight: bold;">102m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem; font-weight: bold;">98m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem; font-weight: bold;">105m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #dc3545; color: white; text-align: center; font-size: 0.8rem; font-weight: bold;">127m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #dc3545; color: white; text-align: center; font-size: 0.8rem; font-weight: bold;">135m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #dc3545; color: white; text-align: center; font-size: 0.8rem; font-weight: bold;">118m</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; font-weight: bold; font-size: 0.8rem;">10pm-6am</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">45m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">48m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">42m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">46m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">51m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #f8d7da; text-align: center; font-size: 0.8rem;">68m</td>
+                                        <td style="padding: 10px; border: 1px solid #dee2e6; background: #fff3cd; text-align: center; font-size: 0.8rem;">55m</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div style="display: flex; justify-content: center; gap: 30px; margin-top: 15px;">
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="width: 20px; height: 20px; background: #d4edda; border-radius: 3px;"></div>
+                                    <span style="font-size: 0.8rem; color: #666;">Bueno (&lt;40m)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="width: 20px; height: 20px; background: #fff3cd; border-radius: 3px;"></div>
+                                    <span style="font-size: 0.8rem; color: #666;">Regular (40-60m)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="width: 20px; height: 20px; background: #f8d7da; border-radius: 3px;"></div>
+                                    <span style="font-size: 0.8rem; color: #666;">Malo (60-90m)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="width: 20px; height: 20px; background: #dc3545; border-radius: 3px;"></div>
+                                    <span style="font-size: 0.8rem; color: #666;">Crítico (&gt;90m)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background: #ffe6e6; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 4px solid #dc3545;">
+                            <p style="color: #721c24; font-weight: bold; margin: 0;">
+                                🔥 Zona crítica: 6-10pm coincide con cambio de turno + solo 1 médico de triage
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #d1ecf1; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="color: #0c5460; margin: 0;">
+                        <strong>💡 Nota:</strong> Este dashboard es INTERACTIVO en Power BI. Los coordinadores pueden filtrar por hospital, 
+                        día específico, tipo de urgencia. El objetivo es OPERACIONALIZAR el insight para acción diaria.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: CASO 2 - Resolución y Análisis -->
+        <div class="slide">
+            <h1>✅ CASO 2: Dashboard como Solución</h1>
+            <div style="margin: 40px 0;">
+                <div class="case-study-box">
+                    <h3 style="color: #27ae60; margin-bottom: 20px;">LA RESOLUCIÓN: Dashboard Interactivo</h3>
+                    
+                    <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">📊 Funcionalidades del Dashboard</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px;">
+                            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 10px;">📈</div>
+                                <h5 style="color: #2c3e50; margin-bottom: 10px;">Feature 1</h5>
+                                <p style="color: #666; font-size: 0.9rem;"><strong>Predicción de demanda por hora</strong></p>
+                                <p style="color: #666; font-size: 0.8rem; margin-top: 5px;">Permite ajustar personal proactivamente</p>
+                            </div>
+
+                            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 10px;">🚨</div>
+                                <h5 style="color: #2c3e50; margin-bottom: 10px;">Feature 2</h5>
+                                <p style="color: #666; font-size: 0.9rem;"><strong>Alerta de acumulación</strong></p>
+                                <p style="color: #666; font-size: 0.8rem; margin-top: 5px;">Notifica cuando espera &gt; 60 min</p>
+                            </div>
+
+                            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 2rem; margin-bottom: 10px;">📊</div>
+                                <h5 style="color: #2c3e50; margin-bottom: 10px;">Feature 3</h5>
+                                <p style="color: #666; font-size: 0.9rem;"><strong>Análisis de patrones</strong></p>
+                                <p style="color: #666; font-size: 0.8rem; margin-top: 5px;">Identifica días/horas críticas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #d4edda; padding: 25px; border-radius: 10px; border-left: 5px solid #28a745;">
+                        <h4 style="color: #155724; margin-bottom: 15px;">🎯 Resultado Piloto (3 meses)</h4>
+                        <div class="comparison-grid" style="gap: 20px;">
+                            <div>
+                                <p style="color: #155724; font-size: 1rem; margin: 10px 0;">
+                                    ⏰ Tiempo promedio: <strong>47 → 31 minutos (-34%)</strong>
+                                </p>
+                                <p style="color: #155724; font-size: 1rem; margin: 10px 0;">
+                                    😊 Satisfacción paciente: <strong>67% → 84%</strong>
+                                </p>
+                            </div>
+                            <div style="text-align: right;">
+                                <p style="color: #155724; font-size: 1.3rem; font-weight: bold;">
+                                    Sin contratar personal adicional
+                                </p>
+                                <p style="color: #666; font-size: 0.9rem;">Solo reorganización inteligente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px;">
+                    <h3 style="color: white; margin-bottom: 20px;">🔍 ¿Qué fue diferente en este caso vs Caso 1?</h3>
+                    <div class="comparison-grid">
+                        <div>
+                            <p style="margin: 10px 0;">✅ Dashboard <strong>INTERACTIVO</strong> (Power BI), no solo slides</p>
+                            <p style="margin: 10px 0;">✅ Enfocó en <strong>operacionalizar</strong> insights (herramienta diaria)</p>
+                        </div>
+                        <div>
+                            <p style="margin: 10px 0;">✅ Mostró <strong>resultados del piloto</strong> (validación)</p>
+                            <p style="margin: 10px 0;">✅ Métricas de <strong>satisfacción</strong>, no solo eficiencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: CASO 3 - Versión MALA -->
+        <div class="slide">
+            <h1>🚫 CASO 3: Ejemplo MALO → Versión Mejorada</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">⚠️ Antes de Mejorar: Identifiquen Problemas</h2>
+                    <p style="font-size: 1.2rem;">Criminalidad en Cali - Versión que NO funciona</p>
+                </div>
+
+                <div class="bad-example" style="padding: 30px;">
+                    <h3 style="color: #721c24; margin-bottom: 20px;">❌ VERSIÓN MALA</h3>
+                    
+                    <div class="slide-mockup" style="background: white; border: 3px solid #dc3545;">
+                        <h4 style="color: #999; font-size: 0.9rem; margin-bottom: 5px;">SLIDE 1</h4>
+                        <h3 style="color: #333;">Análisis de Criminalidad en Cali 2023</h3>
+                        <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; font-size: 0.7rem; color: #999;">
+                            [Tabla de Excel con 50 filas de números - hurtos, homicidios, lesiones, atracos, etc.]<br>
+                            Datos por mes, por comuna, por tipo de delito...<br>
+                            Sin resaltar nada específico
+                        </div>
+                    </div>
+
+                    <div class="slide-mockup" style="background: white; border: 3px solid #dc3545; margin-top: 20px;">
+                        <h4 style="color: #999; font-size: 0.9rem; margin-bottom: 5px;">SLIDE 2</h4>
+                        <h3 style="color: #333;">Gráfico de Criminalidad</h3>
+                        <div style="background: #f8f9fa; padding: 15px; margin: 15px 0;">
+                            <p style="font-size: 0.8rem; color: #666;">[Gráfico de barras con 15 categorías de crímenes]</p>
+                            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">Sin orden, sin mensaje claro, colores aleatorios</p>
+                        </div>
+                    </div>
+
+                    <div class="slide-mockup" style="background: white; border: 3px solid #dc3545; margin-top: 20px;">
+                        <h4 style="color: #999; font-size: 0.9rem; margin-bottom: 5px;">SLIDE 3</h4>
+                        <h3 style="color: #333;">Conclusión</h3>
+                        <p style="color: #666; margin-top: 15px; font-size: 0.9rem;">
+                            "La criminalidad aumentó en 2023 respecto a 2022."
+                        </p>
+                        <p style="color: #999; font-size: 0.8rem; margin-top: 10px;">[Sin números específicos ni recomendaciones]</p>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4 style="color: #856404; margin-bottom: 15px;">🤔 Pregunta a la Clase</h4>
+                    <p style="color: #856404; margin: 0; font-size: 1.1rem;">
+                        <strong>¿Qué está mal aquí?</strong> (Piensen en: sobrecarga de info, falta de historia, visuales pobres, sin acción clara)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: CASO 3 - Versión MEJORADA Completa -->
+        <div class="slide">
+            <h1>✅ CASO 3: Versión MEJORADA - Slide 1/3</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #28a745;">
+                    <div style="background: #d4edda; padding: 15px; border-radius: 8px; margin-bottom: 30px; text-align: center;">
+                        <strong style="color: #155724;">✅ SLIDE MEJORADO 1 DE 3 - CONTEXTO</strong>
+                    </div>
+                    
+                    <div style="text-align: center; margin-bottom: 40px;">
+                        <h2 style="color: #2c3e50; font-size: 2.5rem; margin-bottom: 20px;">
+                            🚔 Hurtos en Cali 2023
+                        </h2>
+                        <h3 style="color: #667eea; font-size: 1.8rem; margin-bottom: 30px;">
+                            ¿Dónde y cuándo intervenir?
+                        </h3>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 10px; margin: 30px 0;">
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: center;">
+                            <div>
+                                <div style="font-size: 3rem; color: #667eea; font-weight: bold;">23,000</div>
+                                <div style="color: #666; font-size: 1rem; margin-top: 10px;">Reportes policiales</div>
+                                <div style="font-size: 0.8rem; color: #999; margin-top: 5px;">Ene-Dic 2023</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 3rem; color: #667eea; font-weight: bold;">22</div>
+                                <div style="color: #666; font-size: 1rem; margin-top: 10px;">Comunas analizadas</div>
+                                <div style="font-size: 0.8rem; color: #999; margin-top: 5px;">Toda la ciudad</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 3rem; color: #667eea; font-weight: bold;">24/7</div>
+                                <div style="color: #666; font-size: 1rem; margin-top: 10px;">Cobertura temporal</div>
+                                <div style="font-size: 0.8rem; color: #999; margin-top: 5px;">Análisis por hora</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff3cd; padding: 25px; border-radius: 10px; border-left: 5px solid #ffc107;">
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="font-size: 3rem;">🎯</div>
+                            <div style="flex: 1;">
+                                <h4 style="color: #856404; margin-bottom: 10px; font-size: 1.2rem;">Objetivo del Análisis</h4>
+                                <p style="color: #856404; margin: 0; line-height: 1.6;">
+                                    Identificar patrones espaciotemporales de hurtos para optimizar despliegue de 
+                                    patrullaje policial <strong>sin aumentar presupuesto</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                        <p style="color: #666; font-size: 0.9rem; margin: 0;">
+                            <strong>Audiencia:</strong> Secretario de Seguridad y Comandantes Metropolitanos
+                        </p>
+                    </div>
+
+                    <div style="text-align: right; margin-top: 20px; color: #999; font-size: 0.85rem;">
+                        Fuente: Policía Nacional de Colombia
+                    </div>
+                </div>
+
+                <div style="background: #d4edda; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="color: #155724; margin: 0;">
+                        <strong>💡 Mejora vs versión mala:</strong> Enfoque específico (solo hurtos), números grandes y claros, 
+                        audiencia identificada, objetivo concreto. Ya no es "criminalidad general" sino problema específico.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12b: CASO 3 MEJORADO - Slide 2 -->
+        <div class="slide">
+            <h1>✅ CASO 3: Versión MEJORADA - Slide 2/3</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #e74c3c;">
+                    <div style="background: #ffe6e6; padding: 15px; border-radius: 8px; margin-bottom: 30px; text-align: center;">
+                        <strong style="color: #721c24;">✅ SLIDE MEJORADO 2 DE 3 - EL CONFLICTO</strong>
+                    </div>
+                    
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="color: #e74c3c; font-size: 2.2rem; line-height: 1.3; margin-bottom: 20px;">
+                            67% de los hurtos ocurren en patrones predecibles
+                        </h2>
+                        <p style="color: #666; font-size: 1.2rem;">Pero el patrullaje no está donde debe</p>
+                    </div>
+
+                    <!-- Concentración Espacial -->
+                    <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">📍 Concentración Espacial</h3>
+                        
+                        <!-- Mapa simulado con comunas -->
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <div style="background: linear-gradient(135deg, #dc3545 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 0.8rem; opacity: 0.9; margin-bottom: 5px;">Comuna 13</div>
+                                <div style="font-size: 2rem; font-weight: bold;">18%</div>
+                                <div style="margin-top: 8px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.75rem;">
+                                    🔴 CRÍTICA
+                                </div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 0.8rem; opacity: 0.9; margin-bottom: 5px;">Comuna 3</div>
+                                <div style="font-size: 2rem; font-weight: bold;">14%</div>
+                                <div style="margin-top: 8px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.75rem;">
+                                    🔴 ALTA
+                                </div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 0.8rem; opacity: 0.9; margin-bottom: 5px;">Comuna 19</div>
+                                <div style="font-size: 2rem; font-weight: bold;">11%</div>
+                                <div style="margin-top: 8px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.75rem;">
+                                    🔴 ALTA
+                                </div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%); color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                                <div style="font-size: 0.8rem; opacity: 0.9; margin-bottom: 5px;">5 comunas más</div>
+                                <div style="font-size: 2rem; font-weight: bold;">24%</div>
+                                <div style="margin-top: 8px; padding: 5px; background: rgba(255,255,255,0.2); border-radius: 5px; font-size: 0.75rem;">
+                                    ⚠️ MEDIA
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: white; border-radius: 8px;">
+                            <p style="color: #e74c3c; font-size: 1.3rem; font-weight: bold; margin: 0;">
+                                8 comunas = 67% de todos los hurtos
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Concentración Temporal -->
+                    <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 30px; border-radius: 10px; margin-bottom: 25px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">⏰ Concentración Temporal</h3>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; text-align: center;">
+                            <div style="background: #e9ecef; padding: 15px 10px; border-radius: 8px;">
+                                <div style="font-size: 0.75rem; color: #666; margin-bottom: 5px;">Lun</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #666;">12%</div>
+                            </div>
+                            <div style="background: #e9ecef; padding: 15px 10px; border-radius: 8px;">
+                                <div style="font-size: 0.75rem; color: #666; margin-bottom: 5px;">Mar</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #666;">11%</div>
+                            </div>
+                            <div style="background: #e9ecef; padding: 15px 10px; border-radius: 8px;">
+                                <div style="font-size: 0.75rem; color: #666; margin-bottom: 5px;">Mié</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #666;">13%</div>
+                            </div>
+                            <div style="background: #e9ecef; padding: 15px 10px; border-radius: 8px;">
+                                <div style="font-size: 0.75rem; color: #666; margin-bottom: 5px;">Jue</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #666;">14%</div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); padding: 15px 10px; border-radius: 8px; color: white;">
+                                <div style="font-size: 0.75rem; margin-bottom: 5px;">Vie</div>
+                                <div style="font-size: 1.3rem; font-weight: bold;">22%</div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #dc3545 0%, #c0392b 100%); padding: 15px 10px; border-radius: 8px; color: white;">
+                                <div style="font-size: 0.75rem; margin-bottom: 5px;">Sáb</div>
+                                <div style="font-size: 1.3rem; font-weight: bold;">19%</div>
+                            </div>
+                            <div style="background: #e9ecef; padding: 15px 10px; border-radius: 8px;">
+                                <div style="font-size: 0.75rem; color: #666; margin-bottom: 5px;">Dom</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #666;">9%</div>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px;">
+                            <div style="background: #e9ecef; padding: 15px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 0.75rem; color: #666; margin-bottom: 5px;">6am-12pm</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #666;">8%</div>
+                            </div>
+                            <div style="background: #fff3cd; padding: 15px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 0.75rem; color: #856404; margin-bottom: 5px;">12pm-6pm</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #856404;">25%</div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #dc3545 0%, #c0392b 100%); padding: 15px; border-radius: 8px; text-align: center; color: white;">
+                                <div style="font-size: 0.75rem; margin-bottom: 5px;">6pm-9pm</div>
+                                <div style="font-size: 1.3rem; font-weight: bold;">42%</div>
+                            </div>
+                            <div style="background: #e9ecef; padding: 15px; border-radius: 8px; text-align: center;">
+                                <div style="font-size: 0.75rem; color: #666; margin-bottom: 5px;">9pm-6am</div>
+                                <div style="font-size: 1.3rem; font-weight: bold; color: #666;">25%</div>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: white; border-radius: 8px;">
+                            <p style="color: #e74c3c; font-size: 1.3rem; font-weight: bold; margin: 0;">
+                                Vie-Sáb, 6-9pm = 42% de todos los hurtos
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- El problema del patrullaje -->
+                    <div style="background: #ffe6e6; padding: 25px; border-radius: 10px; border-left: 5px solid #dc3545;">
+                        <h4 style="color: #721c24; margin-bottom: 15px; text-align: center; font-size: 1.3rem;">
+                            ⚠️ PERO: El Patrullaje Actual
+                        </h4>
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 30px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem; color: #dc3545; font-weight: bold;">15%</div>
+                                <div style="color: #721c24; font-size: 1rem;">Del patrullaje</div>
+                                <div style="font-size: 0.85rem; color: #856404; margin-top: 5px;">En zonas/horas críticas</div>
+                            </div>
+                            <div style="font-size: 3rem; color: #721c24;">vs</div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem; color: #dc3545; font-weight: bold;">67%</div>
+                                <div style="color: #721c24; font-size: 1rem;">De los hurtos</div>
+                                <div style="font-size: 0.85rem; color: #856404; margin-top: 5px;">En esas mismas zonas/horas</div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 20px; padding: 15px; background: white; border-radius: 8px;">
+                            <p style="color: #dc3545; font-weight: bold; font-size: 1.1rem; margin: 0;">
+                                → Desalineación crítica entre recursos y necesidad
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #d4edda; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="color: #155724; margin: 0;">
+                        <strong>💡 Mejora vs versión mala:</strong> Visual claro con datos específicos (67%, 8 comunas, Vie-Sáb 6-9pm), 
+                        enfoque en un solo mensaje, contraste claro entre problema y situación actual.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12c: CASO 3 MEJORADO - Slide 3 -->
+        <div class="slide">
+            <h1>✅ CASO 3: Versión MEJORADA - Slide 3/3</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #28a745;">
+                    <div style="background: #d4edda; padding: 15px; border-radius: 8px; margin-bottom: 30px; text-align: center;">
+                        <strong style="color: #155724;">✅ SLIDE MEJORADO 3 DE 3 - RESOLUCIÓN</strong>
+                    </div>
+                    
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h2 style="color: #28a745; font-size: 2.2rem; margin-bottom: 15px;">
+                            ✅ Reasignación Inteligente de Recursos
+                        </h2>
+                        <p style="color: #666; font-size: 1.1rem;">Optimización sin costo adicional</p>
+                    </div>
+
+                    <!-- 3 Acciones -->
+                    <div style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #28a745;">
+                        <h3 style="color: #155724; margin-bottom: 20px;">🚔 Acción 1: Redistribuir Patrullaje</h3>
+                        <div style="display: flex; gap: 30px; align-items: center;">
+                            <div style="flex: 1;">
+                                <p style="color: #155724; line-height: 1.8; margin-bottom: 15px;">
+                                    → Reasignar <strong>40% de las patrullas</strong> actuales<br>
+                                    → De zonas de baja incidencia a <strong>8 comunas críticas</strong><br>
+                                    → Concentración horaria: <strong>Vie-Sáb 6-9pm</strong><br>
+                                    → Manteniendo cobertura básica en otras zonas
+                                </p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; min-width: 150px;">
+                                <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Cobertura proyectada</div>
+                                <div style="font-size: 2.5rem; font-weight: bold; color: #28a745;">55%</div>
+                                <div style="font-size: 0.75rem; color: #666;">vs 15% actual</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%); padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #ffc107;">
+                        <h3 style="color: #856404; margin-bottom: 20px;">📍 Acción 2: Puntos de Control Móviles</h3>
+                        <div style="display: flex; gap: 30px; align-items: center;">
+                            <div style="flex: 1;">
+                                <p style="color: #856404; line-height: 1.8; margin-bottom: 15px;">
+                                    → Implementar <strong>12 puntos de control móviles</strong><br>
+                                    → Ubicación basada en análisis de puntos calientes<br>
+                                    → Rotación semanal para impredecibilidad<br>
+                                    → Coordinación con cámaras de seguridad existentes
+                                </p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; min-width: 150px;">
+                                <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Inversión</div>
+                                <div style="font-size: 2.5rem; font-weight: bold; color: #ffc107;">$0</div>
+                                <div style="font-size: 0.75rem; color: #666;">Recursos existentes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%); padding: 30px; border-radius: 12px; border-left: 5px solid #17a2b8;">
+                        <h3 style="color: #0c5460; margin-bottom: 20px;">📱 Acción 3: App de Reporte Ciudadano</h3>
+                        <div style="display: flex; gap: 30px; align-items: center;">
+                            <div style="flex: 1;">
+                                <p style="color: #0c5460; line-height: 1.8; margin-bottom: 15px;">
+                                    → App para reportes en tiempo real georreferenciados<br>
+                                    → Alertas push a ciudadanos en zonas de riesgo<br>
+                                    → Integración con sistema de despacho policial<br>
+                                    → Validación cruzada de reportes (evitar falsos)
+                                </p>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; text-align: center; min-width: 150px;">
+                                <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Tiempo desarrollo</div>
+                                <div style="font-size: 2.5rem; font-weight: bold; color: #17a2b8;">3</div>
+                                <div style="font-size: 0.75rem; color: #666;">meses</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Impacto Proyectado -->
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; margin-top: 30px;">
+                        <h3 style="color: white; margin-bottom: 20px; text-align: center;">🎯 Impacto Proyectado (Modelo Predictivo)</h3>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 10px;">REDUCCIÓN HURTOS</div>
+                                <div style="font-size: 3rem; font-weight: bold;">-23%</div>
+                                <div style="margin-top: 10px; background: rgba(255,255,255,0.2); padding: 8px; border-radius: 5px; font-size: 0.85rem;">
+                                    ≈ 5,290 hurtos menos/año
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 10px;">COSTO ADICIONAL</div>
+                                <div style="font-size: 3rem; font-weight: bold; color: #d4edda;">$0</div>
+                                <div style="margin-top: 10px; background: rgba(255,255,255,0.2); padding: 8px; border-radius: 5px; font-size: 0.85rem;">
+                                    Reorganización de recursos
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 10px;">TIEMPO IMPLEMENTACIÓN</div>
+                                <div style="font-size: 3rem; font-weight: bold;">2-3</div>
+                                <div style="margin-top: 10px; background: rgba(255,255,255,0.2); padding: 8px; border-radius: 5px; font-size: 0.85rem;">
+                                    meses
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; margin-top: 20px;">
+                            <p style="text-align: center; font-size: 1rem; margin: 0;">
+                                <strong>Basado en:</strong> Modelos predictivos con datos históricos de Medellín y Bogotá 
+                                con estrategias similares implementadas
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div style="background: #28a745; color: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 30px;">
+                        <h3 style="color: white; margin-bottom: 15px; font-size: 1.5rem;">🚀 Próximos Pasos</h3>
+                        <p style="font-size: 1.1rem; margin-bottom: 20px; line-height: 1.6;">
+                            1. Aprobación de reasignación → <strong>Esta semana</strong><br>
+                            2. Piloto en 3 comunas → <strong>Mes 1-2</strong><br>
+                            3. Evaluación de resultados → <strong>Mes 3</strong><br>
+                            4. Expansión ciudad completa → <strong>Mes 4</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 15px; margin-top: 20px;">
+                    <h3 style="color: white; margin-bottom: 15px;">🔍 Comparación MALO vs BUENO</h3>
+                    <div class="comparison-grid">
+                        <div>
+                            <p style="margin: 10px 0;">✅ <strong>Enfoque específico:</strong> "Hurtos" no "criminalidad general"</p>
+                            <p style="margin: 10px 0;">✅ <strong>Números concretos:</strong> 67%, 8 comunas, Vie-Sáb 6-9pm</p>
+                            <p style="margin: 10px 0;">✅ <strong>Visual efectivo:</strong> Datos espaciotemporales claros</p>
+                        </div>
+                        <div>
+                            <p style="margin: 10px 0;">✅ <strong>Soluciones realistas:</strong> $0 costo adicional</p>
+                            <p style="margin: 10px 0;">✅ <strong>Impacto cuantificado:</strong> -23% proyectado</p>
+                            <p style="margin: 10px 0;">✅ <strong>Call-to-action claro:</strong> Próximos pasos con timeline</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Técnicas Avanzadas - Parte 1 -->
+        <div class="slide">
+            <h1>🎯 Técnicas Avanzadas de Presentación</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">✨ Técnicas que Hacen Presentaciones Memorables</h2>
+                    <p style="font-size: 1.2rem;">Más allá del framework básico</p>
+                </div>
+
+                <div class="technique-card">
+                    <h3 style="color: white; margin-bottom: 20px;">🎣 TÉCNICA 1: El "Gancho" Inicial</h3>
+                    <p style="margin-bottom: 20px; font-size: 1rem;">Los primeros 30 segundos determinan si captas la atención o la pierdes.</p>
+                    
+                    <div class="comparison-grid">
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <h4 style="color: #ffcccc; margin-bottom: 10px;">❌ APERTURA ABURRIDA</h4>
+                            <p style="font-size: 0.9rem; line-height: 1.6;">
+                                "Buenos días. Hoy voy a presentar un análisis de datos de transporte público en Cali que realizamos durante el último trimestre..."
+                            </p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px;">
+                            <h4 style="color: #ccffcc; margin-bottom: 10px;">✅ GANCHO EFECTIVO</h4>
+                            <p style="font-size: 0.9rem; line-height: 1.6; font-weight: bold;">
+                                "Cada día, 340,000 caleños pierden 2 horas en transporte público. 
+                                Eso es 680,000 horas diarias. En un año, perdemos 248 millones de horas. 
+                                ¿Qué podríamos hacer con ese tiempo?"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin-top: 20px;">
+                        <h4 style="color: white; margin-bottom: 10px;">💡 Por qué funciona:</h4>
+                        <ul style="font-size: 0.9rem; line-height: 1.8;">
+                            <li>Números concretos y escalados (individual → colectivo)</li>
+                            <li>Pregunta que invita a reflexión</li>
+                            <li>Relevancia personal (todos han experimentado esto)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="technique-card" style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);">
+                    <h3 style="color: white; margin-bottom: 20px;">🔎 TÉCNICA 2: El "Zoom" Narrativo</h3>
+                    <p style="margin-bottom: 20px; font-size: 1rem;">Alterna entre macro y micro para crear conexión emocional + contexto.</p>
+                    
+                    <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px;">
+                        <p style="font-size: 1rem; line-height: 2; font-weight: bold;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">MACRO</span> 
+                            "Colombia tiene 11 millones de estudiantes"
+                        </p>
+                        <p style="text-align: center; font-size: 1.5rem; margin: 10px 0;">↓</p>
+                        <p style="font-size: 1rem; line-height: 2; font-weight: bold;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">MICRO</span>
+                            "En esta escuela de Buenaventura, 8 de cada 10 niños desayunan por primera vez en el colegio"
+                        </p>
+                        <p style="text-align: center; font-size: 1.5rem; margin: 10px 0;">↓</p>
+                        <p style="font-size: 1rem; line-height: 2; font-weight: bold;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 5px;">MACRO</span>
+                            "Por eso, alimentación escolar no es gasto, es inversión en futuro"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Técnicas Avanzadas - Parte 2 -->
+        <div class="slide">
+            <h1>🎯 Técnicas Avanzadas (Continuación)</h1>
+            <div style="margin: 40px 0;">
+                <div class="technique-card" style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">
+                    <h3 style="color: white; margin-bottom: 20px;">⚖️ TÉCNICA 3: Comparaciones Efectivas</h3>
+                    <p style="margin-bottom: 20px; font-size: 1rem;">Los números abstractos no significan nada. Compáralos con algo tangible.</p>
+                    
+                    <div class="comparison-grid">
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <h4 style="color: #ffcccc; margin-bottom: 10px;">❌ NÚMERO ABSTRACTO</h4>
+                            <p style="font-size: 1.2rem; font-weight: bold;">
+                                "Se perdieron $450 millones en corrupción"
+                            </p>
+                            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.8;">
+                                (¿Es mucho? ¿Es poco? No hay referencia)
+                            </p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px;">
+                            <h4 style="color: #ccffcc; margin-bottom: 10px;">✅ COMPARACIÓN TANGIBLE</h4>
+                            <p style="font-size: 1rem; font-weight: bold; line-height: 1.8;">
+                                "$450 millones es equivalente a:"<br>
+                                • 3 hospitales nuevos completos<br>
+                                • 15,000 becas universitarias<br>
+                                • Presupuesto anual de 8 municipios
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technique-card" style="background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);">
+                    <h3 style="color: white; margin-bottom: 20px;">❓ TÉCNICA 4: La Pregunta Retórica</h3>
+                    <p style="margin-bottom: 20px; font-size: 1rem;">Estructura: Pregunta intrigante → Datos que responden → Acción clara</p>
+                    
+                    <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 10px;">
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">
+                                1️⃣ PREGUNTA INTRIGANTE
+                            </p>
+                            <p style="font-size: 1rem; font-style: italic;">
+                                "¿Por qué Medellín redujo accidentes de tránsito en 40% y Cali solo en 8%?"
+                            </p>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">
+                                2️⃣ DATOS QUE RESPONDEN
+                            </p>
+                            <p style="font-size: 1rem;">
+                                [Visual comparativo de ambas ciudades]<br>
+                                "La diferencia: Medellín implementó análisis predictivo de puntos críticos en 2021"
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">
+                                3️⃣ ACCIÓN CLARA
+                            </p>
+                            <p style="font-size: 1rem;">
+                                "Aquí está cómo podemos replicarlo en Cali con nuestros datos..."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technique-card" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                    <h3 style="color: white; margin-bottom: 20px;">🛡️ TÉCNICA 5: Anticipar Preguntas</h3>
+                    <p style="margin-bottom: 20px; font-size: 1rem;">Toda audiencia ejecutiva hace estas 4 preguntas mentalmente:</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">💰 "¿Cuánto cuesta?"</p>
+                            <p style="font-size: 0.9rem;">Siempre incluye costos estimados</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">⏰ "¿En cuánto tiempo?"</p>
+                            <p style="font-size: 0.9rem;">Timeline realista de implementación</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">🤷 "¿Qué pasa si no hacemos nada?"</p>
+                            <p style="font-size: 0.9rem;">Costo de inacción</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 10px;">🎯 "¿Por qué debería creerte?"</p>
+                            <p style="font-size: 0.9rem;">Evidencia, datos, validación</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; margin-top: 20px;">
+                        <p style="font-size: 0.9rem;">
+                            <strong>💡 Tip Pro:</strong> Prepara 2 slides de respaldo (no las muestres, solo si preguntan)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Errores Comunes -->
+        <div class="slide">
+            <h1>⚠️ Errores Comunes a Evitar</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🚫 Los 7 Pecados Capitales de las Presentaciones</h2>
+                    <p style="font-size: 1.2rem;">Evítenlos a toda costa</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div style="background: #f8d7da; padding: 25px; border-radius: 12px; border-left: 5px solid #dc3545;">
+                        <h3 style="color: #721c24;">❌ Error 1: Demasiados Visuales</h3>
+                        <p style="color: #721c24; font-size: 0.9rem;">
+                            Máximo 5 insights clave por presentación. Si tienes 15 gráficos, estás diluyendo el mensaje.
+                        </p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 25px; border-radius: 12px; border-left: 5px solid #dc3545;">
+                        <h3 style="color: #721c24;">❌ Error 2: Leer Slides</h3>
+                        <p style="color: #721c24; font-size: 0.9rem;">
+                            Si estás leyendo textualmente, mejor envía un email. Las presentaciones son para CONTAR, no leer.
+                        </p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 25px; border-radius: 12px; border-left: 5px solid #dc3545;">
+                        <h3 style="color: #721c24;">❌ Error 3: Sin Call-to-Action</h3>
+                        <p style="color: #721c24; font-size: 0.9rem;">
+                            Toda presentación debe terminar con: "¿Qué hacemos ahora?" Si no hay acción clara, fallaste.
+                        </p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 25px; border-radius: 12px; border-left: 5px solid #dc3545;">
+                        <h3 style="color: #721c24;">❌ Error 4: Números Sin Contexto</h3>
+                        <p style="color: #721c24; font-size: 0.9rem;">
+                            "Aumentó 15%" no significa nada. ¿15% de qué? ¿Comparado con qué? ¿Es bueno o malo?
+                        </p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 25px; border-radius: 12px; border-left: 5px solid #dc3545;">
+                        <h3 style="color: #721c24;">❌ Error 5: Visuales Decorativos</h3>
+                        <p style="color: #721c24; font-size: 0.9rem;">
+                            Cada gráfico debe tener un mensaje específico. Si es "bonito pero no dice nada", eliminarlo.
+                        </p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 25px; border-radius: 12px; border-left: 5px solid #dc3545;">
+                        <h3 style="color: #721c24;">❌ Error 6: Jerga Técnica</h3>
+                        <p style="color: #721c24; font-size: 0.9rem;">
+                            "El p-value del modelo de regresión..." ❌ "Encontramos una relación fuerte..." ✅
+                        </p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 25px; border-radius: 12px; border-left: 5px solid #dc3545;">
+                        <h3 style="color: #721c24;">❌ Error 7: Excusas</h3>
+                        <p style="color: #721c24; font-size: 0.9rem;">
+                            "No tuvimos tiempo de...", "Los datos no eran perfectos..." Solo destruyen credibilidad.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: #d4edda; padding: 30px; border-radius: 15px; margin-top: 40px; text-align: center;">
+                    <h3 style="color: #155724; margin-bottom: 15px;">💡 Regla de Oro</h3>
+                    <p style="color: #155724; font-size: 1.2rem; font-weight: bold;">
+                        "Si tu presentación necesita explicación después de que termine, no funcionó"
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Workshop - Auto-evaluación -->
+        <div class="slide">
+            <h1>💻 Workshop: Pulir Sus Presentaciones</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎯 Actividad Práctica</h2>
+                    <p style="font-size: 1.2rem;">Auto-evaluación + Peer Review + Plan de Acción</p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">📋 ACTIVIDAD 1: Auto-evaluación</h3>
+                    <p style="color: #666; text-align: center; margin-bottom: 25px;">
+                        Revisen su borrador de presentación usando este checklist:
+                    </p>
+                    
+                    <div style="display: grid; gap: 15px;">
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿El título del dashboard/presentación comunica el insight principal?</p>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿Hay un "gancho" en los primeros 30 segundos?</p>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿Usamos la estructura Contexto → Conflicto → Resolución?</p>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿Cada visual tiene un mensaje claro y específico?</p>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿Incluimos números específicos (no solo "aumentó" o "mejoró")?</p>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿Las recomendaciones son accionables y costeadas?</p>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿Adaptamos para "tomador de decisiones" como audiencia?</p>
+                        </div>
+                        
+                        <div class="checklist-item">
+                            <span style="font-size: 1.5rem;">☐</span>
+                            <p style="margin: 0;">¿Máximo 5 slides principales? (sin contar portada/cierre)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 style="color: #0c5460; margin-bottom: 10px;">⏰ Tiempo</h4>
+                    <p style="color: #0c5460; margin: 0;">
+                        10 minutos individuales para revisar con esta checklist
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 17: Workshop - Peer Review -->
+        <div class="slide">
+            <h1>👥 Workshop: Peer Review</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 20px; text-align: center;">🤝 ACTIVIDAD 2: Feedback Entre Pares</h3>
+                    
+                    <div class="comparison-grid" style="margin-top: 30px;">
+                        <div>
+                            <h4 style="color: #667eea; margin-bottom: 15px;">📝 Instrucciones</h4>
+                            <ol style="color: #666; line-height: 2;">
+                                <li>Intercambien presentaciones con otro equipo</li>
+                                <li>Evalúen usando la checklist anterior</li>
+                                <li>Den 3 sugerencias específicas de mejora</li>
+                                <li>Sean honestos pero constructivos</li>
+                            </ol>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: #667eea; margin-bottom: 15px;">🎯 Enfóquense en</h4>
+                            <div style="background: white; padding: 20px; border-radius: 10px;">
+                                <p style="color: #666; margin: 10px 0;">
+                                    <strong>1.</strong> ¿El mensaje es claro en 10 segundos?
+                                </p>
+                                <p style="color: #666; margin: 10px 0;">
+                                    <strong>2.</strong> ¿Hay un "so what?" obvio?
+                                </p>
+                                <p style="color: #666; margin: 10px 0;">
+                                    <strong>3.</strong> ¿Las recomendaciones son realistas?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); color: white; padding: 25px; border-radius: 15px; margin-top: 30px; text-align: center;">
+                        <h4 style="color: white; margin-bottom: 15px;">💬 Frase Mágica para Dar Feedback</h4>
+                        <p style="font-size: 1.1rem; font-style: italic;">
+                            "Me encantó [X específico]. Para mejorar aún más, sugiero [Y específico] porque [razón]."
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 25px; border-radius: 15px; margin-top: 30px;">
+                    <h4 style="color: #856404; margin-bottom: 15px;">🎯 ACTIVIDAD 3: Plan de Acción</h4>
+                    <p style="color: #856404; margin-bottom: 15px;">
+                        Cada equipo identifica y comparte en voz alta:
+                    </p>
+                    <div class="comparison-grid">
+                        <div style="background: white; padding: 20px; border-radius: 10px;">
+                            <p style="color: #856404; font-weight: bold; margin-bottom: 10px;">
+                                🔴 2 Debilidades principales
+                            </p>
+                            <p style="color: #666; font-size: 0.9rem;">
+                                De su presentación actual
+                            </p>
+                        </div>
+                        <div style="background: white; padding: 20px; border-radius: 10px;">
+                            <p style="color: #28a745; font-weight: bold; margin-bottom: 10px;">
+                                ✅ 2 Mejoras específicas
+                            </p>
+                            <p style="color: #666; font-size: 0.9rem;">
+                                Para implementar esta semana
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 18: Preparación para Semana 11 -->
+        <div class="slide">
+            <h1>📅 Preparación para Semana 11</h1>
+            <div style="margin: 40px 0;">
+                <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 40px;">
+                    <h2 style="color: white; margin-bottom: 15px;">🎤 Formato de Presentación - Entrega 2</h2>
+                    <p style="font-size: 1.2rem;">Próxima semana: Demuestren todo lo aprendido</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <div style="background: #f8f9fa; padding: 30px; border-radius: 15px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">⏱️ Estructura Obligatoria</h3>
+                        <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                            <h4 style="color: #667eea; margin-bottom: 10px;">Parte 1: Contexto (2 min)</h4>
+                            <ul style="color: #666; font-size: 0.9rem; line-height: 1.8;">
+                                <li>Dataset utilizado</li>
+                                <li>Objetivo del análisis</li>
+                                <li>Audiencia objetivo</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                            <h4 style="color: #e74c3c; margin-bottom: 10px;">Parte 2: Insights (6 min)</h4>
+                            <ul style="color: #666; font-size: 0.9rem; line-height: 1.8;">
+                                <li>Máximo 3 insights clave</li>
+                                <li>Con visuales de apoyo</li>
+                                <li>Números específicos</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: white; padding: 20px; border-radius: 10px;">
+                            <h4 style="color: #27ae60; margin-bottom: 10px;">Parte 3: Recomendaciones (4 min)</h4>
+                            <ul style="color: #666; font-size: 0.9rem; line-height: 1.8;">
+                                <li>Accionables y específicas</li>
+                                <li>Con impacto estimado</li>
+                                <li>Priorizadas</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%); color: white; padding: 15px; border-radius: 10px; text-align: center; margin-top: 20px;">
+                            <strong>Total: 12 minutos + 3 min preguntas</strong>
+                        </div>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 30px; border-radius: 15px;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">📊 Criterios de Evaluación</h3>
+                        <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <span style="color: #667eea; font-weight: bold;">Claridad narrativa</span>
+                                <span style="background: #667eea; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold;">30%</span>
+                            </div>
+                            <p style="color: #666; font-size: 0.8rem;">¿Siguieron framework storytelling?</p>
+                        </div>
+                        
+                        <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <span style="color: #e74c3c; font-weight: bold;">Insights profundos</span>
+                                <span style="background: #e74c3c; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold;">30%</span>
+                            </div>
+                            <p style="color: #666; font-size: 0.8rem;">¿Más allá de lo obvio?</p>
+                        </div>
+                        
+                        <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <span style="color: #00b894; font-weight: bold;">Visualizaciones efectivas</span>
+                                <span style="background: #00b894; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold;">20%</span>
+                            </div>
+                            <p style="color: #666; font-size: 0.8rem;">¿Apoyan la historia?</p>
+                        </div>
+                        
+                        <div style="background: white; padding: 20px; border-radius: 10px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <span style="color: #fdcb6e; font-weight: bold;">Recomendaciones accionables</span>
+                                <span style="background: #fdcb6e; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold;">20%</span>
+                            </div>
+                            <p style="color: #666; font-size: 0.8rem;">¿Específicas y viables?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: Tips Finales -->
+        <div class="slide">
+            <h1>✨ Tips Finales & Tarea</h1>
+            <div style="margin: 40px 0;">
+                <div class="comparison-grid">
+                    <div style="background: #d4edda; padding: 30px; border-radius: 15px;">
+                        <h3 style="color: #155724; margin-bottom: 20px;">✅ HACER</h3>
+                        <ul style="color: #155724; font-size: 1rem; line-height: 2;">
+                            <li><strong>Practicar en voz alta</strong> con cronómetro</li>
+                            <li><strong>Anticipar preguntas difíciles</strong> y preparar respuestas</li>
+                            <li><strong>Preparar 1-2 slides de respaldo</strong> (no mostrar, solo si preguntan)</li>
+                            <li><strong>Llegar 10 min antes</strong> para probar tecnología</li>
+                            <li><strong>Grabarse ensayando</strong> para auto-evaluarse</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 30px; border-radius: 15px;">
+                        <h3 style="color: #721c24; margin-bottom: 20px;">❌ EVITAR</h3>
+                        <ul style="color: #721c24; font-size: 1rem; line-height: 2;">
+                            <li><strong>Leer slides</strong> textualmente</li>
+                            <li><strong>Incluir visuales "porque sí"</strong></li>
+                            <li><strong>Excusas</strong> ("no tuvimos tiempo de...")</li>
+                            <li><strong>Presentaciones de más de 15 min</strong></li>
+                            <li><strong>Improvisar sin practicar</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; margin-top: 40px;">
+                    <h3 style="color: white; margin-bottom: 20px; text-align: center;">📝 Tarea para Esta Semana</h3>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1rem; margin-bottom: 10px;">
+                                <strong>1️⃣ Rehacer presentación</strong>
+                            </p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">
+                                Incorporando feedback de hoy
+                            </p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1rem; margin-bottom: 10px;">
+                                <strong>2️⃣ Ensayar 2 veces completas</strong>
+                            </p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">
+                                Con cronómetro, medir tiempos
+                            </p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1rem; margin-bottom: 10px;">
+                                <strong>3️⃣ Grabar un ensayo</strong>
+                            </p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">
+                                Y auto-evaluarse con checklist
+                            </p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+                            <p style="font-size: 1rem; margin-bottom: 10px;">
+                                <strong>4️⃣ (Opcional) Office hours</strong>
+                            </p>
+                            <p style="font-size: 0.9rem; opacity: 0.9;">
+                                Agendar 15 min con profesor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: #fff3cd; padding: 25px; border-radius: 15px; margin-top: 30px; text-align: center;">
+                    <h4 style="color: #856404; margin-bottom: 15px;">💡 Recuerden</h4>
+                    <p style="color: #856404; font-size: 1.2rem; font-weight: bold;">
+                        "La práctica no hace al maestro. La práctica perfecta hace al maestro."
+                    </p>
+                    <p style="color: #856404; margin-top: 10px;">
+                        Ensayar 2 veces marca la diferencia entre una presentación buena y una excelente
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 20: Cierre -->
+        <div class="slide title-slide">
+            <h1>🎬 ¡Listos para la Semana 11!</h1>
+            <div style="margin: 40px 0;">
+                <div style="font-size: 1.5rem; margin-bottom: 30px;">
+                    Ya tienen todas las herramientas:
+                </div>
+                
+                <div style="font-size: 1.2rem; line-height: 2; margin: 30px 0;">
+                    ✅ Framework de storytelling<br>
+                    ✅ 3 ejemplos profesionales completos<br>
+                    ✅ Técnicas avanzadas<br>
+                    ✅ Checklist de calidad<br>
+                    ✅ Feedback de pares
+                </div>
+                
+                <div style="font-size: 1.8rem; margin-top: 40px; font-weight: bold;">
+                    Ahora... ¡a practicar! 🚀
+                </div>
+                
+                <div style="font-size: 1.1rem; margin-top: 30px; opacity: 0.9;">
+                    Nos vemos la próxima semana con sus presentaciones finales
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].style.display = 'flex';
+            slides[currentSlide].style.animation = 'fadeInUp 0.6s ease-out';
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function previousSlide() {
+            showSlide(currentSlide - 1);  
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+        
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>
